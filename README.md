@@ -167,6 +167,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [finance-assistant](https://github.com/googlarz/finance-assistant) - Personal finance copilot with 12 modes: budget manager, debt optimizer (avalanche/snowball), investment tracker (XIRR), tax module (DE/UK/FR/NL/PL — validated against 29 official test cases), Monte Carlo FIRE projections, scenario lab, bank import (CSV/MT940/OFX). Encrypted SQLite, privacy-first. *By [@googlarz](https://github.com/googlarz)*
 - [Internal Comms](./internal-comms/) - Helps write internal communications including 3P updates, company newsletters, FAQs, status reports, and project updates using company-specific formats.
 - [Lead Research Assistant](./lead-research-assistant/) - Identifies and qualifies high-quality leads by analyzing your product, searching for target companies, and providing actionable outreach strategies.
+- [whats-next](https://github.com/googlarz/whats-next) - Identify the top 5 user personas for any project, surface the gaps they hit, and synthesize three layers of recommendations — what to fix now, what to build next, and what would change what your project *is*. Works with GitHub repos, project descriptions, pasted user feedback, and Claude Code skills as inputs. *By [@googlarz](https://github.com/googlarz)*
 
 ### Communication & Writing
 
