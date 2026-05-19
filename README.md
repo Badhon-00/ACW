@@ -113,6 +113,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [Master Claude for Legal](https://github.com/sboghossian/master-claude-for-legal) - Skill pack for legal teams. NDA triage, multi-party version diff, citation verifier, meeting brief, and the Friday-newsletter status synthesis pattern. Includes 10 reference docs (privilege, verification, long documents, practice areas) and 3 firm templates. Built from the public Anthropic Claude for Legal Teams webinar dataset. *By [@sboghossian](https://github.com/sboghossian)*
 
 ### Development & Code Tools
+- [CCA-Audit](https://github.com/GiulioDER/cca-audit) - 6-layer parallel code audit pipeline with non-overlapping scopes. Runs 6 specialized auditors (code quality, bugs, security, performance, docs, config) in parallel, deduplicates findings, auto-fixes P1+P2, re-verifies with tests, and gates through an architect review. Three variants: Claude Code slash command, Codex CLI, OpenRouter Python CLI. *By [@GiulioDER](https://github.com/GiulioDER)*
 
 - [artifacts-builder](https://github.com/anthropics/skills/tree/main/skills/web-artifacts-builder) - Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui).
 - [aws-skills](https://github.com/zxkane/aws-skills) - AWS development with CDK best practices, cost optimization MCP servers, and serverless/event-driven architecture patterns.
