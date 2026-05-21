@@ -196,22 +196,23 @@ When a user requests file organization help:
 
 6. **Execute Organization**
    
-   After approval, organize systematically:
+   After approval in a new user message, organize systematically:
    
    ```bash
    # Create folder structure
    mkdir -p "path/to/new/folders"
    
-   # Move files with clear logging
-   mv "old/path/file.pdf" "new/path/file.pdf"
+   # Move files without overwriting and with clear logging
+   mv -n "old/path/file.pdf" "new/path/file.pdf"
    
    # Rename files with consistent patterns
    # Example: "YYYY-MM-DD - Description.ext"
    ```
    
    **Important Rules**:
-   - Always confirm before deleting anything
-   - Log all moves for potential undo
+   - Always confirm before deleting anything; deletion needs its own explicit confirmation
+   - Log all moves before executing them
+   - Use `mv -n` or equivalent no-clobber behavior; never overwrite silently
    - Preserve original modification dates
    - Handle filename conflicts gracefully
    - Stop and ask if you encounter unexpected situations
@@ -430,4 +431,3 @@ Documents folder.
 - Cleaning up before storage cleanup
 - Organizing shared team folders
 - Structuring new project directories
-

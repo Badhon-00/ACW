@@ -192,16 +192,16 @@ When a user requests invoice organization:
    Process [X] files? (yes/no)
    ```
    
-   After approval:
+   After approval in a new user message:
    ```bash
    # Create folder structure
    mkdir -p "Invoices/2024/Software/Adobe"
    
    # Copy (don't move) to preserve originals
-   cp "original.pdf" "Invoices/2024/Software/Adobe/2024-03-15 Adobe - Invoice - Creative Cloud.pdf"
+   cp -n "original.pdf" "Invoices/2024/Software/Adobe/2024-03-15 Adobe - Invoice - Creative Cloud.pdf"
    
-   # Or move if user prefers
-   mv "original.pdf" "new/path/standardized-name.pdf"
+   # Only move if the user explicitly requested moving originals in a separate message
+   mv -n "original.pdf" "new/path/standardized-name.pdf"
    ```
 
 6. **Generate Summary Report**
@@ -443,4 +443,3 @@ For unusual receipt formats:
 - Archiving old financial records
 - Preparing for audits
 - Tracking subscription costs over time
-
