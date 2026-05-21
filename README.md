@@ -154,8 +154,8 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [tdd](https://github.com/rudi193-cmd/willow-2.0/blob/master/willow/fylgja/skills/tdd.md) - Strict red/green/refactor TDD — failing test first, minimal green, commit each green state. *By [@rudi193-cmd](https://github.com/rudi193-cmd)*
 - [test-driven-development](https://github.com/obra/superpowers/tree/main/skills/test-driven-development) - Use when implementing any feature or bugfix, before writing implementation code.
 - [using-git-worktrees](https://github.com/obra/superpowers/blob/main/skills/using-git-worktrees/) - Creates isolated git worktrees with smart directory selection and safety verification.
-- [worktree](https://github.com/rudi193-cmd/willow-2.0/blob/master/willow/fylgja/skills/worktree.md) - Set up in-repo git worktrees for scoped feature work without losing current context. *By [@rudi193-cmd](https://github.com/rudi193-cmd)*
 - [Webapp Testing](./webapp-testing/) - Tests local web applications using Playwright for verifying frontend functionality, debugging UI behavior, and capturing screenshots.
+- [worktree](https://github.com/rudi193-cmd/willow-2.0/blob/master/willow/fylgja/skills/worktree.md) - Set up in-repo git worktrees for scoped feature work without losing current context. *By [@rudi193-cmd](https://github.com/rudi193-cmd)*
 
 ### Data & Analysis
 
