@@ -546,6 +546,142 @@ class Client:
             raise RuntimeError(f"Upload returned 200 but no URL: {d}")
         return url
 
+    # ── Reads ──
+
+    def user_self(self) -> dict:
+        """Current authenticated user's profile.
+
+        Hits the global substack.com endpoint, not your publication subdomain.
+        Returns at minimum: id, name, handle, photo_url, email.
+
+        Note: this endpoint returns 403 for some accounts (Substack appears
+        to gate it behind an anti-bot or session-scope check that is not
+        well-documented). If you only need the user ID, use the `user_id`
+        property on this Client instead — it resolves from drafts/archive
+        bylines and is more reliable.
+        """
+        r = self.session.get(
+            "https://substack.com/api/v1/user/self",
+            headers=self._json_headers, timeout=self.timeout,
+        )
+        if r.status_code != 200:
+            raise RuntimeError(
+                f"user_self failed: {r.status_code} {r.text[:200]} "
+                "(some accounts always 403 here; use the client.user_id property instead)"
+            )
+        return r.json()
+
+    def publication(self) -> dict:
+        """Publication metadata: name, hero, bylines, custom domain, theme."""
+        r = self.session.get(
+            f"https://{self.pub}/api/v1/publication",
+            headers=self._json_headers, timeout=self.timeout,
+        )
+        if r.status_code != 200:
+            raise RuntimeError(f"publication failed: {r.status_code} {r.text[:200]}")
+        return r.json()
+
+    def archive(self, sort: str = "new", limit: int = 10,
+                offset: int = 0) -> list[dict]:
+        """List published posts in this publication's archive.
+
+        Returns a list of post dicts with keys including: id, title,
+        subtitle, slug, canonical_url, audience, post_date,
+        publishedBylines, type, description, cover_image.
+
+        Args:
+          sort: 'new', 'old', or 'community' (engagement-sorted).
+          limit: posts per page. Substack caps around 50.
+          offset: pagination offset.
+        """
+        r = self.session.get(
+            f"https://{self.pub}/api/v1/archive"
+            f"?sort={sort}&limit={limit}&offset={offset}",
+            headers=self._json_headers, timeout=self.timeout,
+        )
+        if r.status_code != 200:
+            raise RuntimeError(f"archive failed: {r.status_code} {r.text[:200]}")
+        data = r.json()
+        return data if isinstance(data, list) else data.get("posts", [])
+
+    def iter_archive(self, sort: str = "new", page_size: int = 25):
+        """Generator over the full archive. Stops when a short page returns."""
+        offset = 0
+        while True:
+            page = self.archive(sort=sort, limit=page_size, offset=offset)
+            if not page:
+                return
+            for post in page:
+                yield post
+            offset += len(page)
+            if len(page) < page_size:
+                return
+
+    def get_post(self, slug_or_id: Union[str, int]) -> dict:
+        """Fetch a single published post by slug or numeric ID.
+
+        Returns the post dict (unwrapped from the API's `{post, publication,
+        subscription, ...}` envelope) with all fields including
+        `body_html`, `cover_image`, `description`, `audience`, `post_date`,
+        `canonical_url`, `comment_count`, `truncated_body_text`.
+
+        If the response shape ever changes, this method raises a RuntimeError
+        with the available top-level keys for debugging.
+        """
+        candidates = [
+            f"https://{self.pub}/api/v1/posts/{slug_or_id}",
+            f"https://{self.pub}/api/v1/posts/by-id/{slug_or_id}",
+        ]
+        last_err = None
+        for url in candidates:
+            r = self.session.get(url, headers=self._json_headers,
+                                 timeout=self.timeout)
+            if r.status_code == 200:
+                data = r.json()
+                # Unwrap the envelope; fall through to raw if shape is unexpected.
+                if isinstance(data, dict) and "post" in data and isinstance(data["post"], dict):
+                    return data["post"]
+                if isinstance(data, dict) and "body_html" in data:
+                    return data
+                raise RuntimeError(
+                    f"get_post returned an unexpected shape: "
+                    f"top-level keys={sorted(data.keys()) if isinstance(data, dict) else type(data).__name__}"
+                )
+            last_err = f"{r.status_code} {r.text[:120]}"
+        raise RuntimeError(f"get_post failed for {slug_or_id}: {last_err}")
+
+    def subscribers_csv(self, out_path: Union[str, Path, None] = None
+                        ) -> Optional[bytes]:
+        """Download the subscriber list as CSV. Requires owner role.
+
+        Some publications serve subscriber data only through dashboard JS;
+        if the direct API returns a non-CSV payload, fall back to the
+        Playwright recipe in README.md.
+
+        Returns the CSV bytes. If `out_path` is given, also writes to disk.
+        """
+        r = self.session.get(
+            f"https://{self.pub}/api/v1/subscribers/export",
+            headers={"User-Agent": "Mozilla/5.0",
+                     "Accept": "text/csv,application/octet-stream,*/*"},
+            timeout=120,
+        )
+        if r.status_code != 200:
+            raise RuntimeError(
+                f"subscribers_csv failed: {r.status_code} {r.text[:200]}"
+            )
+        ct = r.headers.get("content-type", "")
+        if not any(t in ct for t in ("csv", "octet", "text/plain")):
+            raise RuntimeError(
+                f"Subscriber export returned non-CSV content-type: {ct!r}. "
+                "Owner role required; some accounts need the Playwright "
+                "dashboard-scraping fallback documented in README."
+            )
+        csv_bytes = r.content
+        if out_path:
+            Path(out_path).write_bytes(csv_bytes)
+        return csv_bytes
+
     # ── Drafts ──
 
     def create_draft(self, title: str, subtitle: str,
@@ -736,6 +872,69 @@ def _cli_delete(args):
     print(f"Deleted draft {args.draft_id}")
 
 
+def _cli_whoami(args):
+    client = Client(pub=args.pub)
+    u = client.user_self()
+    print(f"id:     {u.get('id')}")
+    print(f"name:   {u.get('name')}")
+    print(f"handle: {u.get('handle')}")
+    print(f"email:  {u.get('email')}")
+
+
+def _cli_publication(args):
+    client = Client(pub=args.pub)
+    p = client.publication()
+    print(f"name:           {p.get('name')}")
+    print(f"hero:           {p.get('hero_text')}")
+    print(f"custom_domain:  {p.get('custom_domain')}")
+    bylines = p.get("bylines") or []
+    if bylines:
+        print(f"bylines:        {', '.join(b.get('name', '?') for b in bylines)}")
+
+
+def _cli_archive(args):
+    client = Client(pub=args.pub)
+    posts = client.archive(sort=args.sort, limit=args.limit, offset=args.offset)
+    if not posts:
+        print("No posts in this page.")
+        return
+    for p in posts:
+        pid = p.get("id")
+        title = (p.get("title") or "(untitled)")[:70]
+        date = (p.get("post_date") or p.get("publishedAt") or "")[:10]
+        audience = p.get("audience", "?")
+        print(f"  [{pid}] {date}  {audience:10s}  {title}")
+
+
+def _cli_subscribers(args):
+    client = Client(pub=args.pub)
+    out = Path(args.out) if args.out else Path(
+        f"subscribers_{__import__('datetime').date.today().isoformat()}.csv"
+    )
+    csv_bytes = client.subscribers_csv(out_path=out)
+    print(f"Wrote {len(csv_bytes)} bytes to {out}")
+
+
+def _cli_get_post(args):
+    client = Client(pub=args.pub)
+    post = client.get_post(args.id_or_slug)
+    if args.body:
+        # Just the body HTML, for piping into pandoc or similar.
+        print(post.get("body_html") or "")
+        return
+    print(f"id:           {post.get('id')}")
+    print(f"title:        {post.get('title')}")
+    print(f"subtitle:     {post.get('subtitle')}")
+    print(f"audience:     {post.get('audience')}")
+    print(f"post_date:    {post.get('post_date')}")
+    print(f"canonical:    {post.get('canonical_url')}")
+    print(f"comments:     {post.get('comment_count')}")
+    print(f"body_html:    {len(post.get('body_html') or '')} bytes")
+    if args.out:
+        Path(args.out).write_text(post.get("body_html") or "", encoding="utf-8")
+        print(f"Wrote body HTML to {args.out}")
+
+
 def _build_parser():
     p = argparse.ArgumentParser(
         prog="substack_draft",
@@ -765,6 +964,30 @@ def _build_parser():
     dp = sub.add_parser("delete", help="Delete a draft by ID.")
     dp.add_argument("draft_id", type=int)
     dp.set_defaults(func=_cli_delete)
+
+    wp = sub.add_parser("whoami", help="Show the authenticated user.")
+    wp.set_defaults(func=_cli_whoami)
+
+    pup = sub.add_parser("publication", help="Show publication metadata.")
+    pup.set_defaults(func=_cli_publication)
+
+    arp = sub.add_parser("archive", help="List published posts.")
+    arp.add_argument("--sort", default="new", choices=["new", "old", "community"])
+    arp.add_argument("--limit", type=int, default=10)
+    arp.add_argument("--offset", type=int, default=0)
+    arp.set_defaults(func=_cli_archive)
+
+    sp = sub.add_parser("subscribers", help="Download subscriber CSV (owner only).")
+    sp.add_argument("--out", help="Output path (default: subscribers_YYYY-MM-DD.csv)")
+    sp.set_defaults(func=_cli_subscribers)
+
+    gp = sub.add_parser("get", help="Fetch a single post by ID or slug.")
+    gp.add_argument("id_or_slug",
+                    help="Numeric post ID or string slug.")
+    gp.add_argument("--body", action="store_true",
+                    help="Print only the body HTML, suitable for piping.")
+    gp.add_argument("--out", help="Write body HTML to a file.")
+    gp.set_defaults(func=_cli_get_post)
 
     return p
 
