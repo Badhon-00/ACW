@@ -113,6 +113,35 @@ import requests
 DEFAULT_PUB = os.environ.get("SUBSTACK_PUB", "yourname.substack.com")
 DEFAULT_TIMEOUT = 30
 
+# Subset of non-ASCII characters that historically broke Substack's
+# ProseMirror editor when included verbatim in draft content. Used by
+# `safe_text()` for defensive stripping.
+_ASCII_REPLACEMENTS = {
+    "—": "--",   # em-dash
+    "–": "-",    # en-dash
+    "→": "->",   # right arrow
+    "←": "<-",   # left arrow
+    "·": "|",    # middle dot
+    "•": "*",    # bullet
+    "‘": "'", "’": "'",   # smart single quotes
+    "“": '"', "”": '"',   # smart double quotes
+    "…": "...",  # ellipsis
+    " ": " ",    # non-breaking space
+}
+
+
+def safe_text(text: str) -> str:
+    """Defensively strip non-ASCII characters that have historically broken
+    Substack's ProseMirror editor (em-dashes, arrows, smart quotes, emoji).
+
+    Most modern publications render Unicode fine, so this is opt-in.
+    Reach for it only if you see "Something has gone wrong" opening a
+    draft and you've ruled out unsupported node types.
+    """
+    for ch, repl in _ASCII_REPLACEMENTS.items():
+        text = text.replace(ch, repl)
+    return text.encode("ascii", "ignore").decode("ascii")
+
 
 # ═══════════════════════════════════════════════════════════════════════════
 # ProseMirror document builder
@@ -650,6 +679,259 @@ class Client:
             last_err = f"{r.status_code} {r.text[:120]}"
         raise RuntimeError(f"get_post failed for {slug_or_id}: {last_err}")
 
+    def user_public_profile(self, handle: str) -> dict:
+        """Look up a public Substack profile by @handle.
+
+        Returns: id, name, handle, photo_url, bio, subscriberCount, primaryPublication.
+        Endpoint: GET https://substack.com/api/v1/user/{handle}/public_profile
+        """
+        handle = handle.lstrip("@")
+        r = self.session.get(
+            f"https://substack.com/api/v1/user/{handle}/public_profile",
+            headers=self._json_headers, timeout=self.timeout,
+        )
+        if r.status_code != 200:
+            raise RuntimeError(
+                f"user_public_profile({handle}) failed: "
+                f"{r.status_code} {r.text[:200]}"
+            )
+        return r.json()
+
+    # ── Reader feed ──
+
+    def feed(self, cursor: Optional[str] = None) -> dict:
+        """Fetch a single page of the authenticated user's reader feed.
+
+        Returns the raw API response. Useful fields:
+          - items: list of feed entries (mixed posts/notes/chats)
+          - nextCursor: pass to feed() to get the next page (None if end)
+
+        Each item has `type` ("post" or "comment") and an inner `post`
+        or `comment` dict. For notes, `type=="comment"` and
+        `context.type=="note"`.
+
+        Endpoint: GET https://substack.com/api/v1/reader/feed
+        Pagination: ?cursor=<urlencoded>
+        Rate limit: 429 — caller should sleep and retry, or use iter_feed()
+        which handles this for you.
+        """
+        from urllib.parse import quote
+        url = "https://substack.com/api/v1/reader/feed"
+        if cursor:
+            url = f"{url}?cursor={quote(cursor)}"
+        r = self.session.get(url, headers=self._json_headers, timeout=self.timeout)
+        if r.status_code != 200:
+            raise RuntimeError(f"feed failed: {r.status_code} {r.text[:200]}")
+        return r.json()
+
+    def iter_feed(self, max_pages: Optional[int] = None,
+                  max_items: Optional[int] = None,
+                  rate_limit_sleep: float = 10.0,
+                  inter_page_sleep: float = 0.5):
+        """Generator that walks the reader feed across pages.
+
+        Handles 429 rate-limit responses by sleeping `rate_limit_sleep`
+        seconds and retrying once per page. Sleeps `inter_page_sleep`
+        between successful pages to be polite.
+
+        Args:
+          max_pages: stop after this many pages (None = until exhausted)
+          max_items: stop after yielding this many items (None = no limit)
+          rate_limit_sleep: seconds to wait on 429 before retrying
+          inter_page_sleep: seconds between successful pages
+        """
+        import time
+        from urllib.parse import quote
+
+        cursor = None
+        pages_done = 0
+        items_yielded = 0
+        while True:
+            url = "https://substack.com/api/v1/reader/feed"
+            if cursor:
+                url = f"{url}?cursor={quote(cursor)}"
+            r = self.session.get(url, headers=self._json_headers, timeout=self.timeout)
+            if r.status_code == 429:
+                time.sleep(rate_limit_sleep)
+                r = self.session.get(url, headers=self._json_headers, timeout=self.timeout)
+            if r.status_code != 200:
+                raise RuntimeError(f"feed failed: {r.status_code} {r.text[:200]}")
+            data = r.json()
+            for item in data.get("items", []):
+                yield item
+                items_yielded += 1
+                if max_items is not None and items_yielded >= max_items:
+                    return
+            pages_done += 1
+            if max_pages is not None and pages_done >= max_pages:
+                return
+            cursor = data.get("nextCursor")
+            if not cursor:
+                return
+            time.sleep(inter_page_sleep)
+
+    def notes_for_user(self, user_id: int,
+                       cursor: Optional[str] = None) -> dict:
+        """Fetch a page of Notes posted by a specific user.
+
+        Endpoint: GET https://substack.com/api/v1/reader/feed/profile/{user_id}
+        Pagination: ?cursor=<urlencoded>. Server returns ~12 items per page;
+        `limit` query param is ignored on this endpoint.
+
+        Note: passing the `types[]=comment` filter that Substack's own
+        clients sometimes send actually returns zero items here. Don't
+        add it. All entries already have `type="comment"` with
+        `context.type=="note"`.
+
+        Each item has `comment.{body, date, reaction_count,
+        children_count, restacks, canonical_url, attachments}`.
+        """
+        from urllib.parse import quote
+        url = f"https://substack.com/api/v1/reader/feed/profile/{user_id}"
+        if cursor:
+            url = f"{url}?cursor={quote(cursor)}"
+        r = self.session.get(url, headers=self._json_headers, timeout=self.timeout)
+        if r.status_code != 200:
+            raise RuntimeError(
+                f"notes_for_user({user_id}) failed: "
+                f"{r.status_code} {r.text[:200]}"
+            )
+        return r.json()
+
+    def iter_notes_for_user(self, user_id: int,
+                            max_items: Optional[int] = None,
+                            inter_page_sleep: float = 0.5):
+        """Generator over a user's Notes across cursor-paginated pages."""
+        import time
+        cursor = None
+        yielded = 0
+        while True:
+            data = self.notes_for_user(user_id, cursor=cursor)
+            items = data.get("items", [])
+            if not items:
+                return
+            for item in items:
+                yield item
+                yielded += 1
+                if max_items is not None and yielded >= max_items:
+                    return
+            cursor = data.get("nextCursor")
+            if not cursor:
+                return
+            time.sleep(inter_page_sleep)
+
+    # ── Engagement (side-effects — no CLI exposure) ──
+    #
+    # These methods write to your account: likes show on the recipient's
+    # profile, comments and notes appear publicly. There are no CLI
+    # wrappers for them on purpose — call them explicitly from your own
+    # code. Substack rate-limits aggressively on engagement; build in
+    # your own sleeps if looping.
+
+    def like_post(self, post_id: int) -> None:
+        """Like a published post. POST /api/v1/post/{id}/reaction."""
+        r = self.session.post(
+            f"https://substack.com/api/v1/post/{post_id}/reaction",
+            json={"reaction": "❤"},
+            headers=self._json_headers, timeout=self.timeout,
+        )
+        if r.status_code not in (200, 201):
+            raise RuntimeError(
+                f"like_post({post_id}) failed: {r.status_code} {r.text[:200]}"
+            )
+
+    def like_note(self, note_id: int) -> None:
+        """Like a Note (Substack treats notes as comments internally).
+        POST /api/v1/comment/{id}/reaction on the publication subdomain.
+        """
+        r = self.session.post(
+            f"https://{self.pub}/api/v1/comment/{note_id}/reaction",
+            json={"reaction": "❤"},
+            headers=self._json_headers, timeout=self.timeout,
+        )
+        if r.status_code not in (200, 201):
+            raise RuntimeError(
+                f"like_note({note_id}) failed: {r.status_code} {r.text[:200]}"
+            )
+
+    def comment_on_post(self, post_id: int, body: str) -> dict:
+        """Add a comment to a published post.
+        POST /api/v1/posts/{id}/comments on the publication subdomain.
+        """
+        r = self.session.post(
+            f"https://{self.pub}/api/v1/posts/{post_id}/comments",
+            json={"body": body, "post_id": post_id},
+            headers=self._json_headers, timeout=self.timeout,
+        )
+        if r.status_code not in (200, 201):
+            raise RuntimeError(
+                f"comment_on_post({post_id}) failed: "
+                f"{r.status_code} {r.text[:200]}"
+            )
+        return r.json()
+
+    def publish_note(self, text_or_doc: Union[str, Doc, dict],
+                     attachment_url: Optional[str] = None,
+                     audience: str = "everyone") -> dict:
+        """Publish a Substack Note.
+
+        Args:
+          text_or_doc: either a plain string (becomes one paragraph) or a
+            Doc / ProseMirror dict for rich formatting.
+          attachment_url: optional URL to attach. If provided, the link is
+            created as an attachment (POST /comment/attachment/) and the
+            note publishes with `attachmentIds=[<id>]`.
+          audience: "everyone" or "only_paid".
+
+        Returns the publish response. Endpoint: POST /comment/feed/.
+        """
+        if isinstance(text_or_doc, str):
+            body = {
+                "type": "doc",
+                "attrs": {"schemaVersion": "v1"},
+                "content": [{"type": "paragraph",
+                              "content": [{"type": "text", "text": text_or_doc}]}],
+            }
+        elif isinstance(text_or_doc, Doc):
+            body = text_or_doc.to_dict()
+            body.setdefault("attrs", {"schemaVersion": "v1"})
+        else:
+            body = dict(text_or_doc)
+            body.setdefault("attrs", {"schemaVersion": "v1"})
+
+        attachment_ids = []
+        if attachment_url:
+            ra = self.session.post(
+                "https://substack.com/api/v1/comment/attachment",
+                json={"url": attachment_url, "type": "link"},
+                headers=self._json_headers, timeout=self.timeout,
+            )
+            if ra.status_code not in (200, 201):
+                raise RuntimeError(
+                    f"attachment creation failed: {ra.status_code} {ra.text[:200]}"
+                )
+            attachment_ids = [ra.json()["id"]]
+
+        payload = {
+            "bodyJson": body,
+            "tabId": "for-you",
+            "surface": "feed",
+            "replyMinimumRole": audience,
+        }
+        if attachment_ids:
+            payload["attachmentIds"] = attachment_ids
+
+        r = self.session.post(
+            "https://substack.com/api/v1/comment/feed",
+            json=payload,
+            headers=self._json_headers, timeout=self.timeout,
+        )
+        if r.status_code not in (200, 201):
+            raise RuntimeError(
+                f"publish_note failed: {r.status_code} {r.text[:200]}"
+            )
+        return r.json()
+
     def subscribers_csv(self, out_path: Union[str, Path, None] = None
                         ) -> Optional[bytes]:
         """Download the subscriber list as CSV. Requires owner role.
@@ -935,6 +1217,59 @@ def _cli_get_post(args):
         print(f"Wrote body HTML to {args.out}")
 
 
+def _cli_feed(args):
+    client = Client(pub=args.pub)
+    shown = 0
+    for item in client.iter_feed(max_items=args.limit):
+        t = item.get("type", "?")
+        if t == "post":
+            p = item.get("post") or {}
+            pub = (item.get("publication") or {}).get("name", "?")
+            title = (p.get("title") or "(untitled)")[:60]
+            date = (p.get("post_date") or "")[:10]
+            print(f"  [post]    {date}  {pub[:25]:25s}  {title}")
+        elif t == "comment":
+            ctx = item.get("context") or {}
+            users = ctx.get("users") or []
+            author = users[0].get("name", "?") if users else "?"
+            body = ((item.get("comment") or {}).get("body") or "")[:80]
+            print(f"  [note]    {author[:25]:25s}  {body}")
+        else:
+            print(f"  [{t}]    (unrecognized item type)")
+        shown += 1
+    if shown == 0:
+        print("Feed empty.")
+
+
+def _cli_whois(args):
+    client = Client(pub=args.pub)
+    p = client.user_public_profile(args.handle)
+    print(f"id:               {p.get('id')}")
+    print(f"name:             {p.get('name')}")
+    print(f"handle:           @{p.get('handle')}")
+    print(f"subscriberCount:  {p.get('subscriberCount')}")
+    bio = (p.get("bio") or "").strip().replace("\n", " ")
+    print(f"bio:              {bio[:120]}")
+
+
+def _cli_notes_for(args):
+    client = Client(pub=args.pub)
+    if args.user.startswith("@") or not args.user.isdigit():
+        prof = client.user_public_profile(args.user)
+        user_id = prof["id"]
+        print(f"(resolved @{prof.get('handle')} -> {user_id})")
+    else:
+        user_id = int(args.user)
+    for item in client.iter_notes_for_user(user_id, max_items=args.limit):
+        c = item.get("comment") or {}
+        body = (c.get("body") or "").replace("\n", " ")[:100]
+        likes = c.get("reaction_count", 0)
+        comments = c.get("children_count", 0)
+        restacks = c.get("restacks", 0)
+        date = (c.get("date") or "")[:10]
+        print(f"  {date}  ♥{likes:>3} 💬{comments:>3} ↻{restacks:>3}  {body}")
+
+
 def _build_parser():
     p = argparse.ArgumentParser(
         prog="substack_draft",
@@ -988,6 +1323,20 @@ def _build_parser():
                     help="Print only the body HTML, suitable for piping.")
     gp.add_argument("--out", help="Write body HTML to a file.")
     gp.set_defaults(func=_cli_get_post)
+
+    fp = sub.add_parser("feed", help="Show your reader feed (posts + notes).")
+    fp.add_argument("--limit", type=int, default=20)
+    fp.set_defaults(func=_cli_feed)
+
+    wsp = sub.add_parser("whois", help="Look up a Substack profile by handle.")
+    wsp.add_argument("handle", help="@handle (with or without the @).")
+    wsp.set_defaults(func=_cli_whois)
+
+    np = sub.add_parser("notes", help="Show a user's Notes.")
+    np.add_argument("--user", required=True,
+                    help="Numeric user ID or @handle.")
+    np.add_argument("--limit", type=int, default=20)
+    np.set_defaults(func=_cli_notes_for)
 
     return p
 
