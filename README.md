@@ -198,6 +198,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [Tailored Resume Generator](./tailored-resume-generator/) - Analyzes job descriptions and generates tailored resumes that highlight relevant experience, skills, and achievements to maximize interview chances.
 - [ship-learn-next](https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/ship-learn-next) - Skill to help iterate on what to build or learn next, based on feedback loops.
 - [tapestry](https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/tapestry) - Interlink and summarize related documents into knowledge networks.
+- [direito-familiar-imobiliario](https://github.com/maiconfuhr/direito-familiar-imobiliario) - 🇧🇷 Brazilian civil-law skill (pt-BR) orienting laypeople through real estate regularization (usucapião, REURB), divorce/asset division, and inheritance/probate (ITCMD). Includes glossary with 150+ legal terms, document checklists, interactive cost calculator, and 75+ targeted questions for the contracted attorney. Legislation through May 2026. *By [@maiconfuhr](https://github.com/maiconfuhr)*
 
 ### Collaboration & Project Management
 
