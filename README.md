@@ -198,6 +198,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [Tailored Resume Generator](./tailored-resume-generator/) - Analyzes job descriptions and generates tailored resumes that highlight relevant experience, skills, and achievements to maximize interview chances.
 - [ship-learn-next](https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/ship-learn-next) - Skill to help iterate on what to build or learn next, based on feedback loops.
 - [tapestry](https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/tapestry) - Interlink and summarize related documents into knowledge networks.
+- [growth-retrospective](https://github.com/YoungApple/growth-retrospective-skill) - Personal growth retrospectives ranked by decision-velocity signals from git + chat history. Tracks 5 categories (domain knowledge, human skills, work habits, meta-cognition, productivity) with graduation markers so items leave the list instead of piling up. Includes a Step 0 forcing function that blocks new scans if prior level-up actions are untouched. Cross-agent (Claude Code, Codex CLI, Antigravity). *By [@YoungApple](https://github.com/YoungApple)*
 
 ### Collaboration & Project Management
 
