@@ -210,6 +210,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 
 ### Security & Systems
 
+- [authsome](https://github.com/agentrhq/authsome) - Local credential broker for Claude Code, Codex, and Cursor. A local proxy holds OAuth tokens and API keys; the agent's env only sees placeholders, so prompt-injections can't exfiltrate real secrets. *By [@agentrhq](https://github.com/agentrhq)*
 - [computer-forensics](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/computer-forensics) - Digital forensics analysis and investigation techniques.
 - [file-deletion](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/file-deletion) - Secure file deletion and data sanitization methods.
 - [metadata-extraction](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/metadata-extraction) - Extract and analyze file metadata for forensic purposes.
