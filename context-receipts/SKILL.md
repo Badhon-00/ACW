@@ -5,7 +5,7 @@ description: Verify what context an agent loaded, deferred, summarized, or suppr
 
 # Context Receipts
 
-Use this skill when evaluating context-heavy agent workflows: Claude Code skills, MCP Tool Search, lazy-loaded tools, RAG notes, long-running subagents, or handoffs between coding agents.
+Use this skill when evaluating context-heavy agent workflows: Claude Code skills, MCP Tool Search, lazy-loaded tools, RAG notes, pruning/compaction tools, long-running subagents, or handoffs between coding agents.
 
 The goal is to produce a small, privacy-safe receipt that proves **what crossed the context boundary** without logging raw prompts, schemas, retrieved documents, arguments, results, or private files.
 
@@ -14,12 +14,13 @@ The goal is to produce a small, privacy-safe receipt that proves **what crossed 
 - A workflow claims to save tokens through Tool Search, lazy MCP loading, or progressive disclosure.
 - A skill or prompt pack should load only routing instructions at startup, then fetch details on demand.
 - A subagent returns a summary and you need to confirm raw child output did not leak into parent context.
+- A context-cleaning or compaction tool claims it pruned, minified, stubbed, or protected content and you need a receipt without exporting private session JSONL.
 - A role-specific subagent should receive only its allowed MCP servers, not the full union of deployment, analytics, browser, email, and repo tools.
 - A memory/RAG/code-graph system retrieves notes and you need evidence of scope, source, and suppression.
 
 ## What This Skill Does
 
-1. **Names the boundary**: tool index, skill activation, retrieved context, compaction, subagent handoff, or summary.
+1. **Names the boundary**: tool index, skill activation, retrieved context, pruning/compaction, subagent handoff, or summary.
 2. **Records minimal evidence**: counts, hashes, IDs, token buckets, timestamps, and reasons.
 3. **Flags privacy posture**: explicitly states which raw content was not logged.
 4. **Reports audit gaps**: calls out when the workflow cannot prove a claim.
@@ -87,6 +88,15 @@ audit_gap: null
 - How large was the returned context bucket?
 - Was raw child/tool output excluded from parent context?
 
+### Pruning / Compaction
+
+- Which prescription or trigger started the cleaning run?
+- Which strategies changed context (`tool-output-trim`, `tool-result-age`, `document-dedup`, `compact-summary-collapse`)?
+- What were the before/after token and byte buckets?
+- Which summaries, behavioral digests, team messages, or protected sections were explicitly preserved?
+- Was a backup verified before mutation?
+- Were raw transcripts, tool outputs, file paths, secrets, and customer text excluded from the receipt?
+
 ## Example
 
 **User**: "Check whether our browser automation skill is actually progressive-disclosure safe."
@@ -108,6 +118,37 @@ privacy:
   raw_file_content_logged: false
   raw_user_prompt_logged: false
 audit_gap: no runtime hook confirms whether downstream tool output re-entered parent context
+```
+
+## Pruning / Compaction Example
+
+```yaml
+receipt_type: pruning-run
+prescription: balanced
+trigger: manual_dry_run
+strategies:
+  tool-output-trim:
+    candidate_bucket: 10-25
+    changed_bucket: 5-10
+  tool-result-age:
+    minified_bucket: 5-10
+    stubbed_bucket: 1-5
+protected:
+  compact_summaries: 2
+  behavioral_digest: preserved
+  team_messages_bucket: 1-5
+budget:
+  before_token_bucket: 150k-200k
+  after_token_bucket: 75k-100k
+backup:
+  created: true
+  verified: true
+privacy:
+  raw_transcript_logged: false
+  raw_tool_output_logged: false
+  raw_file_path_logged: false
+  raw_secret_logged: false
+audit_gap: proves strategy counts and protections, not whether the pruned text was semantically disposable
 ```
 
 ## Per-Agent MCP Injection Example
@@ -144,6 +185,7 @@ audit_gap: proves injection boundary, not whether selected tools are optimal
 - Verifying MCP Tool Search or deferred tool loading.
 - Auditing Claude Code / OpenCode skills that load references on demand.
 - Checking RAG or memory retrieval scope without leaking retrieved notes.
+- Verifying pruning, compaction, or context-cleaning runs without exporting private session content.
 - Proving per-agent MCP injection excluded irrelevant servers before subagent boot.
 - Confirming subagent summaries do not silently copy raw transcripts into parent context.
 
