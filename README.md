@@ -158,12 +158,12 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 ### Business & Marketing
 
 - [Brand Build Skills](https://github.com/rampstackco/claude-skills) - 59-skill library covering the full website lifecycle: brand, design, content, SEO, dev, ops, growth, and research. Stack-agnostic with an Ahrefs MCP-powered SEO audit suite. Includes a meta-skill for writing your own. *By [@rampstackco](https://github.com/rampstackco)*
-- [Skill Locker](https://skilllocker.ai) - Paid marketplace of 296 hand-authored Claude Code skills across 33 non-developer-first pillars (business, marketing, career, course creation, health & wellness, agency operations, fundraising, community building, personal brand, SEO, and more). All skills at v1.3.0 with 3 Karpathy-loop improvement cycles. Open catalog dataset at https://skilllocker.ai/skills.json; 5 free skills available. *By [@miniminer-droid](https://github.com/miniminer-droid)*
 - [Brand Guidelines](./brand-guidelines/) - Applies Anthropic's official brand colors and typography to artifacts for consistent visual identity and professional design standards.
 - [Competitive Ads Extractor](./competitive-ads-extractor/) - Extracts and analyzes competitors' ads from ad libraries to understand messaging and creative approaches that resonate.
 - [Domain Name Brainstormer](./domain-name-brainstormer/) - Generates creative domain name ideas and checks availability across multiple TLDs including .com, .io, .dev, and .ai extensions.
 - [Internal Comms](./internal-comms/) - Helps write internal communications including 3P updates, company newsletters, FAQs, status reports, and project updates using company-specific formats.
 - [Lead Research Assistant](./lead-research-assistant/) - Identifies and qualifies high-quality leads by analyzing your product, searching for target companies, and providing actionable outreach strategies.
+- [Skill Locker](https://skilllocker.ai) - Paid marketplace of 296 hand-authored Claude Code skills across 33 non-developer-first pillars (business, marketing, career, course creation, health & wellness, agency operations, fundraising, community building, personal brand, SEO, and more). All skills at v1.3.0 with 3 Karpathy-loop improvement cycles. Open catalog dataset at https://skilllocker.ai/skills.json; 5 free skills available. *By [@miniminer-droid](https://github.com/miniminer-droid)*
 
 ### Communication & Writing
 
