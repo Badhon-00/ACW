@@ -163,6 +163,8 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [Domain Name Brainstormer](./domain-name-brainstormer/) - Generates creative domain name ideas and checks availability across multiple TLDs including .com, .io, .dev, and .ai extensions.
 - [Internal Comms](./internal-comms/) - Helps write internal communications including 3P updates, company newsletters, FAQs, status reports, and project updates using company-specific formats.
 - [Lead Research Assistant](./lead-research-assistant/) - Identifies and qualifies high-quality leads by analyzing your product, searching for target companies, and providing actionable outreach strategies.
+- [SaaS Competitor Research](./saas-competitor-research/) - Structured competitive intelligence — analyze a competitor's landing page, pricing, positioning, and gaps from their public website. *By [@ttcd77](https://github.com/ttcd77)*
+- [SaaS SEO Audit](./saas-seo-audit/) - Quick SEO health check on any page — scan title tags, meta, headings, content quality, technical tags, and competitor gaps. Outputs a Pass/Fail/Warning table with prioritized fixes. *By [@ttcd77](https://github.com/ttcd77)*
 
 ### Communication & Writing
 
@@ -194,6 +196,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [kaizen](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/kaizen/skills/kaizen) - Applies continuous improvement methodology with multiple analytical approaches, based on Japanese Kaizen philosophy and Lean methodology.
 - [n8n-skills](https://github.com/haunchen/n8n-skills) - Enables AI assistants to directly understand and operate n8n workflows.
 - [Raffle Winner Picker](./raffle-winner-picker/) - Randomly selects winners from lists, spreadsheets, or Google Sheets for giveaways and contests with cryptographically secure randomness.
+- [SaaS Weekly Review](./saas-weekly-review/) - Structured Friday founder review — prompts through metrics, wins, blockers, learnings, and next week's ONE thing. *By [@ttcd77](https://github.com/ttcd77)*
 - [solo-skills](https://github.com/rockscy/solo-skills) - 7 bilingual (EN+中文) skills for solo founders and indie devs: launch tweets, customer emails, decision frameworks, postmortems. Each skill includes an explicit "When NOT to use" section.
 - [Tailored Resume Generator](./tailored-resume-generator/) - Analyzes job descriptions and generates tailored resumes that highlight relevant experience, skills, and achievements to maximize interview chances.
 - [ship-learn-next](https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/ship-learn-next) - Skill to help iterate on what to build or learn next, based on feedback loops.
