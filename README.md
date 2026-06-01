@@ -463,6 +463,7 @@ We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING
 - [Anthropic Skills Repository](https://github.com/anthropics/skills) - Official example skills
 - [Claude Community](https://community.anthropic.com) - Discuss skills with other users
 - [Skills Marketplace](https://claude.ai/marketplace) - Discover and share skills
+- [first-principles-destructor](https://github.com/reshadat/first-principles-destructor) - Strips any assumption to its physics/math/logic floor, calculates the convention tax, and rebuilds from reality. Works across Claude Code, Claude.ai, Codex CLI, Gemini CLI, Cursor, and Kiro.
 
 ### Inspiration & Use Cases
 
