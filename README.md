@@ -149,6 +149,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 
 ### Data & Analysis
 
+- [clear-eye](https://github.com/3243dwon/clear-eye) - A skeptical-thinking pack: forensic-read (surface what a document isn't saying), second-order (trace knock-on effects), and pre-mortem (find what kills a plan before you commit). Ships an evidence scanner. *By [@3243dwon](https://github.com/3243dwon)*
 - [CSV Data Summarizer](https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill) - Automatically analyzes CSV files and generates comprehensive insights with visualizations without requiring user prompts. *By [@coffeefuelbump](https://github.com/coffeefuelbump)*
 - [deep-research](https://github.com/sanjay3290/ai-skills/tree/main/skills/deep-research) - Execute autonomous multi-step research using Gemini Deep Research Agent for market analysis, competitive landscaping, and literature reviews. *By [@sanjay3290](https://github.com/sanjay3290)*
 - [postgres](https://github.com/sanjay3290/ai-skills/tree/main/skills/postgres) - Execute safe read-only SQL queries against PostgreSQL databases with multi-connection support and defense-in-depth security. *By [@sanjay3290](https://github.com/sanjay3290)*
@@ -173,6 +174,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [Meeting Insights Analyzer](./meeting-insights-analyzer/) - Analyzes meeting transcripts to uncover behavioral patterns including conflict avoidance, speaking ratios, filler words, and leadership style.
 - [NotebookLM Integration](https://github.com/PleasePrompto/notebooklm-skill) - Lets Claude Code chat directly with NotebookLM for source-grounded answers based exclusively on uploaded documents. *By [@PleasePrompto](https://github.com/PleasePrompto)*
 - [Twitter Algorithm Optimizer](./twitter-algorithm-optimizer/) - Analyze and optimize tweets for maximum reach using Twitter's open-source algorithm insights. Rewrite and edit tweets to improve engagement and visibility.
+- [vibe-translator](https://github.com/3243dwon/vibe-translator) - Adapt content across any language, culture, and platform so it reads like a native wrote it — a cultural rebuild, not a literal translation. Ships a validator. *By [@3243dwon](https://github.com/3243dwon)*
 
 ### Creative & Media
 
