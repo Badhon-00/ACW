@@ -296,3 +296,8 @@ npx skills add https://github.com/ComposioHQ/awesome-claude-skills --skill skill
 ---
 
 **由 [ComposioHQ](https://github.com/ComposioHQ) 维护 · 🌟 如果这个项目对你有帮助，请给它一个星标！**
+## 赞助
+
+如果你觉得这个翻译有帮助，欢迎扫码支持：
+
+![支付宝赞赏](alipay-sponsor.jpg)
