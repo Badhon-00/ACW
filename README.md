@@ -167,6 +167,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 ### Communication & Writing
 
 - [article-extractor](https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/article-extractor) - Extract full article text and metadata from web pages.
+- [bloom-tutor](https://github.com/Li-Evan/Bloom/tree/main/skills/bloom-tutor) - One-on-one Socratic tutor based on Benjamin Bloom's "2 Sigma" research: writes a syllabus, teaches one lesson at a time, and adapts each next lesson to your inline feedback. Responds in Chinese. *By [@Li-Evan](https://github.com/Li-Evan)*
 - [brainstorming](https://github.com/obra/superpowers/tree/main/skills/brainstorming) - Transform rough ideas into fully-formed designs through structured questioning and alternative exploration.
 - [Content Research Writer](./content-research-writer/) - Assists in writing high-quality content by conducting research, adding citations, improving hooks, and providing section-by-section feedback.
 - [family-history-research](https://github.com/emaynard/claude-family-history-research-skill) - Provides assistance with planning family history and genealogy research projects.
