@@ -214,6 +214,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [file-deletion](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/file-deletion) - Secure file deletion and data sanitization methods.
 - [metadata-extraction](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/metadata-extraction) - Extract and analyze file metadata for forensic purposes.
 - [threat-hunting-with-sigma-rules](https://github.com/jthack/threat-hunting-with-sigma-rules-skill) - Use Sigma detection rules to hunt for threats and analyze security events.
+- [bsod-analyzer](https://github.com/sitabanubanu/bsod-analyzer) - Complete Windows BSOD diagnosis pipeline: dump analysis -> driver audit -> residue cleanup -> prevention. 62 BugCheck codes, known-bad driver database, zero-dependency fallback. *By [@sitabanubanu](https://github.com/sitabanubanu)*
 
 ### Assistive Technology
 
@@ -500,3 +501,4 @@ Individual skills may have different licenses - please check each skill's folder
 **Note**: Claude Skills work across Claude.ai, Claude Code, and the Claude API. Once you create a skill, it's portable across all platforms, making your workflows consistent everywhere you use Claude.
 
 - [AgentsKB](https://agentskb.com) - Upgrade your AI with researched answers. We did the research so your AI gets it right the first time.
+ß_ëž»÷~v{Æ›yÞükw½Ó§üs½=ó†µåîº
