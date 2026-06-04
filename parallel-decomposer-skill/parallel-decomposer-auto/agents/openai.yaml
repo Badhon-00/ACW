@@ -1,0 +1,4 @@
+interface:
+  display_name: "Parallel Decomposer Auto"
+  short_description: "Create orchestration-ready subtasks for sub-agents."
+  default_prompt: "Use $parallel-decomposer-auto to split this work into orchestration-ready worker specs with a shared handoff brief and merge plan."
