@@ -66,17 +66,17 @@ def validate_skill_md(skill_dir: Path) -> bool:
         valid = False
 
     # Check name field
-    if "name: code-analyzer-skill" in content:
+    if "name: code-analyzer-suite" in content:
         print("  [OK] Name field correct")
     else:
         print("  [FAIL] Name field missing or incorrect")
         valid = False
 
-    # Check trigger section
-    if "# /code-analyzer" in content:
-        print("  [OK] Trigger header present")
+    # Check description field for trigger metadata
+    if "description:" in content:
+        print("  [OK] Description field present")
     else:
-        print("  [FAIL] Missing trigger header")
+        print("  [FAIL] Missing description field")
         valid = False
 
     # Check line count

@@ -27,7 +27,7 @@ def validate_frontmatter(content: str) -> list:
     frontmatter = match.group(1)
 
     # Required fields
-    required_fields = ["name:", "description:", "license:"]
+    required_fields = ["name:", "description:"]
     for field in required_fields:
         if field not in frontmatter:
             errors.append(f"Missing required frontmatter field: {field}")
@@ -78,13 +78,9 @@ def validate_skill_md(skill_path: Path) -> list:
     if len(lines) > 500:
         errors.append(f"SKILL.md too long ({len(lines)} lines, max 500)")
 
-    # Must have invocation header
-    if not re.search(r'^# /[a-z0-9-]+', content, re.MULTILINE):
-        errors.append("SKILL.md must have invocation header like '# /skill-name'")
-
-    # Must have trigger section
-    if "## Trigger" not in content:
-        errors.append("SKILL.md must have '## Trigger' section")
+    # Description field carries activation guidance in the Agent Skills format
+    if "description:" not in content:
+        errors.append("SKILL.md must include a frontmatter description field")
 
     return errors
 

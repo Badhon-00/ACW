@@ -79,16 +79,16 @@ def validate_skill(skill_dir: str) -> bool:
             print("  [FAIL] Frontmatter missing")
             all_pass = False
 
-        if "# /parallel-decomposer" in content:
-            print("  [PASS] Invocation header present")
+        if "name: parallel-decomposer-skill" in content:
+            print("  [PASS] Name field present")
         else:
-            print("  [FAIL] Invocation header missing")
+            print("  [FAIL] Name field missing or incorrect")
             all_pass = False
 
-        if "## Trigger" in content:
-            print("  [PASS] Trigger section present")
+        if "description:" in content:
+            print("  [PASS] Description field present")
         else:
-            print("  [FAIL] Trigger section missing")
+            print("  [FAIL] Description field missing")
             all_pass = False
     else:
         print("  [FAIL] SKILL.md not found")
