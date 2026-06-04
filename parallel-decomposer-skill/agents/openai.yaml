@@ -1,0 +1,4 @@
+interface:
+  display_name: "Parallel Splitter"
+  short_description: "Split complex work into independent parallel subtasks."
+  default_prompt: "Use $parallel-decomposer-skill to split this request into independent subtasks with a merge plan."

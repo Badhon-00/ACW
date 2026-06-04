@@ -1,0 +1,4 @@
+interface:
+  display_name: "Code Analyzer"
+  short_description: "Review code across focused risk dimensions."
+  default_prompt: "Use $code-analyzer-suite to review this code with the most relevant dimensions and report findings first."
