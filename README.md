@@ -174,6 +174,12 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [NotebookLM Integration](https://github.com/PleasePrompto/notebooklm-skill) - Lets Claude Code chat directly with NotebookLM for source-grounded answers based exclusively on uploaded documents. *By [@PleasePrompto](https://github.com/PleasePrompto)*
 - [Twitter Algorithm Optimizer](./twitter-algorithm-optimizer/) - Analyze and optimize tweets for maximum reach using Twitter's open-source algorithm insights. Rewrite and edit tweets to improve engagement and visibility.
 
+### Gaming
+
+| Skill | Description |
+|-------|-------------|
+| **[baldurs-gate-3-claude-skills](https://github.com/atasayugras/baldurs-gate-3-claude-skills)** | 14 skills for Baldur's Gate 3: boss tactics, build planner, quest tracker, achievement checker, loot advisor, and camp inventory manager |
+
 ### Creative & Media
 
 - [anydesign](https://github.com/uxKero/anydesign) - Analyzes any image, URL, or Figma file and generates a structured `design.md` with the full design system, component inventory, and reconstruction notes — portable to v0, Lovable, Cursor or any AI builder. *By [@uxKero](https://github.com/uxKero)*
