@@ -431,6 +431,9 @@ Detailed description of the skill's purpose and capabilities.
 - Document prerequisites and dependencies
 - Include error handling guidance
 
+
+- [Hermes Skills](https://github.com/liuyunnb666/hermes-skills) - 7 curated agent skills for AI programming: debugging, TDD, parallel dev, UI
+
 ## Contributing
 
 We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING.md) for details on:
