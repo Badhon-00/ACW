@@ -8,7 +8,7 @@
 
 ## Step 2 — Connect MCP
 
-### Claude Code
+### Claude Code / Codex
 
 ```bash
 claude mcp add rarefriend \

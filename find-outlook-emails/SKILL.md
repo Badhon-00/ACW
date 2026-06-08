@@ -10,6 +10,7 @@ description: >
   Outlook inbox, check my email, find email, email history, what did they say, email thread,
   did I hear back, follow up email.
 license: MIT-0
+compatibility: Requires Rarefriend MCP (@rarefriend-ai/mcp). Works with Claude Code, Cursor, Codex, OpenClaw, Gemini CLI, and other Agent Skills-compatible clients.
 user-invocable: true
 argument-hint: '[setup|search|list|connect]'
 metadata:
@@ -29,6 +30,7 @@ metadata:
       - name: RAREFRIEND_CLIENT_SECRET
         required: true
         description: OAuth client secret — rarefriend.com → Settings → Integrations → MCP
+  category: productivity
   author: Rarefriend
   homepage: https://rarefriend.com
   repository: https://github.com/Whitefield-Labs/rarefriend-skills
@@ -47,7 +49,7 @@ Access it from your AI assistant, the web app at [rarefriend.com](https://rarefr
 1. Call `list_connected_integrations`.
    - **Tool not available → MCP not connected.** Present these steps inline to the user:
      1. Sign in at [rarefriend.com](https://rarefriend.com) → **Settings → Integrations → MCP** → copy the Client ID and Client Secret
-     2. **Claude Code:** run `claude mcp add rarefriend -e RAREFRIEND_CLIENT_ID=your_id -e RAREFRIEND_CLIENT_SECRET=your_secret -- npx -y @rarefriend-ai/mcp`
+     2. **Claude Code / Codex:** run `claude mcp add rarefriend -e RAREFRIEND_CLIENT_ID=your_id -e RAREFRIEND_CLIENT_SECRET=your_secret -- npx -y @rarefriend-ai/mcp`
      3. **Cursor:** add to `~/.cursor/mcp.json` under `mcpServers.rarefriend` with `command: npx`, `args: ["-y", "@rarefriend-ai/mcp"]`, and the two env vars
      4. **Claude Desktop:** add the same block to `claude_desktop_config.json`
      5. Restart the client, then try again
@@ -137,7 +139,7 @@ get_integration_sync_status("microsoft_email")
 
 ## References
 
-- [MCP setup — Claude Code, Cursor, Claude Desktop](references/SETUP.md)
+- [MCP setup — all supported clients](references/SETUP.md)
 
 ---
 
