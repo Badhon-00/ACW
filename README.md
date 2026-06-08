@@ -188,6 +188,12 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [Pixelbin-Media-Generation](https://github.com/anandpareek-hub/pixelbin-claude-skill) - Generate and edit images & videos with 85+ API portfolio and build visually appealing website pages
 
 ### Productivity & Organization
+- [Find Outlook Emails](./find-outlook-emails/) - Search your Microsoft Outlook inbox and cross-reference emails with contact history — find any email instantly with full relationship context via Rarefriend. *By [Rarefriend](https://rarefriend.com)*
+- [Manage LinkedIn Network](./manage-linkedin-network/) - Turn your LinkedIn network into a searchable CRM — find who you know at any company, prep for meetings, and never lose context on a connection again. *By [Rarefriend](https://rarefriend.com)*
+- [Network and Relationship Manager](./network-and-relationship-manager/) - Never forget a person again — full personal CRM with contacts, notes, tags, Google/Microsoft calendar, and LinkedIn sync via Rarefriend. *By [Rarefriend](https://rarefriend.com)*
+- [Organize Google Contacts](./organize-google-contacts/) - Google Contacts supercharged with notes, tags, and relationship memory — find anyone instantly and remember every conversation. *By [Rarefriend](https://rarefriend.com)*
+- [Schedule with Google Calendar](./schedule-with-google-calendar/) - Schedule meetings, find free time, and manage Google Calendar — all connected to your contact network via Rarefriend. *By [Rarefriend](https://rarefriend.com)*
+- [Schedule with Outlook](./schedule-with-outlook/) - Manage Microsoft Outlook contacts and calendar — search contacts, schedule Teams meetings, and keep relationship notes all in one place. *By [Rarefriend](https://rarefriend.com)*
 
 - [File Organizer](./file-organizer/) - Intelligently organizes files and folders by understanding context, finding duplicates, and suggesting better organizational structures.
 - [Invoice Organizer](./invoice-organizer/) - Automatically organizes invoices and receipts for tax preparation by reading files, extracting information, and renaming consistently.
