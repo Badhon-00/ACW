@@ -469,6 +469,7 @@ We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING
 - [Lenny's Newsletter](https://www.lennysnewsletter.com/p/everyone-should-be-using-claude-code) - 50 ways people use Claude Code
 - [Notion Skills](https://www.notion.so/notiondevs/Notion-Skills-for-Claude-28da4445d27180c7af1df7d8615723d0) - Notion integration skills
 - [Top Claude Skills](https://composio.dev/content/top-claude-skills)
+- [Learn Agentic Working](https://the-good-pixel.github.io/learn-agentic-working/) - Open-source playbook (28 chapters) on working with Claude Code and other agents, for engineers and non-engineers, with role-specific workflow chapters
 
 
 ## Join the Community
