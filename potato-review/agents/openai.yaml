@@ -1,0 +1,4 @@
+interface:
+  display_name: "POTATO Review"
+  short_description: "Harsh evidence-first artifact review reports."
+  default_prompt: "Use $potato-review to run a harsh evidence-first review and generate a report."
