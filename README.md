@@ -157,7 +157,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 
 ### Business & Marketing
 
-- [Automotive VE AI Skills Kit](./automotive-ve-ai-skills-kit/) - Converts automotive value engineering and VAVE workflows into reusable AI Skills with cost-review, documentation, adoption, evidence-claim auditing, and human-review guardrails. Inspired by [Automotive VE AI Skills Kit](https://github.com/onyx679/automotive-ve-ai-skills-kit).
+- [Automotive VE AI Skills Kit](https://github.com/onyx679/automotive-ve-ai-skills-kit) - Converts automotive value engineering and VAVE workflows into reusable AI Skills with cost-review, documentation, adoption, evidence-claim auditing, and human-review guardrails.
 - [Brand Build Skills](https://github.com/rampstackco/claude-skills) - 59-skill library covering the full website lifecycle: brand, design, content, SEO, dev, ops, growth, and research. Stack-agnostic with an Ahrefs MCP-powered SEO audit suite. Includes a meta-skill for writing your own. *By [@rampstackco](https://github.com/rampstackco)*
 - [Brand Guidelines](./brand-guidelines/) - Applies Anthropic's official brand colors and typography to artifacts for consistent visual identity and professional design standards.
 - [Competitive Ads Extractor](./competitive-ads-extractor/) - Extracts and analyzes competitors' ads from ad libraries to understand messaging and creative approaches that resonate.
