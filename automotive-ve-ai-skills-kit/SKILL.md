@@ -1,6 +1,6 @@
 ---
 name: automotive-ve-ai-skills-kit
-description: Helps automotive value engineering teams convert VE/VAVE workflows, BOM and quotation reviews, opportunity registers, SOPs, and adoption feedback into reusable AI Skills with human-review guardrails.
+description: Helps automotive value engineering teams convert VE/VAVE workflows, BOM and quotation reviews, opportunity registers, SOPs, adoption feedback, and evidence-backed claims into reusable AI Skills with human-review and overclaim guardrails.
 ---
 
 # Automotive VE AI Skills Kit
@@ -14,6 +14,7 @@ Use this skill when working with automotive value engineering, VAVE, cost analys
 - Project managers need to convert VE review notes into action items, SOPs, FAQs, or weekly summaries.
 - A team has piloted AI Skills and needs to analyze adoption, feedback, productivity impact, and iteration priorities.
 - A candidate, consultant, or internal AI enablement lead needs a safe demo workflow for automotive VE AI productivity without proprietary data.
+- A resume, release note, portfolio, or internal report needs claims checked against evidence links, PR status, CI status, and safe wording boundaries.
 
 ## What This Skill Does
 
@@ -23,6 +24,7 @@ Use this skill when working with automotive value engineering, VAVE, cost analys
 4. **Separates evidence types**: Labels conclusions as `Fact`, `Calculation`, `Hypothesis`, or `Needs confirmation`.
 5. **Builds operating documents**: Turns workflow notes into SOPs, FAQs, checklists, version records, and best-practice examples.
 6. **Tracks adoption**: Summarizes usage, time savings, rework, field completeness, satisfaction, and iteration backlog.
+7. **Audits public claims**: Classifies project or resume claims as `resume-ready`, `boundary-only`, or `do-not-claim` based on evidence status and wording risk.
 
 ## How to Use
 
@@ -49,6 +51,13 @@ Use automotive-ve-ai-skills-kit to summarize this two-week AI Skill pilot.
 Classify feedback, identify quality issues, calculate adoption metrics, and propose the next iteration backlog.
 ```
 
+### Evidence Claim Audit
+
+```text
+Use automotive-ve-ai-skills-kit to audit these resume and portfolio claims.
+For each claim, identify evidence status, source strength, safe wording, and claims that should not be made yet.
+```
+
 ## Output Patterns
 
 ### Skill Candidate Map
@@ -72,6 +81,13 @@ Classify feedback, identify quality issues, calculate adoption metrics, and prop
 |---|---:|---:|---:|---|---|
 ```
 
+### Evidence Claim Matrix
+
+```markdown
+| Claim | Source | Evidence Level | Verdict | Status | Claim Level | Evidence | Safe Wording | Boundary |
+|---|---|---|---|---|---|---|---|---|
+```
+
 ## Guardrails
 
 - Do not invent costs, supplier quotes, material specs, engineering feasibility, quality risk, or confirmed savings.
@@ -79,6 +95,8 @@ Classify feedback, identify quality issues, calculate adoption metrics, and prop
 - Route safety, quality, regulatory, warranty, supplier, and financial conclusions to the relevant human owner.
 - Use redacted or synthetic data unless the user confirms an approved enterprise environment for proprietary data.
 - Prefer small, frequent, low-risk workflows for first pilots instead of broad "AI assistant" concepts.
+- Do not describe open PRs as merged, accepted, or contributor status.
+- Treat self-reported or marketing-only evidence as weak until backed by a platform record, repository artifact, or independent source.
 
 ## Example
 
@@ -125,5 +143,6 @@ Create an opportunity register draft for review.
 - VE meeting action-item extraction
 - SOP and best-practice documentation
 - AI Skill adoption reporting
+- Resume, portfolio, release-note, and management-summary claim auditing
 
-**Inspired by:** The open-source [Automotive VE AI Skills Kit](https://github.com/onyx679/automotive-ve-ai-skills-kit) portfolio project.
+**Inspired by:** The open-source [Automotive VE AI Skills Kit](https://github.com/onyx679/automotive-ve-ai-skills-kit) portfolio project, currently published as v0.3.0 with five standalone Skills, four Python workflow scripts, generated examples, and CI-backed tests.
