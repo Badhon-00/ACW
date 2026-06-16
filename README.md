@@ -147,6 +147,8 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [using-git-worktrees](https://github.com/obra/superpowers/blob/main/skills/using-git-worktrees/) - Creates isolated git worktrees with smart directory selection and safety verification.
 - [Webapp Testing](./webapp-testing/) - Tests local web applications using Playwright for verifying frontend functionality, debugging UI behavior, and capturing screenshots.
 
+- [scorm](https://github.com/studiolxd/scorm-skills) - Teaches agents to use @studiolxd/scorm, a headless SCORM 1.2/2004 runtime (React, Vue, Angular, Svelte, Web Component, vanilla). Full skill included in ./scorm.
+
 ### Data & Analysis
 
 - [CSV Data Summarizer](https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill) - Automatically analyzes CSV files and generates comprehensive insights with visualizations without requiring user prompts. *By [@coffeefuelbump](https://github.com/coffeefuelbump)*
