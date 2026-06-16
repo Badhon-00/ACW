@@ -189,6 +189,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 
 ### Productivity & Organization
 
+- [Equity Comp Tax (OptionsAhoy)](https://github.com/AlvisoOculus/optionsahoy-mcp/tree/main/integrations/agent-kits/claude-skill/equity-comp-tax) - Routes US equity-compensation tax questions (ISO/AMT exercise timing, NSO, RSU sell-vs-hold, QSBS eligibility, single-stock concentration, protective puts, and funding a cash goal from equity) to a free, keyless MCP server and REST API covering the full federal tax code plus all 50 states and DC. *By [@AlvisoOculus](https://github.com/AlvisoOculus)*
 - [File Organizer](./file-organizer/) - Intelligently organizes files and folders by understanding context, finding duplicates, and suggesting better organizational structures.
 - [Invoice Organizer](./invoice-organizer/) - Automatically organizes invoices and receipts for tax preparation by reading files, extracting information, and renaming consistently.
 - [kaizen](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/kaizen/skills/kaizen) - Applies continuous improvement methodology with multiple analytical approaches, based on Japanese Kaizen philosophy and Lean methodology.
