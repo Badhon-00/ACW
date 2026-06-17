@@ -6,8 +6,19 @@ Downloads videos from YouTube with customizable quality and format options.
 
 import argparse
 import sys
+import os
 import subprocess
 import json
+
+
+def default_output_dir():
+    """Pick a portable default output directory.
+
+    Prefers the user's Downloads folder (cross-platform), falling back to
+    a ./downloads directory in the current working directory.
+    """
+    downloads = os.path.join(os.path.expanduser("~"), "Downloads")
+    return downloads if os.path.isdir(downloads) else os.path.join(os.getcwd(), "downloads")
 
 
 def check_yt_dlp():
@@ -30,7 +41,7 @@ def get_video_info(url):
     return json.loads(result.stdout)
 
 
-def download_video(url, output_path="/mnt/user-data/outputs", quality="best", format_type="mp4", audio_only=False):
+def download_video(url, output_path=None, quality="best", format_type="mp4", audio_only=False):
     """
     Download a YouTube video.
     
@@ -42,7 +53,12 @@ def download_video(url, output_path="/mnt/user-data/outputs", quality="best", fo
         audio_only: Download only audio (mp3)
     """
     check_yt_dlp()
-    
+
+    # Resolve and ensure the output directory exists (portable default)
+    if output_path is None:
+        output_path = default_output_dir()
+    os.makedirs(output_path, exist_ok=True)
+
     # Build command
     cmd = ["yt-dlp"]
     
@@ -107,8 +123,8 @@ def main():
     parser.add_argument("url", help="YouTube video URL")
     parser.add_argument(
         "-o", "--output",
-        default="/mnt/user-data/outputs",
-        help="Output directory (default: /mnt/user-data/outputs)"
+        default=None,
+        help="Output directory (default: ~/Downloads, or ./downloads if absent)"
     )
     parser.add_argument(
         "-q", "--quality",

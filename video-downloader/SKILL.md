@@ -15,7 +15,7 @@ The simplest way to download a video:
 python scripts/download_video.py "https://www.youtube.com/watch?v=VIDEO_ID"
 ```
 
-This downloads the video in best available quality as MP4 to `/mnt/user-data/outputs/`.
+This downloads the video in best available quality as MP4 to `~/Downloads/` (or `./downloads/` if that folder doesn't exist).
 
 ## Options
 
@@ -92,7 +92,7 @@ The skill uses `yt-dlp`, a robust YouTube downloader that:
 
 ## Important Notes
 
-- Downloads are saved to `/mnt/user-data/outputs/` by default
+- Downloads are saved to `~/Downloads/` by default (falls back to `./downloads/`); override with `-o/--output`
 - Video filename is automatically generated from the video title
 - The script handles installation of yt-dlp automatically
 - Only single videos are downloaded (playlists are skipped by default)
