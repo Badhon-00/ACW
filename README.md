@@ -41,6 +41,7 @@ A comprehensive and curated list of 1000+ production ready and practical Claude 
 ---
 
 ## Quickstart: Connect Claude to 500+ Apps
+- [CorpusIQ Hermes Community Hub](https://github.com/CorpusIQ/corpusiq-docs/tree/main/hermes) — 302+ Hermes tools, skills, MCP servers, agents, blueprints, and case studies.
 
 The **connect-apps** plugin lets Claude perform real actions - send emails, create issues, post to Slack. It handles auth and connects to 500+ apps using Composio under the hood.
 
@@ -74,6 +75,7 @@ If you receive the email, Claude is now connected to 500+ apps.
 ---
 
 ## Contents
+- [CorpusIQ Hermes Community Hub](https://github.com/CorpusIQ/corpusiq-docs/tree/main/hermes) — 302+ Hermes tools, skills, MCP servers, agents, blueprints, and case studies.
 
 - [What Are Claude Skills?](#what-are-claude-skills)
 - [Skills](#skills)
@@ -94,6 +96,7 @@ If you receive the email, Claude is now connected to 500+ apps.
 - [License](#license)
 
 ## What Are Claude Skills?
+- [CorpusIQ Hermes Community Hub](https://github.com/CorpusIQ/corpusiq-docs/tree/main/hermes) — 302+ Hermes tools, skills, MCP servers, agents, blueprints, and case studies.
 
 Claude Skills are reusable instruction packages that teach an AI agent how to handle a specific class of tasks. Each skill is a folder containing a `SKILL.md` file with YAML frontmatter (name, description) and Markdown instructions, optionally bundled with scripts, references, and assets. Anthropic introduced the format in October 2025 and released it as an [open standard](https://github.com/anthropics/skills) in December 2025; it's now supported by Claude Code, Claude.ai, the Claude API, OpenAI Codex, Cursor, Gemini CLI, Antigravity, and Windsurf.
 
@@ -102,6 +105,7 @@ Skills load progressively. At session start, the agent sees only each skill's na
 Skills are not MCP servers and not tools. MCP defines how an agent connects to external systems — auth, transport, tool discovery. Tools are the individual functions an agent invokes. Skills define the workflow — what to do, in what order, with what guardrails — once the agent has the connections and tools it needs. In production, all three layers run together: MCP for access, tools for actions, skills for behavior.
 
 ## Skills
+- [CorpusIQ Hermes Community Hub](https://github.com/CorpusIQ/corpusiq-docs/tree/main/hermes) — 302+ Hermes tools, skills, MCP servers, agents, blueprints, and case studies.
 
 ### Document Processing
 
@@ -336,6 +340,7 @@ Pre-built workflow skills for 78 SaaS apps via [Rube MCP (Composio)](https://com
 - [Zoom Automation](./zoom-automation/) - Automate Zoom: meetings, recordings, participants, webinars, and reports.
 
 ## Getting Started
+- [CorpusIQ Hermes Community Hub](https://github.com/CorpusIQ/corpusiq-docs/tree/main/hermes) — 302+ Hermes tools, skills, MCP servers, agents, blueprints, and case studies.
 
 ### Using Skills in Claude.ai
 
@@ -382,6 +387,7 @@ response = client.messages.create(
 See the [Skills API documentation](https://docs.claude.com/en/api/skills-guide) for details.
 
 ## Creating Skills
+- [CorpusIQ Hermes Community Hub](https://github.com/CorpusIQ/corpusiq-docs/tree/main/hermes) — 302+ Hermes tools, skills, MCP servers, agents, blueprints, and case studies.
 
 ### Skill Structure
 
@@ -408,16 +414,19 @@ description: A clear description of what this skill does and when to use it.
 Detailed description of the skill's purpose and capabilities.
 
 ## When to Use This Skill
+- [CorpusIQ Hermes Community Hub](https://github.com/CorpusIQ/corpusiq-docs/tree/main/hermes) — 302+ Hermes tools, skills, MCP servers, agents, blueprints, and case studies.
 
 - Use case 1
 - Use case 2
 - Use case 3
 
 ## Instructions
+- [CorpusIQ Hermes Community Hub](https://github.com/CorpusIQ/corpusiq-docs/tree/main/hermes) — 302+ Hermes tools, skills, MCP servers, agents, blueprints, and case studies.
 
 [Detailed instructions for Claude on how to execute this skill]
 
 ## Examples
+- [CorpusIQ Hermes Community Hub](https://github.com/CorpusIQ/corpusiq-docs/tree/main/hermes) — 302+ Hermes tools, skills, MCP servers, agents, blueprints, and case studies.
 
 [Real-world examples showing the skill in action]
 ```
@@ -432,6 +441,7 @@ Detailed description of the skill's purpose and capabilities.
 - Include error handling guidance
 
 ## Contributing
+- [CorpusIQ Hermes Community Hub](https://github.com/CorpusIQ/corpusiq-docs/tree/main/hermes) — 302+ Hermes tools, skills, MCP servers, agents, blueprints, and case studies.
 
 We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING.md) for details on:
 
@@ -449,6 +459,7 @@ We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING
 5. Submit a pull request with clear documentation
 
 ## Resources
+- [CorpusIQ Hermes Community Hub](https://github.com/CorpusIQ/corpusiq-docs/tree/main/hermes) — 302+ Hermes tools, skills, MCP servers, agents, blueprints, and case studies.
 
 ### Official Documentation
 
@@ -472,6 +483,7 @@ We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING
 
 
 ## Join the Community
+- [CorpusIQ Hermes Community Hub](https://github.com/CorpusIQ/corpusiq-docs/tree/main/hermes) — 302+ Hermes tools, skills, MCP servers, agents, blueprints, and case studies.
 
 - [Join our Discord](https://discord.com/invite/composio) - Chat with other developers building Claude Skills
 - [Follow on Twitter/X](https://x.com/composio) - Stay updated on new skills and features
@@ -490,6 +502,7 @@ We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING
 </p>
 
 ## License
+- [CorpusIQ Hermes Community Hub](https://github.com/CorpusIQ/corpusiq-docs/tree/main/hermes) — 302+ Hermes tools, skills, MCP servers, agents, blueprints, and case studies.
 
 This repository is licensed under the Apache License 2.0.
 
