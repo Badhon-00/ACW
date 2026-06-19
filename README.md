@@ -198,6 +198,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [Tailored Resume Generator](./tailored-resume-generator/) - Analyzes job descriptions and generates tailored resumes that highlight relevant experience, skills, and achievements to maximize interview chances.
 - [ship-learn-next](https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/ship-learn-next) - Skill to help iterate on what to build or learn next, based on feedback loops.
 - [tapestry](https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/tapestry) - Interlink and summarize related documents into knowledge networks.
+- [Victory Methodology](https://github.com/rxdage/The-teacher) - A facts-first method that turns any messy real-world problem (work, money, family, a stuck life decision) into a concrete plan, with quick-decision, full battle-plan, setback-recovery, and postmortem modes. Bilingual English/中文. *By [@rxdage](https://github.com/rxdage)*
 
 ### Collaboration & Project Management
 
