@@ -469,6 +469,7 @@ We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING
 - [Lenny's Newsletter](https://www.lennysnewsletter.com/p/everyone-should-be-using-claude-code) - 50 ways people use Claude Code
 - [Notion Skills](https://www.notion.so/notiondevs/Notion-Skills-for-Claude-28da4445d27180c7af1df7d8615723d0) - Notion integration skills
 - [Top Claude Skills](https://composio.dev/content/top-claude-skills)
+- [ClaudeCodeManual](https://github.com/NickScherbakov/ClaudeCodeManual) — Free 15-chapter browser-based course on Claude Code's Workflow tool (multi-agent orchestration). Covers pipeline() vs parallel(), loop-until-dry, adversarial verify, budget loops. 14 hands-on labs. Russian content, language-agnostic code.
 
 
 ## Join the Community
