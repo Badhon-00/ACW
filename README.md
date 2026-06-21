@@ -198,6 +198,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [Tailored Resume Generator](./tailored-resume-generator/) - Analyzes job descriptions and generates tailored resumes that highlight relevant experience, skills, and achievements to maximize interview chances.
 - [ship-learn-next](https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/ship-learn-next) - Skill to help iterate on what to build or learn next, based on feedback loops.
 - [tapestry](https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/tapestry) - Interlink and summarize related documents into knowledge networks.
+- [todo.txt-skill](https://github.com/aguilera-ee/todo.txt-skill) - Manage a durable todo.txt task list by driving the official todo.sh CLI. *By [@aguilera-ee](https://github.com/aguilera-ee)*
 
 ### Collaboration & Project Management
 
