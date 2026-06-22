@@ -163,6 +163,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [Domain Name Brainstormer](./domain-name-brainstormer/) - Generates creative domain name ideas and checks availability across multiple TLDs including .com, .io, .dev, and .ai extensions.
 - [Internal Comms](./internal-comms/) - Helps write internal communications including 3P updates, company newsletters, FAQs, status reports, and project updates using company-specific formats.
 - [Lead Research Assistant](./lead-research-assistant/) - Identifies and qualifies high-quality leads by analyzing your product, searching for target companies, and providing actionable outreach strategies.
+- - [pm-claude-skills](https://github.com/mohitagw15856/pm-claude-skills) — 205 professional Agent Skills (PRDs, sprint plans, exec updates, contracts, pitch decks, health scorecards, GTM plans...) across 21 professions, 28 bundles. Run free in the browser with your own Claude/OpenAI/Gemini/Ollama key, install via `npx`, `pip install pm-skills`, local or hosted MCP, or the Claude Code marketplace. 196 of 205 skills eval-scored by an LLM judge — avg 4.8/5, with a public leaderboard. Includes Workflow Recipes that chain skills end-to-end (`/ship-a-feature`, `/close-the-quarter`, `/rescue-an-account`), Skill Memory for personalised output, and a Workflow Canvas. *By [@mohitagw15856](https://github.com/mohitagw15856)*
 
 ### Communication & Writing
 
