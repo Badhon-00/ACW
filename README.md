@@ -115,6 +115,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 ### Development & Code Tools
 
 - [artifacts-builder](https://github.com/anthropics/skills/tree/main/skills/web-artifacts-builder) - Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui).
+- [operating-kit](https://github.com/Sharrmavishal/operating-kit) - Portable, project-agnostic operating method for Claude Code and Cursor. Ships builder + strategic-vetting persona, vigilance protocol, multi-model collaboration playbook, silent-failure field notes, incident response, five subagent templates, memory seeds, and a Cursor `.mdc` adapter. Self-installs via one paste. *By [@Sharrmavishal](https://github.com/Sharrmavishal)*
 - [aws-skills](https://github.com/zxkane/aws-skills) - AWS development with CDK best practices, cost optimization MCP servers, and serverless/event-driven architecture patterns.
 - [building-blog](https://github.com/BuildShipGrowRepeat/nextjs-sanity-blog-skill) - Adds an SEO-first, i18n-ready blog to a Next.js + Sanity site via a 40-question intake, a one-page plan, and a 20-section spec. Includes a generator for AI hero images via Gemini 3 Pro Image (Nano Banana Pro). *By [@BuildShipGrowRepeat](https://github.com/BuildShipGrowRepeat)*
 - [Changelog Generator](./changelog-generator/) - Automatically creates user-facing changelogs from git commits by analyzing history and transforming technical commits into customer-friendly release notes.
