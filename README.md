@@ -213,6 +213,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [computer-forensics](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/computer-forensics) - Digital forensics analysis and investigation techniques.
 - [file-deletion](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/file-deletion) - Secure file deletion and data sanitization methods.
 - [metadata-extraction](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/metadata-extraction) - Extract and analyze file metadata for forensic purposes.
+- [remote-server](https://github.com/kengerlwl/remote-server-skill) - SSH-based remote toolkit CLI that wraps Claude Code-style primitives (bash/read/write/edit/ls/grep/glob/download/upload) to operate remote servers over SSH with predictable, escaping-safe behavior. *By [@kengerlwl](https://github.com/kengerlwl)*
 - [threat-hunting-with-sigma-rules](https://github.com/jthack/threat-hunting-with-sigma-rules-skill) - Use Sigma detection rules to hunt for threats and analyze security events.
 
 ### Assistive Technology
