@@ -500,3 +500,9 @@ Individual skills may have different licenses - please check each skill's folder
 **Note**: Claude Skills work across Claude.ai, Claude Code, and the Claude API. Once you create a skill, it's portable across all platforms, making your workflows consistent everywhere you use Claude.
 
 - [AgentsKB](https://agentskb.com) - Upgrade your AI with researched answers. We did the research so your AI gets it right the first time.
+
+
+## Claude Code OS
+
+- [Claude Code OS](https://github.com/stavrespasov/claude-code-os-lite) - Safety harness for Claude Code: /plan gates decisions, /tdd enforces tests first, 8 hooks block secrets/force-push/unreviewed code. Free Lite + €39 PRO.
+
