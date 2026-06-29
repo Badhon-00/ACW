@@ -431,6 +431,8 @@ Detailed description of the skill's purpose and capabilities.
 - Document prerequisites and dependencies
 - Include error handling guidance
 
+- [OpenRuna skills & agents](https://www.openruna.com/best/ai-skills-packs) — SKILL.md packs, agent templates, and Claude/Cursor workflow links.
+
 ## Contributing
 
 We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING.md) for details on:
