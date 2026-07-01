@@ -500,3 +500,5 @@ Individual skills may have different licenses - please check each skill's folder
 **Note**: Claude Skills work across Claude.ai, Claude Code, and the Claude API. Once you create a skill, it's portable across all platforms, making your workflows consistent everywhere you use Claude.
 
 - [AgentsKB](https://agentskb.com) - Upgrade your AI with researched answers. We did the research so your AI gets it right the first time.
+
+draw\|visual\|excalidraw|- [excalidraw-skill](https://github.com/xiaoshuai1024/excalidraw-skill) - An agent skill that renders 64 types of hand-drawn Excalidraw diagrams (UML, ER, sequence, architecture) to editable SVG/PNG using the real Excalidraw engine. Works in Claude Code, Cursor, ZCode and 70+ agents.
