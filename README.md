@@ -189,6 +189,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 
 ### Productivity & Organization
 
+- [Agentic Learning Studio](https://github.com/APareek89/agentic-learning-skill) - Turn any topic into a personalized, interactive lesson — learn AI (or anything) in your own context: mental-map first, with examples and a knowledge check, instead of long videos. *By [@APareek89](https://github.com/APareek89)*
 - [File Organizer](./file-organizer/) - Intelligently organizes files and folders by understanding context, finding duplicates, and suggesting better organizational structures.
 - [Invoice Organizer](./invoice-organizer/) - Automatically organizes invoices and receipts for tax preparation by reading files, extracting information, and renaming consistently.
 - [kaizen](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/kaizen/skills/kaizen) - Applies continuous improvement methodology with multiple analytical approaches, based on Japanese Kaizen philosophy and Lean methodology.
@@ -198,7 +199,6 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [Tailored Resume Generator](./tailored-resume-generator/) - Analyzes job descriptions and generates tailored resumes that highlight relevant experience, skills, and achievements to maximize interview chances.
 - [ship-learn-next](https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/ship-learn-next) - Skill to help iterate on what to build or learn next, based on feedback loops.
 - [tapestry](https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/tapestry) - Interlink and summarize related documents into knowledge networks.
-- [Agentic Learning Studio](https://github.com/APareek89/agentic-learning-skill) - Turn any topic into a personalized, interactive lesson — learn AI (or anything) in your own context: mental-map first, with examples and a knowledge check, instead of long videos. *By [@APareek89](https://github.com/APareek89)*
 
 ### Collaboration & Project Management
 
