@@ -33,7 +33,7 @@
   </p>
 </div>
 
-A comprehensive and curated list of 1000+ production ready and practical Claude Skills and Plugins for enhancing productivity across usecases on not just Claude.ai, Claude Code, but also across coding agents like Codex, Cursor, Gemini CLI, Antigravity and more.
+A comprehensive and curated list of 1000+ production ready and practical Claude Skills and Plugins for enhancing productivity across usecases on not just Claude.ai, Claude Code, but also across coding agents like Codex, Autohand Code, Cursor, Gemini CLI, Antigravity and more.
 
 
 > **Want skills that do more than generate text?** Claude can send emails, create issues, post to Slack, and take actions across 1000+ apps. [See how →](./connect/)
@@ -95,7 +95,7 @@ If you receive the email, Claude is now connected to 500+ apps.
 
 ## What Are Claude Skills?
 
-Claude Skills are reusable instruction packages that teach an AI agent how to handle a specific class of tasks. Each skill is a folder containing a `SKILL.md` file with YAML frontmatter (name, description) and Markdown instructions, optionally bundled with scripts, references, and assets. Anthropic introduced the format in October 2025 and released it as an [open standard](https://github.com/anthropics/skills) in December 2025; it's now supported by Claude Code, Claude.ai, the Claude API, OpenAI Codex, Cursor, Gemini CLI, Antigravity, and Windsurf.
+Claude Skills are reusable instruction packages that teach an AI agent how to handle a specific class of tasks. Each skill is a folder containing a `SKILL.md` file with YAML frontmatter (name, description) and Markdown instructions, optionally bundled with scripts, references, and assets. Anthropic introduced the format in October 2025 and released it as an [open standard](https://github.com/anthropics/skills) in December 2025; it's now supported by Claude Code, Claude.ai, the Claude API, OpenAI Codex, Autohand Code, Cursor, Gemini CLI, Antigravity, and Windsurf.
 
 Skills load progressively. At session start, the agent sees only each skill's name and description — roughly 100 tokens per skill. The full SKILL.md body (typically under 5,000 tokens) loads only when the agent decides the skill is relevant to the current task. Auxiliary files in `scripts/` and `references/` load on demand. This is what lets a single agent host hundreds of skills without bloating its context window.
 
@@ -363,6 +363,32 @@ Pre-built workflow skills for 78 SaaS apps via [Rube MCP (Composio)](https://com
 
 4. The skill loads automatically and activates when relevant.
 
+### Using Skills in Autohand Code
+
+1. Place the skill in Autohand's global skills directory:
+   ```bash
+   mkdir -p ~/.autohand/skills/
+   cp -r skill-name ~/.autohand/skills/
+   ```
+
+   Or install it for a single workspace:
+   ```bash
+   mkdir -p .autohand/skills/
+   cp -r skill-name .autohand/skills/
+   ```
+
+2. Verify skill metadata:
+   ```bash
+   head ~/.autohand/skills/skill-name/SKILL.md
+   ```
+
+3. Start Autohand Code:
+   ```bash
+   autohand
+   ```
+
+4. Ask Autohand to use the skill by name. Autohand also provides `autohand --skill-install` for cataloged skills, with `--project` for workspace-level installs.
+
 ### Using Skills via API
 
 Use the Claude Skills API to programmatically load and manage skills:
@@ -497,6 +523,6 @@ Individual skills may have different licenses - please check each skill's folder
 
 ---
 
-**Note**: Claude Skills work across Claude.ai, Claude Code, and the Claude API. Once you create a skill, it's portable across all platforms, making your workflows consistent everywhere you use Claude.
+**Note**: Claude Skills work across Claude.ai, Claude Code, and the Claude API, and the same `SKILL.md` folders can be reused by compatible agent hosts such as Autohand Code, Codex, Cursor, Gemini CLI, Antigravity, and Windsurf.
 
 - [AgentsKB](https://agentskb.com) - Upgrade your AI with researched answers. We did the research so your AI gets it right the first time.
