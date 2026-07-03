@@ -149,7 +149,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 
 ### Data & Analysis
 
-- [cc-usage](https://github.com/liberzon/cc-usage) - Analyzes your local Claude Code token usage and pay-as-you-go API-equivalent cost across all projects — totals, daily/weekly breakdowns, per-model repricing, and top days/weeks. Read-only and stdlib-only. *By [@liberzon](https://github.com/liberzon)*
+- [cc-usage](https://github.com/liberzon/cc-usage) - Reports how many tokens you've spent in Claude Code and the pay-as-you-go API-equivalent cost across all projects — daily/weekly breakdowns, per-model repricing, and top days/weeks. Read-only and stdlib-only. *By [@liberzon](https://github.com/liberzon)*
 - [CSV Data Summarizer](https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill) - Automatically analyzes CSV files and generates comprehensive insights with visualizations without requiring user prompts. *By [@coffeefuelbump](https://github.com/coffeefuelbump)*
 - [deep-research](https://github.com/sanjay3290/ai-skills/tree/main/skills/deep-research) - Execute autonomous multi-step research using Gemini Deep Research Agent for market analysis, competitive landscaping, and literature reviews. *By [@sanjay3290](https://github.com/sanjay3290)*
 - [postgres](https://github.com/sanjay3290/ai-skills/tree/main/skills/postgres) - Execute safe read-only SQL queries against PostgreSQL databases with multi-connection support and defense-in-depth security. *By [@sanjay3290](https://github.com/sanjay3290)*
