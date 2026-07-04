@@ -79,6 +79,7 @@ If you receive the email, Claude is now connected to 500+ apps.
 - [Skills](#skills)
   - [Document Processing](#document-processing)
   - [Development & Code Tools](#development--code-tools)
+- **[Context Kit](https://github.com/JDDavenport/context-kit)** — Personal Context Artifacts: 4 Markdown templates + 5 Claude Code skills (crm-everything, open-loops, watchers, morning-briefing, session-digest). Start every session context-full, not context-zero. MIT, one-command install.
   - [Data & Analysis](#data--analysis)
   - [Business & Marketing](#business--marketing)
   - [Communication & Writing](#communication--writing)
