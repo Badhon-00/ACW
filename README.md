@@ -214,6 +214,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [file-deletion](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/file-deletion) - Secure file deletion and data sanitization methods.
 - [metadata-extraction](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/metadata-extraction) - Extract and analyze file metadata for forensic purposes.
 - [threat-hunting-with-sigma-rules](https://github.com/jthack/threat-hunting-with-sigma-rules-skill) - Use Sigma detection rules to hunt for threats and analyze security events.
+- [ai-net-doctor](https://github.com/wxggzz/ai-net-doctor) - Diagnoses whether your network can actually reach Codex/OpenAI and Claude/Anthropic, pinpointing the first broken layer (DNS/TCP/TLS/HTTP/auth/proxy) and telling real network failures apart from auth/quota. Ships a /network-doctor Claude Code skill that only calls the CLI.
 
 ### Assistive Technology
 
