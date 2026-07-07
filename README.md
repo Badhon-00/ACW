@@ -189,6 +189,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 
 ### Productivity & Organization
 
+- [deciqAI Knowledge Skills](https://github.com/deciqAI/knowledge-skills) - 163 MIT-licensed thinking-framework skills covering first principles, inversion, Bayesian reasoning, mental models, and business frameworks. Each skill is an executable step-by-step process with primary-sourced historical case studies; install via `npx skills add deciqAI/knowledge-skills`. *By [@deciqAI](https://github.com/deciqAI)*
 - [File Organizer](./file-organizer/) - Intelligently organizes files and folders by understanding context, finding duplicates, and suggesting better organizational structures.
 - [Invoice Organizer](./invoice-organizer/) - Automatically organizes invoices and receipts for tax preparation by reading files, extracting information, and renaming consistently.
 - [kaizen](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/kaizen/skills/kaizen) - Applies continuous improvement methodology with multiple analytical approaches, based on Japanese Kaizen philosophy and Lean methodology.
