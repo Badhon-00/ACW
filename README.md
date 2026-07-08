@@ -114,6 +114,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 
 ### Development & Code Tools
 
+- [appstore-precheck](https://github.com/berkayturk/appstore-precheck) - Read-only iOS App Store pre-submission gate — 42 static rejection-vector checks plus 28 semantic deep-review checks, with a GREEN/YELLOW/RED verdict delivered by Pierre, a grumpy French critic. Portable Agent Skill (also runs on Codex, Cursor, Gemini CLI) with an npx CLI and GitHub Action. *By [@berkayturk](https://github.com/berkayturk)*
 - [artifacts-builder](https://github.com/anthropics/skills/tree/main/skills/web-artifacts-builder) - Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui).
 - [aws-skills](https://github.com/zxkane/aws-skills) - AWS development with CDK best practices, cost optimization MCP servers, and serverless/event-driven architecture patterns.
 - [building-blog](https://github.com/BuildShipGrowRepeat/nextjs-sanity-blog-skill) - Adds an SEO-first, i18n-ready blog to a Next.js + Sanity site via a 40-question intake, a one-page plan, and a 20-section spec. Includes a generator for AI hero images via Gemini 3 Pro Image (Nano Banana Pro). *By [@BuildShipGrowRepeat](https://github.com/BuildShipGrowRepeat)*
