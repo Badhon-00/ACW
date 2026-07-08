@@ -463,6 +463,7 @@ We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING
 - [Anthropic Skills Repository](https://github.com/anthropics/skills) - Official example skills
 - [Claude Community](https://community.anthropic.com) - Discuss skills with other users
 - [Skills Marketplace](https://claude.ai/marketplace) - Discover and share skills
+- [The Fable 5 Blueprint](https://github.com/abdelrahmanelmeligy16-glitch/fable5-blueprint) - Model-agnostic operating doctrine (P0–P7) that makes any AI agent verify its own work instead of hallucinating. One file, paste into Claude/GPT/Gemini.
 
 ### Inspiration & Use Cases
 
