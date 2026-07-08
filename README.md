@@ -258,6 +258,7 @@ Skills that ship with Claude Code or are maintained by Anthropic.
 - [claude-skill-builder](https://github.com/anthropics/skills) - Creates new Claude Code skills with proper frontmatter, supporting files, and testing workflows.
 - [tool-definition](https://github.com/anthropics/skills) - Designs tool definitions for AI agents with input schemas, error handling, and documentation.
 - [multi-agent-orchestrator](https://github.com/anthropics/skills) - Designs multi-agent systems with task decomposition, delegation, result aggregation, and error recovery.
+- [tree-ring-memory](https://github.com/TerminallyLazy/tree-ring-memory-claude-plugin/blob/main/skills/tree-ring-memory/SKILL.md) - Adds local-first recall, capture, audit, and forgetting workflows for Claude Code memory.
 
 ## Security
 
