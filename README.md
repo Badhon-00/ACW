@@ -335,6 +335,9 @@ Pre-built workflow skills for 78 SaaS apps via [Rube MCP (Composio)](https://com
 **Zoom & Meetings**
 - [Zoom Automation](./zoom-automation/) - Automate Zoom: meetings, recordings, participants, webinars, and reports.
 
+### Token & Cost Optimization
+- **[paleo](https://github.com/mocasus/paleo)**: Token-saving skills for LLM agents — compress output & context tokens (~54% median, reproducible benchmark) without rewriting code. Composable: `paleo`, `paleo-trim-context`, `paleo-skip-preamble`, `paleo-budget`. Works on Claude Code, Codex, Gemini CLI, OpenCode, Qwen Code, Hermes.
+
 ## Getting Started
 
 ### Using Skills in Claude.ai
