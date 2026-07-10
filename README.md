@@ -189,6 +189,8 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 
 ### Productivity & Organization
 
+- [paleo](https://github.com/mocasus/paleo) - Token-saving skills for AI coding agents. 6 plug-and-play skills (compress output, trim context, budget caps, merge chatter, summarize tool output, compact JSON) — benchmarked median 53.8% fewer output tokens, zero quality loss. Works on Claude Code, Codex, Gemini CLI, OpenCode, Qwen. Install: `npx skills add mocasus/paleo`.
+
 - [File Organizer](./file-organizer/) - Intelligently organizes files and folders by understanding context, finding duplicates, and suggesting better organizational structures.
 - [Invoice Organizer](./invoice-organizer/) - Automatically organizes invoices and receipts for tax preparation by reading files, extracting information, and renaming consistently.
 - [kaizen](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/kaizen/skills/kaizen) - Applies continuous improvement methodology with multiple analytical approaches, based on Japanese Kaizen philosophy and Lean methodology.
