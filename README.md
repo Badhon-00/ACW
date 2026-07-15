@@ -163,7 +163,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [Domain Name Brainstormer](./domain-name-brainstormer/) - Generates creative domain name ideas and checks availability across multiple TLDs including .com, .io, .dev, and .ai extensions.
 - [Internal Comms](./internal-comms/) - Helps write internal communications including 3P updates, company newsletters, FAQs, status reports, and project updates using company-specific formats.
 - [Lead Research Assistant](./lead-research-assistant/) - Identifies and qualifies high-quality leads by analyzing your product, searching for target companies, and providing actionable outreach strategies.
-- [local-marketing](https://github.com/navig-me/local-marketing) - Local-only, agent-agnostic customer-acquisition system: ICP interview, market research, SQLite prospect CRM, and drafted outreach sequences that require human approval (file-move from `pending_review/` to `approved/`) before anything sends over SMTP. *By [@navig-me](https://github.com/navig-me)*
+- [local-marketing](https://github.com/navig-me/local-marketing) - Local-only marketing skill for ICP research and human-approved outreach sequences, with no hosted CRM.
 
 ### Communication & Writing
 
