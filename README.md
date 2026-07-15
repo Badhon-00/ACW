@@ -115,7 +115,6 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 ### Development & Code Tools
 
 - [artifacts-builder](https://github.com/anthropics/skills/tree/main/skills/web-artifacts-builder) - Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui).
-- [Animated Sketch Diagram](https://github.com/OLDyade/animated-sketch-diagram) - Draws hand-drawn "ink on beige paper" animated architecture diagrams where flowing dots trace the real topology, delivered as one self-contained SVG+CSS HTML with seamless-loop GIF export. CJK labels supported. *By [@OLDyade](https://github.com/OLDyade)*
 - [aws-skills](https://github.com/zxkane/aws-skills) - AWS development with CDK best practices, cost optimization MCP servers, and serverless/event-driven architecture patterns.
 - [building-blog](https://github.com/BuildShipGrowRepeat/nextjs-sanity-blog-skill) - Adds an SEO-first, i18n-ready blog to a Next.js + Sanity site via a 40-question intake, a one-page plan, and a 20-section spec. Includes a generator for AI hero images via Gemini 3 Pro Image (Nano Banana Pro). *By [@BuildShipGrowRepeat](https://github.com/BuildShipGrowRepeat)*
 - [Changelog Generator](./changelog-generator/) - Automatically creates user-facing changelogs from git commits by analyzing history and transforming technical commits into customer-friendly release notes.
@@ -177,6 +176,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 
 ### Creative & Media
 
+- [Animated Sketch Diagram](https://github.com/OLDyade/animated-sketch-diagram) - Draws hand-drawn "ink on beige paper" animated architecture diagrams where flowing dots trace the real topology, delivered as one self-contained SVG+CSS HTML with seamless-loop GIF export. CJK labels supported. *By [@OLDyade](https://github.com/OLDyade)*
 - [anydesign](https://github.com/uxKero/anydesign) - Analyzes any image, URL, or Figma file and generates a structured `design.md` with the full design system, component inventory, and reconstruction notes — portable to v0, Lovable, Cursor or any AI builder. *By [@uxKero](https://github.com/uxKero)*
 - [Canvas Design](./canvas-design/) - Creates beautiful visual art in PNG and PDF documents using design philosophy and aesthetic principles for posters, designs, and static pieces.
 - [imagen](https://github.com/sanjay3290/ai-skills/tree/main/skills/imagen) - Generate images using Google Gemini's image generation API for UI mockups, icons, illustrations, and visual assets. *By [@sanjay3290](https://github.com/sanjay3290)*
