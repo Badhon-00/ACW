@@ -214,6 +214,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [file-deletion](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/file-deletion) - Secure file deletion and data sanitization methods.
 - [metadata-extraction](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/metadata-extraction) - Extract and analyze file metadata for forensic purposes.
 - [threat-hunting-with-sigma-rules](https://github.com/jthack/threat-hunting-with-sigma-rules-skill) - Use Sigma detection rules to hunt for threats and analyze security events.
+- [16-eyes](https://github.com/kigiela/16-eyes) - AI-driven security audits (full-repo or diff/PR-scoped) with adversarial multi-agent verification, for Claude Code, Gemini CLI, Cursor, and GitHub Copilot.
 
 ### Assistive Technology
 
