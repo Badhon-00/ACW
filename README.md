@@ -189,6 +189,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 
 ### Productivity & Organization
 
+- [AILmanac Skill Packs](https://github.com/derob98/ailmanac/tree/main/skills) - Seven MIT-licensed skill packs, one per user type: writing/content, developer workflow, research analyst, data analyst, business & marketing, student learning, and everyday productivity. Part of the AILmanac community almanac for Claude. *By [@derob98](https://github.com/derob98)*
 - [File Organizer](./file-organizer/) - Intelligently organizes files and folders by understanding context, finding duplicates, and suggesting better organizational structures.
 - [Invoice Organizer](./invoice-organizer/) - Automatically organizes invoices and receipts for tax preparation by reading files, extracting information, and renaming consistently.
 - [kaizen](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/kaizen/skills/kaizen) - Applies continuous improvement methodology with multiple analytical approaches, based on Japanese Kaizen philosophy and Lean methodology.
