@@ -211,8 +211,11 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 ### Security & Systems
 
 - [computer-forensics](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/computer-forensics) - Digital forensics analysis and investigation techniques.
+- [CRA Vulnerability & Reporting Obligations](https://github.com/Ansvar-Systems/cra-vulnerability-obligations-skill) - Determines EU Cyber Resilience Act scope, product classification, and Article 14 reporting duties role-by-role, with regulatory text and CVE/KEV/EPSS data fetched live via the Ansvar Gateway MCP connector. *By [@Ansvar-Systems](https://github.com/Ansvar-Systems)*
 - [file-deletion](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/file-deletion) - Secure file deletion and data sanitization methods.
+- [Incident Reporting Navigator (EU)](https://github.com/Ansvar-Systems/incident-reporting-navigator-skill) - Screens one security incident across NIS2, GDPR, DORA, and CRA, resolving the receiving authority per member state and reporting deadlines with citations fetched from official sources via the Ansvar Gateway MCP connector. *By [@Ansvar-Systems](https://github.com/Ansvar-Systems)*
 - [metadata-extraction](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/metadata-extraction) - Extract and analyze file metadata for forensic purposes.
+- [Regulatory Threat Model (STRIDE + LINDDUN)](https://github.com/Ansvar-Systems/regulatory-threat-model-skill) - STRIDE and LINDDUN threat modeling with a cited EU security-obligations screen (GDPR, NIS2, CRA, AI Act) via the Ansvar Gateway MCP connector. *By [@Ansvar-Systems](https://github.com/Ansvar-Systems)*
 - [threat-hunting-with-sigma-rules](https://github.com/jthack/threat-hunting-with-sigma-rules-skill) - Use Sigma detection rules to hunt for threats and analyze security events.
 
 ### Assistive Technology
