@@ -145,6 +145,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [subagent-driven-development](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/sadd/skills/subagent-driven-development) - Dispatches independent subagents for individual tasks with code review checkpoints between iterations for rapid, controlled development.
 - [test-driven-development](https://github.com/obra/superpowers/tree/main/skills/test-driven-development) - Use when implementing any feature or bugfix, before writing implementation code.
 - [using-git-worktrees](https://github.com/obra/superpowers/blob/main/skills/using-git-worktrees/) - Creates isolated git worktrees with smart directory selection and safety verification.
+- [Video Walkthrough](https://github.com/Avatechdir/video-walkthrough-skill) - Turns one Playwright/Gherkin scenario into an automated test plus a captioned walkthrough video (mp4 + srt) with optional voice narration (en/ru), click highlighting, and clean before/after screenshots of every step for UX analysis. *By [@Avatechdir](https://github.com/Avatechdir)*
 - [Webapp Testing](./webapp-testing/) - Tests local web applications using Playwright for verifying frontend functionality, debugging UI behavior, and capturing screenshots.
 
 ### Data & Analysis
