@@ -154,6 +154,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [postgres](https://github.com/sanjay3290/ai-skills/tree/main/skills/postgres) - Execute safe read-only SQL queries against PostgreSQL databases with multi-connection support and defense-in-depth security. *By [@sanjay3290](https://github.com/sanjay3290)*
 - [recursive-research](https://github.com/Anjos2/recursive-research) - Recursive research up to PhD level across any domain (science, tech, business, arts, humanities) with source tiering, WDM + Munger inversion for autonomous decisions, and disk checkpointing to survive context compaction. *By [@Anjos2](https://github.com/Anjos2)*
 - [root-cause-tracing](https://github.com/obra/superpowers/tree/main/skills/root-cause-tracing) - Use when errors occur deep in execution and you need to trace back to find the original trigger.
+- [wiki-to-graph](https://github.com/MangroveTechnologies/wiki-to-graph) - Turns an LLM wiki (a folder of interlinked markdown pages) into a typed, queryable knowledge graph with build, validate, analyze, query, update, and offline browser-view steps. Python 3, standard library only. *By [@MangroveTechnologies](https://github.com/MangroveTechnologies)*
 
 ### Business & Marketing
 
