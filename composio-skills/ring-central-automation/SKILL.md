@@ -1,5 +1,5 @@
 ---
-name: ring_central-automation
+name: ring-central-automation
 description: "Automate RingCentral tasks via Rube MCP (Composio): calls, messages, meetings, and unified communications. Always search tools first for current schemas."
 requires:
   mcp: [rube]

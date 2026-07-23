@@ -1,5 +1,5 @@
 ---
-name: -21risk-automation
+name: 21risk-automation
 description: "Automate 21risk tasks via Rube MCP (Composio). Always search tools first for current schemas."
 requires:
   mcp: [rube]
