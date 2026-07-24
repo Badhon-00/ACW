@@ -117,6 +117,8 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 
 ### Development & Code Tools
 
+- [aomi-build](https://github.com/aomi-labs/skills/tree/main/aomi-build) - Scaffolds Aomi Rust SDK crates from OpenAPI/Swagger specs, generating `lib.rs`/`client.rs`/`tool.rs` plus tool schemas and host-interop flows. *By [@aomi-labs](https://github.com/aomi-labs)*
+- [aomi-transact](https://github.com/aomi-labs/skills/tree/main/aomi-transact) - Natural-language on-chain agent: turns prompts like "swap 1 ETH for USDC" into fork-simulated, key-signed transactions across EVM mainnets (Base, Arbitrum, Optimism, Polygon, Linea, plus L1). Non-custodial, account-abstraction first, 40+ DEX/CEX/perps/prediction-market integrations (Uniswap, Aave, GMX, Polymarket, Hyperliquid). *By [@aomi-labs](https://github.com/aomi-labs)*
 - [artifacts-builder](https://github.com/anthropics/skills/tree/main/skills/web-artifacts-builder) - Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui).
 - [aws-skills](https://github.com/zxkane/aws-skills) - AWS development with CDK best practices, cost optimization MCP servers, and serverless/event-driven architecture patterns.
 - [building-blog](https://github.com/BuildShipGrowRepeat/nextjs-sanity-blog-skill) - Adds an SEO-first, i18n-ready blog to a Next.js + Sanity site via a 40-question intake, a one-page plan, and a 20-section spec. Includes a generator for AI hero images via Gemini 3 Pro Image (Nano Banana Pro). *By [@BuildShipGrowRepeat](https://github.com/BuildShipGrowRepeat)*
