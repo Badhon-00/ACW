@@ -149,6 +149,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [test-driven-development](https://github.com/obra/superpowers/tree/main/skills/test-driven-development) - Use when implementing any feature or bugfix, before writing implementation code.
 - [using-git-worktrees](https://github.com/obra/superpowers/blob/main/skills/using-git-worktrees/) - Creates isolated git worktrees with smart directory selection and safety verification.
 - [Webapp Testing](./webapp-testing/) - Tests local web applications using Playwright for verifying frontend functionality, debugging UI behavior, and capturing screenshots.
+- [power-apps-code-apps-skill](https://github.com/LeonardSEO/power-apps-code-apps-skill) - Build, test, and publish Microsoft Power Apps code components (PCF controls) with TypeScript scaffolding, manifest configuration, and Power Platform CLI workflows. *By [@LeonardSEO](https://github.com/LeonardSEO)*
 
 ### Data & Analysis
 
@@ -165,6 +166,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [Competitive Ads Extractor](./competitive-ads-extractor/) - Extracts and analyzes competitors' ads from ad libraries to understand messaging and creative approaches that resonate.
 - [Domain Name Brainstormer](./domain-name-brainstormer/) - Generates creative domain name ideas and checks availability across multiple TLDs including .com, .io, .dev, and .ai extensions.
 - [Internal Comms](./internal-comms/) - Helps write internal communications including 3P updates, company newsletters, FAQs, status reports, and project updates using company-specific formats.
+- [decision-council](https://github.com/LeonardSEO/decision-council) - Structured multi-persona council for consequential decisions. Convenes 5 independent expert advisors with adversarial peer review and evidence-based revision to produce one defensible recommendation with preserved dissent. *By [@LeonardSEO](https://github.com/LeonardSEO)*
 - [Lead Research Assistant](./lead-research-assistant/) - Identifies and qualifies high-quality leads by analyzing your product, searching for target companies, and providing actionable outreach strategies.
 
 ### Communication & Writing
