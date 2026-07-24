@@ -215,6 +215,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 
 - [computer-forensics](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/computer-forensics) - Digital forensics analysis and investigation techniques.
 - [file-deletion](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/file-deletion) - Secure file deletion and data sanitization methods.
+- [Legible Legitimacy](https://github.com/that-guy-jamie/legible-legitimacy) - Workflow-governance guardrail that restructures high-consequence agent work (production mutations, delegated access, secrets, bulk jobs, security tests) so authorization, scope, least privilege, and reversibility are enforced by the workflow and evidenced by its artifacts — not asserted in prose. Ships as a Claude Code plugin with before/after examples and trigger/non-trigger evals. *By [@that-guy-jamie](https://github.com/that-guy-jamie)*
 - [metadata-extraction](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/metadata-extraction) - Extract and analyze file metadata for forensic purposes.
 - [threat-hunting-with-sigma-rules](https://github.com/jthack/threat-hunting-with-sigma-rules-skill) - Use Sigma detection rules to hunt for threats and analyze security events.
 
