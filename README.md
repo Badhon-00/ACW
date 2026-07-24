@@ -152,6 +152,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 
 ### Data & Analysis
 
+- [BDE Score™](https://github.com/hbhqq9/bde-score) - Multi-factor stock scoring MCP server for US/HK/A-share markets. Transparent scoring with EU AI Act Art.50 compliance. $0.01/query x402 micropayments. *By [@hbhqq9](https://github.com/hbhqq9)*
 - [CSV Data Summarizer](https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill) - Automatically analyzes CSV files and generates comprehensive insights with visualizations without requiring user prompts. *By [@coffeefuelbump](https://github.com/coffeefuelbump)*
 - [deep-research](https://github.com/sanjay3290/ai-skills/tree/main/skills/deep-research) - Execute autonomous multi-step research using Gemini Deep Research Agent for market analysis, competitive landscaping, and literature reviews. *By [@sanjay3290](https://github.com/sanjay3290)*
 - [postgres](https://github.com/sanjay3290/ai-skills/tree/main/skills/postgres) - Execute safe read-only SQL queries against PostgreSQL databases with multi-connection support and defense-in-depth security. *By [@sanjay3290](https://github.com/sanjay3290)*
