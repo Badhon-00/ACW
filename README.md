@@ -149,7 +149,8 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [test-driven-development](https://github.com/obra/superpowers/tree/main/skills/test-driven-development) - Use when implementing any feature or bugfix, before writing implementation code.
 - [using-git-worktrees](https://github.com/obra/superpowers/blob/main/skills/using-git-worktrees/) - Creates isolated git worktrees with smart directory selection and safety verification.
 - [Webapp Testing](./webapp-testing/) - Tests local web applications using Playwright for verifying frontend functionality, debugging UI behavior, and capturing screenshots.
-
+- [spec-tdd](https://github.com/HagonChan/spec-tdd) - Hook-enforced review gates for AI coding: approve architecture, patterns, and tests before any code, with frozen tests that catch silent `.skip`. _By [@HagonChan](https://github.com/HagonChan)_
+  
 ### Data & Analysis
 
 - [CSV Data Summarizer](https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill) - Automatically analyzes CSV files and generates comprehensive insights with visualizations without requiring user prompts. *By [@coffeefuelbump](https://github.com/coffeefuelbump)*
