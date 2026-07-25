@@ -189,6 +189,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [youtube-transcript](https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/youtube-transcript) - Fetch transcripts from YouTube videos and prepare summaries.
 - [swiftui-design-skill](https://github.com/wholiver/swiftui-design-skill) - SwiftUI 前端设计 skill — 反 AI Slop 六条铁律、设计方向顾问、品牌资产协议、五维评审。支持 Claude Code / Cursor / Codex / OpenCode 等全部 AI agent 平台。 *By [@wholiver](https://github.com/wholiver)*
 - [Pixelbin-Media-Generation](https://github.com/anandpareek-hub/pixelbin-claude-skill) - Generate and edit images & videos with 85+ API portfolio and build visually appealing website pages
+- [Viral Cover Prompt Builder](https://github.com/JackZhong2017/viral-cover-prompt-builder) - Generates viral, vertical (3:4) Xiaohongshu/Rednote cover prompts via a guided Q&A: 8 layout templates, fisheye "little planet" camera module, and color-theory-driven Morandi clash backgrounds. *Derived from [@panggungunvibe](https://github.com/panggungunvibe)'s atutun-xhs-cover*
 
 ### Productivity & Organization
 
