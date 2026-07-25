@@ -157,6 +157,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [postgres](https://github.com/sanjay3290/ai-skills/tree/main/skills/postgres) - Execute safe read-only SQL queries against PostgreSQL databases with multi-connection support and defense-in-depth security. *By [@sanjay3290](https://github.com/sanjay3290)*
 - [recursive-research](https://github.com/Anjos2/recursive-research) - Recursive research up to PhD level across any domain (science, tech, business, arts, humanities) with source tiering, WDM + Munger inversion for autonomous decisions, and disk checkpointing to survive context compaction. *By [@Anjos2](https://github.com/Anjos2)*
 - [root-cause-tracing](https://github.com/obra/superpowers/tree/main/skills/root-cause-tracing) - Use when errors occur deep in execution and you need to trace back to find the original trigger.
+- [CRE Agent Skills](https://github.com/sasha-deneux/claude-skills-cre) - 10 commercial-real-estate skills (deal screening, underwriting, rent-roll normalization, off-market sourcing, feasibility, zoning, permits, due diligence, LP reporting). Spec-compliant SKILL.md frontmatter (validated: name to directory match, descriptions under 1024 chars); portable across Claude Code, the API, and claude.ai; no external dependencies. *By [@sasha-deneux](https://github.com/sasha-deneux)*
 
 ### Business & Marketing
 
