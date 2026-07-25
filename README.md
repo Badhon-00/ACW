@@ -152,6 +152,8 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 
 ### Data & Analysis
 
+- [apify-youtube-transcript-api](https://github.com/johnisanerd/claude-skill-youtube-transcript-api) - Fetch YouTube transcripts as structured JSON, SRT, or VTT via a hosted YouTube transcript API on Apify. *By [@johnisanerd](https://github.com/johnisanerd)*
+- [apify-youtube-transcripts-llm-training-data](https://github.com/johnisanerd/claude-skill-youtube-transcripts-llm-training-data) - Build LLM training data from YouTube transcripts in bulk, with provenance metadata per video. *By [@johnisanerd](https://github.com/johnisanerd)*
 - [CSV Data Summarizer](https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill) - Automatically analyzes CSV files and generates comprehensive insights with visualizations without requiring user prompts. *By [@coffeefuelbump](https://github.com/coffeefuelbump)*
 - [deep-research](https://github.com/sanjay3290/ai-skills/tree/main/skills/deep-research) - Execute autonomous multi-step research using Gemini Deep Research Agent for market analysis, competitive landscaping, and literature reviews. *By [@sanjay3290](https://github.com/sanjay3290)*
 - [postgres](https://github.com/sanjay3290/ai-skills/tree/main/skills/postgres) - Execute safe read-only SQL queries against PostgreSQL databases with multi-connection support and defense-in-depth security. *By [@sanjay3290](https://github.com/sanjay3290)*
