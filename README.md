@@ -160,7 +160,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 
 ### Business & Marketing
 
-- [AgentPump](https://gist.github.com/pu-re/305e6f96861bae12afb2f20e73428912) - Operate an AgentPump account from the terminal to create, fund, tune, and run an autonomous on-chain memecoin trading agent on Solana. *By [@pu-re](https://github.com/pu-re)*
+- [AgentPump](https://github.com/pact-layer/agentpump-skill) - Operate an AgentPump account from the terminal to create, fund, tune, and run an autonomous on-chain memecoin trading agent on Solana. *By [@pact-layer](https://github.com/pact-layer)*
 - [Brand Build Skills](https://github.com/rampstackco/claude-skills) - 59-skill library covering the full website lifecycle: brand, design, content, SEO, dev, ops, growth, and research. Stack-agnostic with an Ahrefs MCP-powered SEO audit suite. Includes a meta-skill for writing your own. *By [@rampstackco](https://github.com/rampstackco)*
 - [Brand Guidelines](./brand-guidelines/) - Applies Anthropic's official brand colors and typography to artifacts for consistent visual identity and professional design standards.
 - [Competitive Ads Extractor](./competitive-ads-extractor/) - Extracts and analyzes competitors' ads from ad libraries to understand messaging and creative approaches that resonate.
