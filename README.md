@@ -1,11 +1,11 @@
 <h1 align="center">Awesome Claude Skills</h1>
-<script src="https://utteranc.es/client.js"
+<!-- <script src="https://utteranc.es/client.js"
         repo="awesome-claude-skills"
         issue-term="pathname"
         theme="github-light"
         crossorigin="anonymous"
         async>
-</script>
+</script> -->
 <p align="center">
 <a href="https://dashboard.composio.dev/login?utm_source=Github&utm_medium=Youtube&utm_campaign=2025-11&utm_content=AwesomeSkills">
   <img width="1280" height="640" alt="Composio banner" src="https://github.com/user-attachments/assets/e91255af-e4ba-4d71-b1a8-bd081e8a234a">
