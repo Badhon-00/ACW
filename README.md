@@ -89,6 +89,7 @@ If you receive the email, Claude is now connected to 1000+ apps.
   - [Productivity & Organization](#productivity--organization)
   - [Collaboration & Project Management](#collaboration--project-management)
   - [Security & Systems](#security--systems)
+  - [Homelab & Self-Hosted Infrastructure](#homelab--self-hosted-infrastructure)
   - [App Automation via Composio](#app-automation-via-composio)
 - [Getting Started](#getting-started)
 - [Creating Skills](#creating-skills)
@@ -217,6 +218,15 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [file-deletion](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/file-deletion) - Secure file deletion and data sanitization methods.
 - [metadata-extraction](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/metadata-extraction) - Extract and analyze file metadata for forensic purposes.
 - [threat-hunting-with-sigma-rules](https://github.com/jthack/threat-hunting-with-sigma-rules-skill) - Use Sigma detection rules to hunt for threats and analyze security events.
+
+### Homelab & Self-Hosted Infrastructure
+
+Skills for pointing an agent at hardware and services you run yourself: networking gear, smart home, media and game boxes. These carry operational doctrine (auth quirks, undocumented endpoints, the traps that make a write look successful when nothing changed) rather than wrapping a hosted API.
+
+- [unifi-skills](https://github.com/t3chnaztea/unifi-skills) - Administer a UniFi network over its local API: auth lanes and the endpoint map, zone-based firewall rules, a diagnostic ladder for slow Wi-Fi, client and VLAN moves. *By [@t3chnaztea](https://github.com/t3chnaztea)*
+- [home-assistant-skills](https://github.com/t3chnaztea/home-assistant-skills) - Run a Home Assistant instance: connection doctrine over SSH and REST, mapping an unfamiliar instance, writing automations that are verified rather than assumed, and price- or LLM-driven triggers. *By [@t3chnaztea](https://github.com/t3chnaztea)*
+- [batocera-skills](https://github.com/t3chnaztea/batocera-skills) - Operate a Batocera retro-gaming cabinet: SSH ops against a read-only rootfs, ROM and gamelist curation, shaders and bezels, performance tuning, maintenance. *By [@t3chnaztea](https://github.com/t3chnaztea)*
+- [awesome-psn-skills](https://github.com/t3chnaztea/awesome-psn-skills) - Read a PlayStation play-history export: build a taste profile, triage a backlog into return-vs-drop calls, rank a wishlist by what you will actually finish. *By [@t3chnaztea](https://github.com/t3chnaztea)*
 
 ### Assistive Technology
 
