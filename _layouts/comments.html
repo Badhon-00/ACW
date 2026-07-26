@@ -1,9 +1,15 @@
-{% raw %}
-<script src="https://utteranc.es/client.js"
-        repo="shtilman2/awesome-claude-skills"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
+<div id="utterances-comments"></div>
+
+<script>
+  (function() {
+    const script = document.createElement('script');
+    script.src = 'https://utteranc.es/client.js';
+    script.setAttribute('repo', 'shtilman2/awesome-claude-skills');
+    script.setAttribute('issue-term', 'pathname');
+    script.setAttribute('theme', 'github-light');
+    script.setAttribute('crossorigin', 'anonymous');
+    script.async = true;
+
+    document.getElementById('utterances-comments').appendChild(script);
+  })();
 </script>
-{% endraw %}
