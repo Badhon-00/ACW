@@ -117,6 +117,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 
 ### Development & Code Tools
 
+- [agent-experiment](https://github.com/hashiruu/agent-experiment) - Working discipline for research runs that stay up for days: 26 rules distilled from real incidents (GPU indices that lie, stale completion markers read as success, two chains writing the same directory, a table updated while the prose still quotes the old number), plus three ledger files, a long-run monitoring guide, and a resumable task skeleton that snapshots the code per run. Rules are layered (general / GPU compute / LaTeX writing) so you deploy only what applies. Rule text is in Chinese; docs are bilingual. *By [@hashiruu](https://github.com/hashiruu)*
 - [artifacts-builder](https://github.com/anthropics/skills/tree/main/skills/web-artifacts-builder) - Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui).
 - [aws-skills](https://github.com/zxkane/aws-skills) - AWS development with CDK best practices, cost optimization MCP servers, and serverless/event-driven architecture patterns.
 - [building-blog](https://github.com/BuildShipGrowRepeat/nextjs-sanity-blog-skill) - Adds an SEO-first, i18n-ready blog to a Next.js + Sanity site via a 40-question intake, a one-page plan, and a 20-section spec. Includes a generator for AI hero images via Gemini 3 Pro Image (Nano Banana Pro). *By [@BuildShipGrowRepeat](https://github.com/BuildShipGrowRepeat)*
