@@ -217,6 +217,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [file-deletion](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/file-deletion) - Secure file deletion and data sanitization methods.
 - [metadata-extraction](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/metadata-extraction) - Extract and analyze file metadata for forensic purposes.
 - [threat-hunting-with-sigma-rules](https://github.com/jthack/threat-hunting-with-sigma-rules-skill) - Use Sigma detection rules to hunt for threats and analyze security events.
+- [windows-process-cleanup](https://github.com/g4vvj4n7z6-eng/windows-process-cleanup) - Consent-gated Windows background-process cleanup: honest triage of high process counts, verified vendor/OEM bloat catalog, reversible tiered disables behind UAC, and a post-update audit that catches services that re-enable themselves. *By [@g4vvj4n7z6-eng](https://github.com/g4vvj4n7z6-eng)*
 
 ### Assistive Technology
 
