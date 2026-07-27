@@ -213,9 +213,11 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 
 ### Security & Systems
 
+- [android-adb-debloat](https://github.com/g4vvj4n7z6-eng/android-adb-debloat) - Debloat and de-Google any Android phone over ADB: no root, tiered removal with a never-touch list, round-trip-tested rollback, and honest measure-first performance claims. *By [@g4vvj4n7z6-eng](https://github.com/g4vvj4n7z6-eng)*
 - [computer-forensics](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/computer-forensics) - Digital forensics analysis and investigation techniques.
 - [file-deletion](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/file-deletion) - Secure file deletion and data sanitization methods.
 - [metadata-extraction](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/metadata-extraction) - Extract and analyze file metadata for forensic purposes.
+- [samsung-debloat](https://github.com/g4vvj4n7z6-eng/samsung-debloat) - Full Samsung Galaxy debloat, privacy setup (HeliBoard keyboard, Google-only contacts) and iPhone-style home-screen automation over ADB: reversible, root-free, validated on One UI. *By [@g4vvj4n7z6-eng](https://github.com/g4vvj4n7z6-eng)*
 - [threat-hunting-with-sigma-rules](https://github.com/jthack/threat-hunting-with-sigma-rules-skill) - Use Sigma detection rules to hunt for threats and analyze security events.
 
 ### Assistive Technology
