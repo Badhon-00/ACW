@@ -160,6 +160,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 
 ### Business & Marketing
 
+- [AnveVoice](https://clawhub.ai/ANVEAI/anvevoice) - Voice AI platform skill with 46 MCP tools for adding AI voice assistants to any website. Covers bot management, conversation intelligence, analytics, lead extraction, knowledge management, and one-line embed deployment. Sub-700ms response latency, 53 languages including 22 Indian languages, WCAG 2.1 AA compliant. *By [@ANVEAI](https://github.com/ANVEAI)*
 - [Brand Build Skills](https://github.com/rampstackco/claude-skills) - 59-skill library covering the full website lifecycle: brand, design, content, SEO, dev, ops, growth, and research. Stack-agnostic with an Ahrefs MCP-powered SEO audit suite. Includes a meta-skill for writing your own. *By [@rampstackco](https://github.com/rampstackco)*
 - [Brand Guidelines](./brand-guidelines/) - Applies Anthropic's official brand colors and typography to artifacts for consistent visual identity and professional design standards.
 - [Competitive Ads Extractor](./competitive-ads-extractor/) - Extracts and analyzes competitors' ads from ad libraries to understand messaging and creative approaches that resonate.
