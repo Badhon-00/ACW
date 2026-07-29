@@ -109,6 +109,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 ### Document Processing
 
 - [docx](https://github.com/anthropics/skills/tree/main/skills/docx) - Create, edit, analyze Word docs with tracked changes, comments, formatting.
+- [html-collab](https://github.com/ljn-hust/html-collab) - Single-file HTML format for LLM-human collaborative document review. The LLM generates a self-contained .html, humans comment and edit it in Chrome, and the skill reads the annotations to produce the next revision. No server or accounts needed. *By [@ljn-hust](https://github.com/ljn-hust)*
 - [pdf](https://github.com/anthropics/skills/tree/main/skills/pdf) - Extract text, tables, metadata, merge & annotate PDFs.
 - [pptx](https://github.com/anthropics/skills/tree/main/skills/pptx) - Read, generate, and adjust slides, layouts, templates.
 - [xlsx](https://github.com/anthropics/skills/tree/main/skills/xlsx) - Spreadsheet manipulation: formulas, charts, data transformations.
