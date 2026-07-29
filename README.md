@@ -465,6 +465,7 @@ We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING
 
 - [Anthropic Skills Repository](https://github.com/anthropics/skills) - Official example skills
 - [Claude Community](https://community.anthropic.com) - Discuss skills with other users
+- [Remote OpenClaw Claude Skills](https://www.remoteopenclaw.com/skills/claude) - Claude Code skills directory with category pages, install guides, and related workflow resources
 - [Skills Marketplace](https://claude.ai/marketplace) - Discover and share skills
 
 ### Inspiration & Use Cases
