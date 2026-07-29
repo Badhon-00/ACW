@@ -193,8 +193,10 @@ When a user requests analysis of their developer growth or coding patterns from 
    Use Rube MCP to send the complete report to the user's own Slack DMs:
 
    - Check if Slack connection is active via RUBE_SEARCH_TOOLS
-   - If not connected, use RUBE_MANAGE_CONNECTIONS to initiate Slack auth
-   - Use RUBE_MULTI_EXECUTE_TOOL to send the report as a formatted message:
+   - If not connected, ask the user before starting Slack auth
+   - Before sending, show the resolved Slack workspace/user and a short report preview; redact secrets and private project/customer details unless explicitly included
+   - Wait for explicit approval
+   - Use RUBE_MULTI_EXECUTE_TOOL to send the approved report as a formatted message:
      - Send the report title and period as the first message
      - Break the report into logical sections (Summary, Improvements, Strengths, Actions, Resources)
      - Format each section as a well-structured Slack message with proper markdown
