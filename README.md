@@ -204,6 +204,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 
 ### Collaboration & Project Management
 
+- [caveman-plan](https://github.com/spikeon/caveman-plan) - Large-project planning workflow: Epic → Plans → Hunts → Inventory with mandatory Boss checkpoints between phases. Install via `npx skills add spikeon/caveman-plan`. Built on [caveman](https://github.com/JuliusBrussee/caveman) + [superpowers-plan](https://github.com/obra/superpowers). *By [@spikeon](https://github.com/spikeon)*
 - [git-pushing](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/engineering-workflow-plugin/skills/git-pushing) - Automate git operations and repository interactions.
 - [google-workspace-skills](https://github.com/sanjay3290/ai-skills/tree/main/skills) - Suite of Google Workspace integrations: Gmail, Calendar, Chat, Docs, Sheets, Slides, and Drive with cross-platform OAuth. *By [@sanjay3290](https://github.com/sanjay3290)*
 - [mercury-mcp](https://www.teamoffsite.ai/proton/docs/skill) - Cheatsheet for the Mercury (Proton) MCP tools. Message agent teammates, manage threads, create tasks, and schedule automations across coordinated agent teams. *By [Mercury](https://mercury.build)*
