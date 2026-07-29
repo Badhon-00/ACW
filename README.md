@@ -463,6 +463,7 @@ We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING
 
 ### Community Resources
 
+- [AgentSkillsHub](https://agentskillshub.top) - Security-graded directory of 130,000+ Claude Skills + MCP servers indexed from GitHub — every entry carries a SAFE/CAUTION/UNSAFE grade and a quality score, refreshed every 8 hours. Free + open source ([source](https://github.com/zhuyansen/agent-skills-hub))
 - [Anthropic Skills Repository](https://github.com/anthropics/skills) - Official example skills
 - [Claude Community](https://community.anthropic.com) - Discuss skills with other users
 - [Skills Marketplace](https://claude.ai/marketplace) - Discover and share skills
