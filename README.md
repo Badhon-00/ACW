@@ -152,8 +152,10 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 
 ### Data & Analysis
 
+- [autoresearch](https://github.com/AlexWortega/claude-autoresearch-skill) - Autonomously sweep an ML task with many bounded experiments — fixed-budget edit→train→eval→keep-or-discard loop inspired by karpathy/autoresearch, fanned out via a Claude Code dynamic workflow with a running leaderboard and shared findings board. *By [@AlexWortega](https://github.com/AlexWortega)*
 - [CSV Data Summarizer](https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill) - Automatically analyzes CSV files and generates comprehensive insights with visualizations without requiring user prompts. *By [@coffeefuelbump](https://github.com/coffeefuelbump)*
 - [deep-research](https://github.com/sanjay3290/ai-skills/tree/main/skills/deep-research) - Execute autonomous multi-step research using Gemini Deep Research Agent for market analysis, competitive landscaping, and literature reviews. *By [@sanjay3290](https://github.com/sanjay3290)*
+- [ml-intern](https://github.com/AlexWortega/claude-ml-intern-skill) - Autonomously research, implement, train, and ship ML code using the Hugging Face ecosystem — port of huggingface/ml-intern with parallel solution-path subagents, HF Hub publishing, and Telegram/Slack milestone alerts. *By [@AlexWortega](https://github.com/AlexWortega)*
 - [postgres](https://github.com/sanjay3290/ai-skills/tree/main/skills/postgres) - Execute safe read-only SQL queries against PostgreSQL databases with multi-connection support and defense-in-depth security. *By [@sanjay3290](https://github.com/sanjay3290)*
 - [recursive-research](https://github.com/Anjos2/recursive-research) - Recursive research up to PhD level across any domain (science, tech, business, arts, humanities) with source tiering, WDM + Munger inversion for autonomous decisions, and disk checkpointing to survive context compaction. *By [@Anjos2](https://github.com/Anjos2)*
 - [root-cause-tracing](https://github.com/obra/superpowers/tree/main/skills/root-cause-tracing) - Use when errors occur deep in execution and you need to trace back to find the original trigger.
