@@ -466,6 +466,7 @@ We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING
 - [Anthropic Skills Repository](https://github.com/anthropics/skills) - Official example skills
 - [Claude Community](https://community.anthropic.com) - Discuss skills with other users
 - [Skills Marketplace](https://claude.ai/marketplace) - Discover and share skills
+- [Vexilo · A field guide to Claude Code](https://vexilo.app/?lang=en) — Visual interactive index of 31 agents · 99 commands · 123 skills · 13 rules, organized around the 5-step workflow (Research → Plan → Test-first → Security → Commit). One-click "Teach Claude this handbook" feeds the whole guide into a local Claude session in 30 seconds. Browser-based, zero install. ([companion repo](https://github.com/lilhawk7077/claude-code-resources))
 
 ### Inspiration & Use Cases
 
