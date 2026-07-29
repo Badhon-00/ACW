@@ -199,6 +199,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [Raffle Winner Picker](./raffle-winner-picker/) - Randomly selects winners from lists, spreadsheets, or Google Sheets for giveaways and contests with cryptographically secure randomness.
 - [solo-skills](https://github.com/rockscy/solo-skills) - 7 bilingual (EN+中文) skills for solo founders and indie devs: launch tweets, customer emails, decision frameworks, postmortems. Each skill includes an explicit "When NOT to use" section.
 - [Tailored Resume Generator](./tailored-resume-generator/) - Analyzes job descriptions and generates tailored resumes that highlight relevant experience, skills, and achievements to maximize interview chances.
+- [claude-skills-kit](https://github.com/Abed-Zahed/claude-skills-kit) - 7 interconnected skills forming a complete workflow system: prompt polishing with auto-routing and auto-execution, 5-phase engineering workflow, web research, knowledge ingestion, advisory board simulation, and multi-agent focus group. Includes a UserPromptSubmit hook for always-on vagueness detection. *By [@Abed-Zahed](https://github.com/Abed-Zahed)*
 - [ship-learn-next](https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/ship-learn-next) - Skill to help iterate on what to build or learn next, based on feedback loops.
 - [tapestry](https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/tapestry) - Interlink and summarize related documents into knowledge networks.
 
