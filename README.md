@@ -192,6 +192,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 
 ### Productivity & Organization
 
+- [fable-mode](https://github.com/KevssG/fable-mode) - Reasoning-discipline skill (in Spanish) that makes Opus 4.8 work with Fable 5’s habits: plan gate, scope fence, adversarial self-verification, verify loop, result-first. Validated with blind pairwise tests. *By [@KevssG](https://github.com/KevssG)*
 - [File Organizer](./file-organizer/) - Intelligently organizes files and folders by understanding context, finding duplicates, and suggesting better organizational structures.
 - [Invoice Organizer](./invoice-organizer/) - Automatically organizes invoices and receipts for tax preparation by reading files, extracting information, and renaming consistently.
 - [kaizen](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/kaizen/skills/kaizen) - Applies continuous improvement methodology with multiple analytical approaches, based on Japanese Kaizen philosophy and Lean methodology.
