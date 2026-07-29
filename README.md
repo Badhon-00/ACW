@@ -201,6 +201,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [Tailored Resume Generator](./tailored-resume-generator/) - Analyzes job descriptions and generates tailored resumes that highlight relevant experience, skills, and achievements to maximize interview chances.
 - [ship-learn-next](https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/ship-learn-next) - Skill to help iterate on what to build or learn next, based on feedback loops.
 - [tapestry](https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/tapestry) - Interlink and summarize related documents into knowledge networks.
+- [XMemo](https://github.com/yonro/memory-os-cli) - Persistent, user-owned memory for AI agents over hosted MCP. Remember decisions, recall project context, manage TODOs, and govern memory lifecycle across sessions. *By [@yonro](https://github.com/yonro)*
 
 ### Collaboration & Project Management
 
