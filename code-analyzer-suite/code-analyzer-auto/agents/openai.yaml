@@ -1,0 +1,4 @@
+interface:
+  display_name: "Code Analyzer Auto"
+  short_description: "Dispatch code review dimensions to sub-agents automatically."
+  default_prompt: "Use $code-analyzer-auto to review this code by dispatching the most relevant dimensions to sub-agents and consolidating the findings."
