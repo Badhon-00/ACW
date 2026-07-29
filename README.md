@@ -466,6 +466,7 @@ We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING
 - [Anthropic Skills Repository](https://github.com/anthropics/skills) - Official example skills
 - [Claude Community](https://community.anthropic.com) - Discuss skills with other users
 - [Skills Marketplace](https://claude.ai/marketplace) - Discover and share skills
+- [Remote OpenClaw](https://www.remoteopenclaw.com/skills) - directory of agent skills and mcp servers for OpenClaw, Hermes Agent, Claude Code and Codex, browsable by ecosystem and category
 
 ### Inspiration & Use Cases
 
