@@ -201,6 +201,8 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [Tailored Resume Generator](./tailored-resume-generator/) - Analyzes job descriptions and generates tailored resumes that highlight relevant experience, skills, and achievements to maximize interview chances.
 - [ship-learn-next](https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/ship-learn-next) - Skill to help iterate on what to build or learn next, based on feedback loops.
 - [tapestry](https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/tapestry) - Interlink and summarize related documents into knowledge networks.
+- [time-ledger](https://github.com/cruisekkk/time-ledger) - Natural-language time tracking that parses what you said you did into your own Notion database, asking instead of guessing when unsure. Bilingual (EN+中文).
+- [trading-ledger](https://github.com/cruisekkk/trading-ledger) - Trading journal that captures your stated reason, plan, and emotion at the moment of entry into your own Notion database, with reviews that grade decisions rather than P&L. Bilingual (EN+中文).
 
 ### Collaboration & Project Management
 
