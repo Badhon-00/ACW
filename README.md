@@ -337,6 +337,7 @@ Pre-built workflow skills for 78 SaaS apps via [Rube MCP (Composio)](https://com
 
 **Zoom & Meetings**
 - [Zoom Automation](./zoom-automation/) - Automate Zoom: meetings, recordings, participants, webinars, and reports.
+- [handoff](https://github.com/dazuiba/handoff) - Delegate tasks to DeepSeek V4, Codex, or Opus right inside your Claude Code session. Install: `uv tool install handoff-cli && handoff init`
 
 ## Getting Started
 
