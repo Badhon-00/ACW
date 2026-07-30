@@ -463,6 +463,7 @@ We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING
 
 ### Community Resources
 
+- [ORPTA](https://github.com/rjchicago/ORPTA) - Hierarchical planning methodology with `skills/orpta/SKILL.md` adapter for Claude Code, Codex, and Cursor
 - [Anthropic Skills Repository](https://github.com/anthropics/skills) - Official example skills
 - [Claude Community](https://community.anthropic.com) - Discuss skills with other users
 - [Skills Marketplace](https://claude.ai/marketplace) - Discover and share skills
