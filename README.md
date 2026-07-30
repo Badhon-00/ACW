@@ -154,9 +154,11 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 
 - [CSV Data Summarizer](https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill) - Automatically analyzes CSV files and generates comprehensive insights with visualizations without requiring user prompts. *By [@coffeefuelbump](https://github.com/coffeefuelbump)*
 - [deep-research](https://github.com/sanjay3290/ai-skills/tree/main/skills/deep-research) - Execute autonomous multi-step research using Gemini Deep Research Agent for market analysis, competitive landscaping, and literature reviews. *By [@sanjay3290](https://github.com/sanjay3290)*
+- [govcon-scout](https://github.com/z0157/claude-operator-skills/tree/master/skills/govcon-scout) - Research U.S. federal contract spending and live bid opportunities: what agencies actually buy, who wins, and at what price. Uses USAspending (no key) and SAM.gov. *By [@z0157](https://github.com/z0157)*
 - [postgres](https://github.com/sanjay3290/ai-skills/tree/main/skills/postgres) - Execute safe read-only SQL queries against PostgreSQL databases with multi-connection support and defense-in-depth security. *By [@sanjay3290](https://github.com/sanjay3290)*
 - [recursive-research](https://github.com/Anjos2/recursive-research) - Recursive research up to PhD level across any domain (science, tech, business, arts, humanities) with source tiering, WDM + Munger inversion for autonomous decisions, and disk checkpointing to survive context compaction. *By [@Anjos2](https://github.com/Anjos2)*
 - [root-cause-tracing](https://github.com/obra/superpowers/tree/main/skills/root-cause-tracing) - Use when errors occur deep in execution and you need to trace back to find the original trigger.
+- [youtube-research-miner](https://github.com/z0157/claude-operator-skills/tree/master/skills/youtube-research-miner) - Transcribe and mine an entire YouTube channel without the API, then distil dozens of transcripts into ranked findings. Handles the rolling auto-caption format that silently duplicates every line. *By [@z0157](https://github.com/z0157)*
 
 ### Business & Marketing
 
@@ -166,6 +168,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [Domain Name Brainstormer](./domain-name-brainstormer/) - Generates creative domain name ideas and checks availability across multiple TLDs including .com, .io, .dev, and .ai extensions.
 - [Internal Comms](./internal-comms/) - Helps write internal communications including 3P updates, company newsletters, FAQs, status reports, and project updates using company-specific formats.
 - [Lead Research Assistant](./lead-research-assistant/) - Identifies and qualifies high-quality leads by analyzing your product, searching for target companies, and providing actionable outreach strategies.
+- [local-lead-finder](https://github.com/z0157/claude-operator-skills/tree/master/skills/local-lead-finder) - Find local businesses that have no website in any city using OpenStreetMap, with opportunity scoring, franchise filtering, and phone/address enrichment. Free, no API keys. *By [@z0157](https://github.com/z0157)*
 
 ### Communication & Writing
 
@@ -183,6 +186,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [Canvas Design](./canvas-design/) - Creates beautiful visual art in PNG and PDF documents using design philosophy and aesthetic principles for posters, designs, and static pieces.
 - [imagen](https://github.com/sanjay3290/ai-skills/tree/main/skills/imagen) - Generate images using Google Gemini's image generation API for UI mockups, icons, illustrations, and visual assets. *By [@sanjay3290](https://github.com/sanjay3290)*
 - [Image Enhancer](./image-enhancer/) - Improves image and screenshot quality by enhancing resolution, sharpness, and clarity for professional presentations and documentation.
+- [media-transcriber](https://github.com/z0157/claude-operator-skills/tree/master/skills/media-transcriber) - Transcribe any audio or video through a three-tier fallback: captions, then audio download, then browser-playback loopback capture into Whisper for sources with no downloadable audio. *By [@z0157](https://github.com/z0157)*
 - [Slack GIF Creator](./slack-gif-creator/) - Creates animated GIFs optimized for Slack with validators for size constraints and composable animation primitives.
 - [Theme Factory](./theme-factory/) - Applies professional font and color themes to artifacts including slides, docs, reports, and HTML landing pages with 10 pre-set themes.
 - [Video Downloader](./video-downloader/) - Downloads videos from YouTube and other platforms for offline viewing, editing, or archival with support for various formats and quality options.
