@@ -166,6 +166,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [Domain Name Brainstormer](./domain-name-brainstormer/) - Generates creative domain name ideas and checks availability across multiple TLDs including .com, .io, .dev, and .ai extensions.
 - [Internal Comms](./internal-comms/) - Helps write internal communications including 3P updates, company newsletters, FAQs, status reports, and project updates using company-specific formats.
 - [Lead Research Assistant](./lead-research-assistant/) - Identifies and qualifies high-quality leads by analyzing your product, searching for target companies, and providing actionable outreach strategies.
+- [Marketing Skills](https://github.com/coreyhaines31/marketingskills) - 49 marketing skills for AI agents — SEO, copywriting, cold email, pricing, CRO, ads, and analytics. Install with `npx skills add coreyhaines31/marketingskills`; per-skill guides at marketing-skills.com. *By [@coreyhaines31](https://github.com/coreyhaines31)*
 
 ### Communication & Writing
 
