@@ -33,7 +33,7 @@
   </p>
 </div>
 
-A comprehensive and curated list of 1000+ production ready and practical Claude Skills and Plugins for enhancing productivity across usecases on not just Claude.ai, Claude Code, but also across coding agents like Codex, Cursor, Gemini CLI, Antigravity and more.
+A comprehensive and curated list of 1000+ production ready and practical Claude Skills and Plugins for enhancing productivity across usecases on not just Claude.ai, Claude Code, but also across coding agents like Codex, Cursor, Gemini CLI, Antigravity, [AdaL](https://github.com/SylphAI-Inc/adal) and more.
 
 ## Give your skills real-world actions
 
@@ -98,7 +98,7 @@ If you receive the email, Claude is now connected to 1000+ apps.
 
 ## What Are Claude Skills?
 
-Claude Skills are reusable instruction packages that teach an AI agent how to handle a specific class of tasks. Each skill is a folder containing a `SKILL.md` file with YAML frontmatter (name, description) and Markdown instructions, optionally bundled with scripts, references, and assets. Anthropic introduced the format in October 2025 and released it as an [open standard](https://github.com/anthropics/skills) in December 2025; it's now supported by Claude Code, Claude.ai, the Claude API, OpenAI Codex, Cursor, Gemini CLI, Antigravity, and Windsurf.
+Claude Skills are reusable instruction packages that teach an AI agent how to handle a specific class of tasks. Each skill is a folder containing a `SKILL.md` file with YAML frontmatter (name, description) and Markdown instructions, optionally bundled with scripts, references, and assets. Anthropic introduced the format in October 2025 and released it as an [open standard](https://github.com/anthropics/skills) in December 2025; it's now supported by Claude Code, Claude.ai, the Claude API, OpenAI Codex, Cursor, Gemini CLI, Antigravity, Windsurf, and [AdaL](https://github.com/SylphAI-Inc/adal).
 
 Skills load progressively. At session start, the agent sees only each skill's name and description — roughly 100 tokens per skill. The full SKILL.md body (typically under 5,000 tokens) loads only when the agent decides the skill is relevant to the current task. Auxiliary files in `scripts/` and `references/` load on demand. This is what lets a single agent host hundreds of skills without bloating its context window.
 
@@ -366,6 +366,28 @@ Pre-built workflow skills for 78 SaaS apps via [Rube MCP (Composio)](https://com
 
 4. The skill loads automatically and activates when relevant.
 
+### Using Skills in AdaL
+
+[AdaL](https://github.com/SylphAI-Inc/adal) natively supports the open `SKILL.md` standard for both personal and project-scoped skills.
+
+1. Place the skill in `~/.adal/skills/` (personal, global) or `.adal/skills/` (project-scoped):
+   ```bash
+   mkdir -p ~/.adal/skills/
+   cp -r skill-name ~/.adal/skills/
+   ```
+
+2. Verify skill metadata:
+   ```bash
+   head ~/.adal/skills/skill-name/SKILL.md
+   ```
+
+3. Start AdaL:
+   ```bash
+   adal
+   ```
+
+4. Browse and inspect loaded skills anytime with the `/skills` slash command. AdaL loads only each skill's name/description at session start and pulls in the full body on demand, keeping context usage low.
+
 ### Using Skills via API
 
 Use the Claude Skills API to programmatically load and manage skills:
@@ -500,4 +522,4 @@ Individual skills may have different licenses - please check each skill's folder
 
 ---
 
-**Note**: Claude Skills work across Claude.ai, Claude Code, and the Claude API. Once you create a skill, it's portable across all platforms, making your workflows consistent everywhere you use Claude.
+**Note**: Claude Skills work across Claude.ai, Claude Code, the Claude API, and other agent platforms like [AdaL](https://github.com/SylphAI-Inc/adal). Once you create a skill, it's portable across all platforms, making your workflows consistent everywhere you use Claude — or AdaL.
