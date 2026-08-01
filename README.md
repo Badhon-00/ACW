@@ -193,6 +193,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 ### Productivity & Organization
 
 - [File Organizer](./file-organizer/) - Intelligently organizes files and folders by understanding context, finding duplicates, and suggesting better organizational structures.
+- [BeachFinder](https://github.com/troulin-a11y/beachfinder-skills) - Find and compare 184,900 swimming spots on [getbeachfinder.com](https://getbeachfinder.com) worldwide (beaches, lakes, bathing places) with live weather, water temperature, wind, UV and wave signals, guides and source-backed providers. Routes requests across 14 languages to the right BeachFinder MCP tool and never claims water is safe to swim. *By [@troulin-a11y](https://github.com/troulin-a11y)*
 - [Invoice Organizer](./invoice-organizer/) - Automatically organizes invoices and receipts for tax preparation by reading files, extracting information, and renaming consistently.
 - [kaizen](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/kaizen/skills/kaizen) - Applies continuous improvement methodology with multiple analytical approaches, based on Japanese Kaizen philosophy and Lean methodology.
 - [n8n-skills](https://github.com/haunchen/n8n-skills) - Enables AI assistants to directly understand and operate n8n workflows.
