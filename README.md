@@ -181,6 +181,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 
 - [anydesign](https://github.com/uxKero/anydesign) - Analyzes any image, URL, or Figma file and generates a structured `design.md` with the full design system, component inventory, and reconstruction notes — portable to v0, Lovable, Cursor or any AI builder. *By [@uxKero](https://github.com/uxKero)*
 - [Canvas Design](./canvas-design/) - Creates beautiful visual art in PNG and PDF documents using design philosophy and aesthetic principles for posters, designs, and static pieces.
+- [Filaxy Watch](https://github.com/othmarodev/Filaxy-whatch_skill_for_claude) - Watches a video (URL or local file), extracting real frames and a timestamped transcript so Claude can answer questions grounded in what it actually saw and heard, not a guess from the title. Fork of `claude-video` by Brad Bonanno. *By [@othmarodev](https://github.com/othmarodev)*
 - [imagen](https://github.com/sanjay3290/ai-skills/tree/main/skills/imagen) - Generate images using Google Gemini's image generation API for UI mockups, icons, illustrations, and visual assets. *By [@sanjay3290](https://github.com/sanjay3290)*
 - [Image Enhancer](./image-enhancer/) - Improves image and screenshot quality by enhancing resolution, sharpness, and clarity for professional presentations and documentation.
 - [Slack GIF Creator](./slack-gif-creator/) - Creates animated GIFs optimized for Slack with validators for size constraints and composable animation primitives.
