@@ -147,6 +147,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [software-architecture](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/ddd/skills/software-architecture) - Implements design patterns including Clean Architecture, SOLID principles, and comprehensive software design best practices.
 - [subagent-driven-development](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/sadd/skills/subagent-driven-development) - Dispatches independent subagents for individual tasks with code review checkpoints between iterations for rapid, controlled development.
 - [test-driven-development](https://github.com/obra/superpowers/tree/main/skills/test-driven-development) - Use when implementing any feature or bugfix, before writing implementation code.
+- [Use-Case Catalog](https://github.com/succtorlin/use-case) - Builds a verified-only catalog of what your product can actually do: walks the codebase AND the live app in a browser, then generates an in-app panel, a shareable demo deck, and a dead-feature report of features users can't reach. *By [@succtorlin](https://github.com/succtorlin)*
 - [using-git-worktrees](https://github.com/obra/superpowers/blob/main/skills/using-git-worktrees/) - Creates isolated git worktrees with smart directory selection and safety verification.
 - [Webapp Testing](./webapp-testing/) - Tests local web applications using Playwright for verifying frontend functionality, debugging UI behavior, and capturing screenshots.
 
@@ -166,6 +167,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [Domain Name Brainstormer](./domain-name-brainstormer/) - Generates creative domain name ideas and checks availability across multiple TLDs including .com, .io, .dev, and .ai extensions.
 - [Internal Comms](./internal-comms/) - Helps write internal communications including 3P updates, company newsletters, FAQs, status reports, and project updates using company-specific formats.
 - [Lead Research Assistant](./lead-research-assistant/) - Identifies and qualifies high-quality leads by analyzing your product, searching for target companies, and providing actionable outreach strategies.
+- [Monetization Audit](https://github.com/succtorlin/monetization-audit) - Turns “how could this project make money?” into a scanned inventory, sourced market research with receipts, a gap analysis, and action specs an agent can execute — every claim traces to a file in the repo or a dated source. *By [@succtorlin](https://github.com/succtorlin)*
 
 ### Communication & Writing
 
