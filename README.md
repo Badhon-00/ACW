@@ -160,6 +160,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 
 ### Business & Marketing
 
+- [AAJ Marketing Skills](https://github.com/sarojkjha/aaj-marketing-skills) - 39 marketing skills across GTM, SEO/GEO, unit economics, retention and pipeline. 24 ship runnable Node engines that compute the numbers — LTV:CAC and payback, weighted forecasts, A/B significance, AI citation visibility — rather than only prompting. *By [@sarojkjha](https://github.com/sarojkjha)*
 - [Brand Build Skills](https://github.com/rampstackco/claude-skills) - 59-skill library covering the full website lifecycle: brand, design, content, SEO, dev, ops, growth, and research. Stack-agnostic with an Ahrefs MCP-powered SEO audit suite. Includes a meta-skill for writing your own. *By [@rampstackco](https://github.com/rampstackco)*
 - [Brand Guidelines](./brand-guidelines/) - Applies Anthropic's official brand colors and typography to artifacts for consistent visual identity and professional design standards.
 - [Competitive Ads Extractor](./competitive-ads-extractor/) - Extracts and analyzes competitors' ads from ad libraries to understand messaging and creative approaches that resonate.
