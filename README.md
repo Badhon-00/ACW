@@ -95,6 +95,7 @@ If you receive the email, Claude is now connected to 1000+ apps.
 - [Contributing](#contributing)
 - [Resources](#resources)
 - [License](#license)
+- - [warrant-policy-author](https://github.com/rmanish2000-del/warrant-mcp/tree/main/skills/warrant-policy-author) - Interviews you and writes an agent-firewall policy in plain English, shaped for the closed rule set so `warrant-mcp review` has the best chance of accepting it first time. Knows the eight enforceable rule shapes of [warrant-mcp](https://github.com/rmanish2000-del/warrant-mcp) and explains why sentences like "don't touch secrets" or "ask me first" cannot be enforced — instead of silently weakening them. Writes policy text only; enforcement is a PreToolUse hook and a deterministic engine, never the skill. _By [@rmanish2000-del](https://github.com/rmanish2000-del)_
 
 ## What Are Claude Skills?
 
