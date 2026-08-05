@@ -180,6 +180,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 ### Creative & Media
 
 - [anydesign](https://github.com/uxKero/anydesign) - Analyzes any image, URL, or Figma file and generates a structured `design.md` with the full design system, component inventory, and reconstruction notes — portable to v0, Lovable, Cursor or any AI builder. *By [@uxKero](https://github.com/uxKero)*
+- [audio-tldr](https://github.com/AugustusW/audio-tldr-skill) - Summarizes videos, audio files, and podcasts into key takeaways — transcribes locally with Whisper and caches transcripts, so repeat requests skip re-transcription. *By [@AugustusW](https://github.com/AugustusW)*
 - [Canvas Design](./canvas-design/) - Creates beautiful visual art in PNG and PDF documents using design philosophy and aesthetic principles for posters, designs, and static pieces.
 - [imagen](https://github.com/sanjay3290/ai-skills/tree/main/skills/imagen) - Generate images using Google Gemini's image generation API for UI mockups, icons, illustrations, and visual assets. *By [@sanjay3290](https://github.com/sanjay3290)*
 - [Image Enhancer](./image-enhancer/) - Improves image and screenshot quality by enhancing resolution, sharpness, and clarity for professional presentations and documentation.
@@ -189,7 +190,6 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [youtube-transcript](https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/youtube-transcript) - Fetch transcripts from YouTube videos and prepare summaries.
 - [swiftui-design-skill](https://github.com/wholiver/swiftui-design-skill) - SwiftUI 前端设计 skill — 反 AI Slop 六条铁律、设计方向顾问、品牌资产协议、五维评审。支持 Claude Code / Cursor / Codex / OpenCode 等全部 AI agent 平台。 *By [@wholiver](https://github.com/wholiver)*
 - [Pixelbin-Media-Generation](https://github.com/anandpareek-hub/pixelbin-claude-skill) - Generate and edit images & videos with 85+ API portfolio and build visually appealing website pages
-- [audio-tldr](https://github.com/AugustusW/audio-tldr-skill) - Summarizes videos, audio files, and podcasts into key takeaways — transcribes locally with Whisper and caches transcripts, so repeat requests skip re-transcription. *By [@AugustusW](https://github.com/AugustusW)*
 
 ### Productivity & Organization
 
