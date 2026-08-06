@@ -108,6 +108,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 
 ### Document Processing
 
+- [Agent Body Document Parsing](https://github.com/agentbody/skills/tree/main/skills/document-parsing) - Parse documents from HTTPS URLs into Markdown and structured content, with page-level and range-based retrieval. *By [@agentbody](https://github.com/agentbody)*
 - [docx](https://github.com/anthropics/skills/tree/main/skills/docx) - Create, edit, analyze Word docs with tracked changes, comments, formatting.
 - [pdf](https://github.com/anthropics/skills/tree/main/skills/pdf) - Extract text, tables, metadata, merge & annotate PDFs.
 - [pptx](https://github.com/anthropics/skills/tree/main/skills/pptx) - Read, generate, and adjust slides, layouts, templates.
@@ -152,6 +153,9 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 
 ### Data & Analysis
 
+- [Agent Body Competitor Monitoring](https://github.com/agentbody/skills/tree/main/skills/competitor-monitoring) - Research competitor updates, feedback, comparisons, migrations, alternatives, and market reactions in public social content. *By [@agentbody](https://github.com/agentbody)*
+- [Agent Body Demand Research](https://github.com/agentbody/skills/tree/main/skills/demand-research) - Research public customer pain points, budgets, alternatives, workarounds, and buying intent in social content. *By [@agentbody](https://github.com/agentbody)*
+- [Agent Body Find Leads](https://github.com/agentbody/skills/tree/main/skills/find-leads) - Find potential customers, prospects, and buying signals in public social content through scoped research monitors. *By [@agentbody](https://github.com/agentbody)*
 - [CSV Data Summarizer](https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill) - Automatically analyzes CSV files and generates comprehensive insights with visualizations without requiring user prompts. *By [@coffeefuelbump](https://github.com/coffeefuelbump)*
 - [deep-research](https://github.com/sanjay3290/ai-skills/tree/main/skills/deep-research) - Execute autonomous multi-step research using Gemini Deep Research Agent for market analysis, competitive landscaping, and literature reviews. *By [@sanjay3290](https://github.com/sanjay3290)*
 - [postgres](https://github.com/sanjay3290/ai-skills/tree/main/skills/postgres) - Execute safe read-only SQL queries against PostgreSQL databases with multi-connection support and defense-in-depth security. *By [@sanjay3290](https://github.com/sanjay3290)*
@@ -160,6 +164,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 
 ### Business & Marketing
 
+- [Agent Body People Data](https://github.com/agentbody/skills/tree/main/skills/people-data) - Research professional profiles and public business contact data through LinkedIn and YouTube. *By [@agentbody](https://github.com/agentbody)*
 - [Brand Build Skills](https://github.com/rampstackco/claude-skills) - 59-skill library covering the full website lifecycle: brand, design, content, SEO, dev, ops, growth, and research. Stack-agnostic with an Ahrefs MCP-powered SEO audit suite. Includes a meta-skill for writing your own. *By [@rampstackco](https://github.com/rampstackco)*
 - [Brand Guidelines](./brand-guidelines/) - Applies Anthropic's official brand colors and typography to artifacts for consistent visual identity and professional design standards.
 - [Competitive Ads Extractor](./competitive-ads-extractor/) - Extracts and analyzes competitors' ads from ad libraries to understand messaging and creative approaches that resonate.
@@ -169,6 +174,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 
 ### Communication & Writing
 
+- [Agent Body Humanize Writing](https://github.com/agentbody/skills/tree/main/skills/humanize-writing) - Rewrite AI-generated or mechanical text into natural writing while preserving meaning, facts, language, and intent. *By [@agentbody](https://github.com/agentbody)*
 - [article-extractor](https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/article-extractor) - Extract full article text and metadata from web pages.
 - [brainstorming](https://github.com/obra/superpowers/tree/main/skills/brainstorming) - Transform rough ideas into fully-formed designs through structured questioning and alternative exploration.
 - [Content Research Writer](./content-research-writer/) - Assists in writing high-quality content by conducting research, adding citations, improving hooks, and providing section-by-section feedback.
@@ -179,6 +185,8 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 
 ### Creative & Media
 
+- [Agent Body TikTok Transcript](https://github.com/agentbody/skills/tree/main/skills/tiktok-transcript) - Extract existing TikTok captions or transcribe TikTok audio into text and timed segments. *By [@agentbody](https://github.com/agentbody)*
+- [Agent Body YouTube Transcript](https://github.com/agentbody/skills/tree/main/skills/youtube-transcript) - Extract text and timed segments from existing YouTube manual or automatic subtitle tracks. *By [@agentbody](https://github.com/agentbody)*
 - [anydesign](https://github.com/uxKero/anydesign) - Analyzes any image, URL, or Figma file and generates a structured `design.md` with the full design system, component inventory, and reconstruction notes — portable to v0, Lovable, Cursor or any AI builder. *By [@uxKero](https://github.com/uxKero)*
 - [Canvas Design](./canvas-design/) - Creates beautiful visual art in PNG and PDF documents using design philosophy and aesthetic principles for posters, designs, and static pieces.
 - [imagen](https://github.com/sanjay3290/ai-skills/tree/main/skills/imagen) - Generate images using Google Gemini's image generation API for UI mockups, icons, illustrations, and visual assets. *By [@sanjay3290](https://github.com/sanjay3290)*
@@ -192,6 +200,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 
 ### Productivity & Organization
 
+- [Agent Body Account Usage](https://github.com/agentbody/skills/tree/main/skills/account-usage) - Check Agent Body account balance, API-key quota, request totals, spending, and recent usage history. *By [@agentbody](https://github.com/agentbody)*
 - [File Organizer](./file-organizer/) - Intelligently organizes files and folders by understanding context, finding duplicates, and suggesting better organizational structures.
 - [Invoice Organizer](./invoice-organizer/) - Automatically organizes invoices and receipts for tax preparation by reading files, extracting information, and renaming consistently.
 - [kaizen](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/kaizen/skills/kaizen) - Applies continuous improvement methodology with multiple analytical approaches, based on Japanese Kaizen philosophy and Lean methodology.
