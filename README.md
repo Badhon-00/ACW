@@ -109,6 +109,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 ### Document Processing
 
 - [docx](https://github.com/anthropics/skills/tree/main/skills/docx) - Create, edit, analyze Word docs with tracked changes, comments, formatting.
+- [DS Vision Skill](https://github.com/Sorwcyra/ds-vision-skill) - Routes image understanding, OCR, and PDF parsing. *By [@Sorwcyra](https://github.com/Sorwcyra)*
 - [pdf](https://github.com/anthropics/skills/tree/main/skills/pdf) - Extract text, tables, metadata, merge & annotate PDFs.
 - [pptx](https://github.com/anthropics/skills/tree/main/skills/pptx) - Read, generate, and adjust slides, layouts, templates.
 - [xlsx](https://github.com/anthropics/skills/tree/main/skills/xlsx) - Spreadsheet manipulation: formulas, charts, data transformations.
