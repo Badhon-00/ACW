@@ -213,6 +213,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 
 ### Security & Systems
 
+- [claude-code-security-baseline](https://github.com/mikobuilds/claude-code-security-checklist) - Sets up the security baseline before an AI agent starts working in a repo: a permissions.deny list, a gitleaks pre-commit hook, a read-only database role in .env.example and prompt-injection rules in CLAUDE.md. Never overwrites, and --check reports what's missing without writing. *By [@mikobuilds](https://github.com/mikobuilds)*
 - [computer-forensics](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/computer-forensics) - Digital forensics analysis and investigation techniques.
 - [file-deletion](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/file-deletion) - Secure file deletion and data sanitization methods.
 - [metadata-extraction](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/metadata-extraction) - Extract and analyze file metadata for forensic purposes.
