@@ -45,30 +45,20 @@ Composio [MCP Gateway](https://composio.dev/mcp-gateway) provides a single MCP e
 
 ## Quickstart: Connect Claude to 1000+ Apps
 
-The **connect-apps** plugin lets Claude perform real actions - send emails, create issues, post to Slack. It handles auth and connects to 1000+ apps using Composio under the hood.
+Use the maintained Composio plugin for Claude Code:
 
-### 1. Install the Plugin
+```text
+/plugin marketplace add ComposioHQ/composio-plugin-cc
+/plugin install composio@composio
+```
+
+Restart Claude Code or run `/reload-plugins`, then ask Claude to act on an app. The plugin provides commands and hooks; it does not bundle a skill. Its CLI login/setup flow installs the separately maintained `composio-cli` skill.
+
+For product selection and integration guidance, install the public skill explicitly:
 
 ```bash
-claude --plugin-dir ./connect-apps-plugin
+npx skills add ComposioHQ/composio --skill composio --global --yes
 ```
-
-### 2. Run Setup
-
-```
-/connect-apps:setup
-```
-
-Paste your API key when asked. (Get a free key at [dashboard.composio.dev](https://dashboard.composio.dev/login?utm_source=Github&utm_content=AwesomeSkills))
-
-### 3. Restart & Try It
-
-```bash
-exit
-claude
-```
-
-> **Want skills that do more than generate text?** Claude can send emails, create issues, post to Slack, and take actions across 1000+ apps. [See how →](./connect/)
 
 If you receive the email, Claude is now connected to 1000+ apps.
 
@@ -123,7 +113,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [Changelog Generator](./changelog-generator/) - Automatically creates user-facing changelogs from git commits by analyzing history and transforming technical commits into customer-friendly release notes.
 - [Chrome Relay](https://chrome-relay.kushalsm.com/) - Drives the user's already-open Chrome session — cookies, SSO, extensions, localhost — through a local CLI bridge. Real-Chrome counterpart to Playwright Browser Automation; install via `npx skills add chrome-relay` + a [Chrome Web Store extension](https://chromewebstore.google.com/detail/chrome-relay/cpdiapbifblhlcpnmlmfpgfjlacebokb). No remote relay, no Playwright fixtures, no MCP server needed.
 - [Claude Code Terminal Title](https://github.com/bluzername/claude-code-terminal-title) - Gives each Claud-Code terminal window a dynamic title that describes the work being done so you don't lose track of what window is doing what.
-- [Connect](./connect/) - Connect Claude to any app. Send emails, create issues, post messages, update databases - take real actions across Gmail, Slack, GitHub, Notion, and 1000+ services.
+- [Composio](https://github.com/ComposioHQ/composio/tree/next/skills/composio) - Maintained first-party skill for Composio product selection, setup, integration, operation, and debugging.
 - [D3.js Visualization](https://github.com/chrisvoncsefalvay/claude-d3js-skill) - Teaches Claude to produce D3 charts and interactive data visualizations. *By [@chrisvoncsefalvay](https://github.com/chrisvoncsefalvay)*
 - [FFUF Web Fuzzing](https://github.com/jthack/ffuf_claude_skill) - Integrates the ffuf web fuzzer so Claude can run fuzzing tasks and analyze results for vulnerabilities. *By [@jthack](https://github.com/jthack)*
 - [finishing-a-development-branch](https://github.com/obra/superpowers/tree/main/skills/finishing-a-development-branch) - Guides completion of development work by presenting clear options and handling chosen workflow.
