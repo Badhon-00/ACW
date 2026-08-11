@@ -25,11 +25,17 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-# Regional API hosts. "global" serves international traffic, "cn" serves
-# mainland China. Both expose the same base path for each API version.
+# Regional API endpoints. "global" serves international traffic, "cn" serves
+# mainland China.
 REGIONS = {
-    "global": "https://api.minimax.io/v1",
-    "cn": "https://api.minimaxi.com/v1",
+    "global": {
+        "v1": "https://api.minimax.io/v1",
+        "v2": "https://api.minimax.io/v2",
+    },
+    "cn": {
+        "v1": "https://api.minimaxi.com/v1",
+        "v2": "https://api.minimaxi.com/v2",
+    },
 }
 
 V1_MODELS = [
@@ -45,17 +51,25 @@ V1_MODELS = [
 H3_MODEL = "MiniMax-H3"
 MODELS = [H3_MODEL, *V1_MODELS]
 DEFAULT_MODEL = H3_MODEL
+H3_RESOLUTIONS = {"2K"}
+H3_RATIOS = {"adaptive", "21:9", "16:9", "4:3", "1:1", "3:4", "9:16"}
+H3_MAX_PROMPT_CHARACTERS = 7000
+H3_MAX_REQUEST_BYTES = 64 * 1024 * 1024
 
 SUCCESS_STATES = {"success", "succeeded"}
 FAILURE_STATES = {"fail", "failed", "cancelled", "expired"}
 
 
-def base_url(region):
-    """Return the API base URL for a region."""
+def base_url(region, api_version="v1"):
+    """Return the regional API base URL for a version."""
     try:
-        return REGIONS[region]
+        return REGIONS[region][api_version]
     except KeyError:
-        raise ValueError(f"Unknown region '{region}'. Choose from: {', '.join(REGIONS)}")
+        if region not in REGIONS:
+            raise ValueError(
+                f"Unknown region '{region}'. Choose from: {', '.join(REGIONS)}"
+            )
+        raise ValueError(f"Unknown API version '{api_version}'")
 
 
 def get_api_key(cli_key):
@@ -134,6 +148,10 @@ def _build_v2_content(args):
     """Build the MiniMax-H3 content array."""
     if not args.prompt:
         raise ValueError("MiniMax-H3 requires a non-empty prompt")
+    if len(args.prompt) > H3_MAX_PROMPT_CHARACTERS:
+        raise ValueError(
+            f"MiniMax-H3 prompts cannot exceed {H3_MAX_PROMPT_CHARACTERS} characters"
+        )
 
     first_frame = getattr(args, "first_frame_image_opt", None) or getattr(
         args, "first_frame_image", None
@@ -165,20 +183,38 @@ def _has_only_text_v2(content):
 
 def _build_v2_payload(args):
     content = _build_v2_content(args)
+    resolution = args.resolution or "2K"
+    if resolution not in H3_RESOLUTIONS:
+        raise ValueError("MiniMax-H3 resolution must be 2K")
+    if args.ratio is not None and args.ratio not in H3_RATIOS:
+        raise ValueError(
+            f"MiniMax-H3 ratio must be one of: {', '.join(sorted(H3_RATIOS))}"
+        )
+
     payload = {
         "model": H3_MODEL,
         "content": content,
-        "resolution": args.resolution or "2K",
+        "resolution": resolution,
         "duration": args.duration,
     }
     if _has_only_text_v2(content):
-        if args.ratio is None:
-            raise ValueError("MiniMax-H3 text-to-video requires --ratio")
+        if args.ratio in (None, "adaptive"):
+            raise ValueError(
+                "MiniMax-H3 text-to-video requires a non-adaptive --ratio"
+            )
         payload["ratio"] = args.ratio
+    elif _v2_has_reference_media(args):
+        payload["ratio"] = args.ratio or "adaptive"
     else:
         payload["ratio"] = "adaptive"
     if args.callback_url is not None:
         payload["callback_url"] = args.callback_url
+    if args.aigc_watermark is not None:
+        if args.region != "cn":
+            raise ValueError("--aigc-watermark is only available in the China region")
+        payload["aigc_watermark"] = args.aigc_watermark
+    if len(json.dumps(payload).encode("utf-8")) > H3_MAX_REQUEST_BYTES:
+        raise ValueError("MiniMax-H3 request body cannot exceed 64 MB")
     return payload
 
 
@@ -210,7 +246,7 @@ def create_task(args, api_key):
             raise ValueError("MiniMax-H3 requires --duration")
         if not 4 <= args.duration <= 15:
             raise ValueError("MiniMax-H3 duration must be between 4 and 15 seconds")
-        url = f"{base_url(args.region)}/v2/video_generation"
+        url = f"{base_url(args.region, 'v2')}/video_generation"
         payload = _build_v2_payload(args)
         response = _request(url, api_key, method="POST", payload=payload)
         task_id = response.get("task_id")
@@ -218,6 +254,8 @@ def create_task(args, api_key):
             raise RuntimeError(f"No task_id in response: {response}")
         return {"api_version": "v2", "task_id": task_id}
 
+    if args.aigc_watermark is not None:
+        raise ValueError("--aigc-watermark requires the MiniMax-H3 model")
     url = f"{base_url(args.region)}/video_generation"
     payload = _build_v1_payload(args)
     response = _request(url, api_key, method="POST", payload=payload)
@@ -231,7 +269,7 @@ def query_task(task_id, region, api_key, api_version="auto"):
     """Query a generation task and return the task metadata."""
     if api_version in ("auto", "v2"):
         try:
-            url = f"{base_url(region)}/v2/query/video_generation/{task_id}"
+            url = f"{base_url(region, 'v2')}/query/video_generation/{task_id}"
             response = _request(url, api_key, method="GET")
             task = response.get("task") or {}
             return {
@@ -270,7 +308,7 @@ def list_tasks(args, api_key):
     if args.filter_task_type:
         params["filter.task_type"] = args.filter_task_type
     query = urllib.parse.urlencode(params, doseq=True)
-    url = f"{base_url(args.region)}/v2/query/video_generation"
+    url = f"{base_url(args.region, 'v2')}/query/video_generation"
     if query:
         url = f"{url}?{query}"
     return _request(url, api_key, method="GET")
@@ -278,7 +316,7 @@ def list_tasks(args, api_key):
 
 def delete_task(task_id, region, api_key):
     """Cancel or delete a v2 video generation task."""
-    url = f"{base_url(region)}/v2/video_generation/{task_id}"
+    url = f"{base_url(region, 'v2')}/video_generation/{task_id}"
     return _request(url, api_key, method="DELETE")
 
 
@@ -430,6 +468,12 @@ def add_generation_options(parser):
         dest="callback_url",
         default=None,
         help="URL to receive asynchronous status callbacks",
+    )
+    parser.add_argument(
+        "--aigc-watermark",
+        action="store_true",
+        default=None,
+        help="Add the China-region AIGC watermark for MiniMax-H3",
     )
     parser.add_argument(
         "--first-frame-image",
