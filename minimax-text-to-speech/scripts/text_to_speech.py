@@ -291,21 +291,9 @@ def create_async_task(args, api_key):
 
 
 def query_task(task_id, region, api_key):
-    """Query an async synthesis task.
-
-    The query endpoint accepts task_id either as a GET query parameter or as a
-    POST JSON body; try both and keep whichever the endpoint accepts.
-    """
-    base = base_url(region)
-    path = "/query/t2a_async_query_v2"
-    query_url = f"{base}{path}?{urllib.parse.urlencode({'task_id': task_id})}"
-    try:
-        return _request(query_url, api_key, method="GET")
-    except RuntimeError as first_error:
-        try:
-            return _request(f"{base}{path}", api_key, method="POST", payload={"task_id": task_id})
-        except RuntimeError:
-            raise first_error
+    """Query an async synthesis task with a POST JSON body."""
+    url = f"{base_url(region)}/query/t2a_async_query_v2"
+    return _request(url, api_key, method="POST", payload={"task_id": task_id})
 
 
 def retrieve_file(file_id, region, api_key):

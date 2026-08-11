@@ -132,10 +132,9 @@ The skill calls four endpoints under the selected region base URL:
   `base_resp.status_code`.
 - `POST /v1/t2a_async_v2` creates an asynchronous task and returns a
   `task_id`.
-- `/v1/query/t2a_async_query_v2` reports the task `status` (`Processing`,
+- `POST /v1/query/t2a_async_query_v2` reports the task `status` (`Processing`,
   `Success`, `Failed`, or `Expired`) and the `file_id` once complete; the
-  script sends the task id either as a GET query parameter or as a POST JSON
-  body.
+  script sends the task id in a JSON request body.
 - `GET /v1/files/retrieve?file_id=...` returns a download URL for the finished
   audio file.
 
