@@ -149,6 +149,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [test-driven-development](https://github.com/obra/superpowers/tree/main/skills/test-driven-development) - Use when implementing any feature or bugfix, before writing implementation code.
 - [using-git-worktrees](https://github.com/obra/superpowers/blob/main/skills/using-git-worktrees/) - Creates isolated git worktrees with smart directory selection and safety verification.
 - [Webapp Testing](./webapp-testing/) - Tests local web applications using Playwright for verifying frontend functionality, debugging UI behavior, and capturing screenshots.
+- [workflow-design](https://github.com/ghorbanies/workflow-design) - Design, prove, measure, and safely change workflows: approval chains, review pipelines, ticketing, human gates over AI output. Four stdlib-only tools — flow linter, guard red-proof runner, transition-log metrics, log-vs-model conformance — each self-tested and red-proofed by shipped specs. *By [@ghorbanies](https://github.com/ghorbanies)*
 
 ### Data & Analysis
 
