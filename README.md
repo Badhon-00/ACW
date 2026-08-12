@@ -164,8 +164,10 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [Brand Guidelines](./brand-guidelines/) - Applies Anthropic's official brand colors and typography to artifacts for consistent visual identity and professional design standards.
 - [Competitive Ads Extractor](./competitive-ads-extractor/) - Extracts and analyzes competitors' ads from ad libraries to understand messaging and creative approaches that resonate.
 - [Domain Name Brainstormer](./domain-name-brainstormer/) - Generates creative domain name ideas and checks availability across multiple TLDs including .com, .io, .dev, and .ai extensions.
+- [FORTRESS](https://github.com/Pr1m4lc0d3/FORTRESS) - Seven skills and a dependency-free Python linter that exits non-zero on any marketing claim not sourced in your own register, so an agent writing your copy cannot invent a statistic. Also sorts the assets you own from the ones you rent. *By [@Pr1m4lc0d3](https://github.com/Pr1m4lc0d3)*
 - [Internal Comms](./internal-comms/) - Helps write internal communications including 3P updates, company newsletters, FAQs, status reports, and project updates using company-specific formats.
 - [Lead Research Assistant](./lead-research-assistant/) - Identifies and qualifies high-quality leads by analyzing your product, searching for target companies, and providing actionable outreach strategies.
+- [RAID](https://github.com/Pr1m4lc0d3/RAID) - Ten skills for marketing a product with no budget, built on one test: never fight where the money wins. Finds ground a funded competitor cannot outbid you on, and stages every draft for a human to sign rather than publishing it. *By [@Pr1m4lc0d3](https://github.com/Pr1m4lc0d3)*
 
 ### Communication & Writing
 
