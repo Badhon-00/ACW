@@ -466,6 +466,7 @@ We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING
 - [Anthropic Skills Repository](https://github.com/anthropics/skills) - Official example skills
 - [Claude Community](https://community.anthropic.com) - Discuss skills with other users
 - [Skills Marketplace](https://claude.ai/marketplace) - Discover and share skills
+- [Skillselion](https://skillselion.com) - Community directory indexing 59,000+ skills and 8,400+ MCP servers, ranked by install counts
 
 ### Inspiration & Use Cases
 
