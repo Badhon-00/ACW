@@ -215,6 +215,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 
 - [computer-forensics](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/computer-forensics) - Digital forensics analysis and investigation techniques.
 - [file-deletion](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/file-deletion) - Secure file deletion and data sanitization methods.
+- [MCP Security Preflight](https://github.com/Abanoub-Rodolf/mcp-security-review-preview/tree/main/skills/mcp-security-preflight) - Runs a safe MCP configuration scan while keeping raw untrusted scanner evidence out of model-facing output. *By [@Abanoub-Rodolf](https://github.com/Abanoub-Rodolf)*
 - [metadata-extraction](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/metadata-extraction) - Extract and analyze file metadata for forensic purposes.
 - [threat-hunting-with-sigma-rules](https://github.com/jthack/threat-hunting-with-sigma-rules-skill) - Use Sigma detection rules to hunt for threats and analyze security events.
 
