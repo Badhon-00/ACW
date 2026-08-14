@@ -1,5 +1,5 @@
 > [!NOTE]
-> **Archived fork and reference.** This repository was forked from [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills). It was not authored by Afsar Ali, is not maintained by him, and is preserved only as a historical reference. Use the upstream repository for current content.
+> **Historical reference fork.** This repository was forked from [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills). The upstream project and its original content were not authored by Afsar Ali; this notice is Ali's repository framing. Ali does not maintain the fork. Use the upstream repository for current content.
 
 ---
 
