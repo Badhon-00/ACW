@@ -1,3 +1,8 @@
+> [!NOTE]
+> **Archived fork and reference.** This repository was forked from [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills). It was not authored by Afsar Ali, is not maintained by him, and is preserved only as a historical reference. Use the upstream repository for current content.
+
+---
+
 <h1 align="center">Awesome Claude Skills</h1>
 
 <p align="center">
