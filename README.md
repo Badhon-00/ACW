@@ -1,3 +1,8 @@
+> [!NOTE]
+> **Historical reference fork.** This repository was forked from [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills). The upstream project and its original content were not authored by Afsar Ali; this notice is Ali's repository framing. Ali does not maintain the fork. Use the upstream repository for current content.
+
+---
+
 <h1 align="center">Awesome Claude Skills</h1>
 
 <p align="center">
@@ -115,7 +120,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [Markdown to EPUB Converter](https://github.com/smerchek/claude-epub-skill) - Converts markdown documents and chat summaries into professional EPUB ebook files. *By [@smerchek](https://github.com/smerchek)*
 - [Master Claude for Legal](https://github.com/sboghossian/master-claude-for-legal) - Skill pack for legal teams. NDA triage, multi-party version diff, citation verifier, meeting brief, and the Friday-newsletter status synthesis pattern. Includes 10 reference docs (privilege, verification, long documents, practice areas) and 3 firm templates. Built from the public Anthropic Claude for Legal Teams webinar dataset. *By [@sboghossian](https://github.com/sboghossian)*
 
-### Development & Code Tools
+
 
 - [artifacts-builder](https://github.com/anthropics/skills/tree/main/skills/web-artifacts-builder) - Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui).
 - [aws-skills](https://github.com/zxkane/aws-skills) - AWS development with CDK best practices, cost optimization MCP servers, and serverless/event-driven architecture patterns.
@@ -149,6 +154,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [test-driven-development](https://github.com/obra/superpowers/tree/main/skills/test-driven-development) - Use when implementing any feature or bugfix, before writing implementation code.
 - [using-git-worktrees](https://github.com/obra/superpowers/blob/main/skills/using-git-worktrees/) - Creates isolated git worktrees with smart directory selection and safety verification.
 - [Webapp Testing](./webapp-testing/) - Tests local web applications using Playwright for verifying frontend functionality, debugging UI behavior, and capturing screenshots.
+- [silent-failure-detector](https://github.com/alidoesAi/alidoesai-skills/tree/main/silent-failure-detector) - Detects when a heartbeat or log stream goes silent unexpectedly; ships a reproducible benchmark (83.8% accuracy, deterministic grader). *By [@alidoesAi](https://github.com/alidoesAi)*
 
 ### Data & Analysis
 
