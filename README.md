@@ -149,6 +149,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [test-driven-development](https://github.com/obra/superpowers/tree/main/skills/test-driven-development) - Use when implementing any feature or bugfix, before writing implementation code.
 - [using-git-worktrees](https://github.com/obra/superpowers/blob/main/skills/using-git-worktrees/) - Creates isolated git worktrees with smart directory selection and safety verification.
 - [Webapp Testing](./webapp-testing/) - Tests local web applications using Playwright for verifying frontend functionality, debugging UI behavior, and capturing screenshots.
+- [Low-Level Skills](https://github.com/TrothByte/low-level-skills-trothbyte) - 124 verified low-level engineering skills for coding agents: C/C++, Rust, assembly, kernel, embedded, Zig, GPU, reverse engineering, and build systems. 65/124 skills executed on real toolchains; every claim source-traced (177 primary sources). *By [@TrothByte](https://github.com/TrothByte)*
 
 ### Data & Analysis
 
