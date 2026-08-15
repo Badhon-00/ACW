@@ -217,6 +217,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [file-deletion](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/file-deletion) - Secure file deletion and data sanitization methods.
 - [metadata-extraction](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/metadata-extraction) - Extract and analyze file metadata for forensic purposes.
 - [threat-hunting-with-sigma-rules](https://github.com/jthack/threat-hunting-with-sigma-rules-skill) - Use Sigma detection rules to hunt for threats and analyze security events.
+- [HOL Guard](https://github.com/hashgraph-online/hol-guard) - Security harness that intercepts tool calls in AI coding agents before files change or network is contacted. Scans skills, MCP servers, and plugins for supply-chain threats.
 
 ### Assistive Technology
 
