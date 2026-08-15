@@ -140,5 +140,5 @@ Do not claim protection, approval, or release readiness without command output p
 
 ## Source
 
-- HOL Guard: https://github.com/hashgraph-online/hol-guard
-- Distribution companion: https://github.com/hashgraph-online/hol-guard-plugin
+- Security documentation: https://hol.org/guard/security
+- Source repository: https://github.com/hashgraph-online/hol-guard
