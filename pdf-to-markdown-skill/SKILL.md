@@ -36,8 +36,10 @@ The Markdown starts with an HTML-comment report block. Read it first — it tell
 The system `python` on Windows may be a stub without packages. Dependencies: `pymupdf4llm`, plus `markdown` for the HTML format. Before running, verify:
 
 ```bash
-python -c "import pymupdf4llm" || py -3 -c "import pymupdf4llm"
+python -c "import pymupdf4llm"
+py -3 -c "import pymupdf4llm"
 ```
+(Either command succeeding means the dependency is available; the second is for machines where the first `python` is a stub.)
 
 If both fail, locate a real Python (e.g. `C:\Users\Lenovo\AppData\Local\Programs\Python\Python313\python.exe`) and use its absolute path for the script too. Output filenames may contain non-ASCII characters — always pass paths as arguments, never rely on a shell working directory that might mangle them.
 
@@ -64,8 +66,8 @@ If the user only wants the text (not images), it's fine to run with the default 
 
 ## How it works
 
-1. **Detect** — per-page text density: pages with few chars and images → scan-like; few chars and no images → blank. `sum(page.get_images())` and `get_text()` are used directly (no OCR).
-2. **Convert** — `pymupdf4llm.to_markdown(write_images=True, image_path=assets/)` handles headings, lists, and tables. The HTML format is rendered from the same Markdown (markdown lib with tables/fenced_code extensions), so both formats stay identical.
+1. **Detect** — per-page text density: pages with few chars and images → scan-like; few chars and no images → blank. `page.get_text()` and `page.get_images()` are read per page (no OCR).
+2. **Convert** — `pymupdf4llm.to_markdown(write_images=True, image_path="assets/")` handles headings, lists, and tables. The HTML format is rendered from the same Markdown (markdown lib with tables/fenced_code extensions), so both formats stay identical.
 3. **Annotate** — prepend the conversion report; rewrite absolute image paths to relative `assets/` so the output folder is portable (e.g. zipped, committed, uploaded).
 
 ## Known limitations
