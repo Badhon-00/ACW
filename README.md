@@ -216,10 +216,10 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 
 ### Security & Systems
 
-- [servicenow-access-forge](https://github.com/jxrlabs/servicenow-forge-skills/tree/main/access-forge) - Audit ServiceNow security configuration including ACLs, roles, Business Rules, and data policies for over-permissioning, missing restrictions, and compliance gaps. _By @jxrlabs_
 - [computer-forensics](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/computer-forensics) - Digital forensics analysis and investigation techniques.
 - [file-deletion](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/file-deletion) - Secure file deletion and data sanitization methods.
 - [metadata-extraction](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/metadata-extraction) - Extract and analyze file metadata for forensic purposes.
+- [servicenow-access-forge](https://github.com/jxrlabs/servicenow-forge-skills/tree/main/access-forge) - Audit ServiceNow security configuration including ACLs, roles, Business Rules, and data policies for over-permissioning, missing restrictions, and compliance gaps. _By @jxrlabs_
 - [threat-hunting-with-sigma-rules](https://github.com/jthack/threat-hunting-with-sigma-rules-skill) - Use Sigma detection rules to hunt for threats and analyze security events.
 
 ### Assistive Technology
