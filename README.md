@@ -169,6 +169,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 
 ### Communication & Writing
 
+- [ai-tell-detector](https://github.com/aragossa/ai-tell-detector) - Audits a finished draft for patterns that read as AI-generated (rhetorical symmetry, filler, uniform rhythm, fabricated personal experience) and flags each with the line and a fix. English and Russian versions.
 - [article-extractor](https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/article-extractor) - Extract full article text and metadata from web pages.
 - [brainstorming](https://github.com/obra/superpowers/tree/main/skills/brainstorming) - Transform rough ideas into fully-formed designs through structured questioning and alternative exploration.
 - [Content Research Writer](./content-research-writer/) - Assists in writing high-quality content by conducting research, adding citations, improving hooks, and providing section-by-section feedback.
