@@ -192,6 +192,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 
 ### Productivity & Organization
 
+- [danshari-skill (断舍离.skill)](https://github.com/swaylq/danshari-skill) - Audits every installed skill against your current model, harness built-ins, and connected MCP servers, then archives the obsolete ones: blind-test evidence for capability skills, never-rm archiving with one-command restore. The first skill that tells you to delete skills. Bilingual (EN+中文). *By [@swaylq](https://github.com/swaylq)*
 - [File Organizer](./file-organizer/) - Intelligently organizes files and folders by understanding context, finding duplicates, and suggesting better organizational structures.
 - [Invoice Organizer](./invoice-organizer/) - Automatically organizes invoices and receipts for tax preparation by reading files, extracting information, and renaming consistently.
 - [kaizen](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/kaizen/skills/kaizen) - Applies continuous improvement methodology with multiple analytical approaches, based on Japanese Kaizen philosophy and Lean methodology.
