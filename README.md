@@ -108,6 +108,8 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 
 ### Document Processing
 
+- [video-to-text](https://github.com/jiawood2006/hermes-skills/tree/main/skills/video-to-text) - Extract transcripts from Douyin video links or local video files with auto-download. *By [@jiawood2006](https://github.com/jiawood2006)*
+- [doc-ocr](https://github.com/jiawood2006/hermes-skills/tree/main/skills/doc-ocr) - Fully local OCR for PDFs, scans, and images — private, no upload required. *By [@jiawood2006](https://github.com/jiawood2006)*
 - [docx](https://github.com/anthropics/skills/tree/main/skills/docx) - Create, edit, analyze Word docs with tracked changes, comments, formatting.
 - [pdf](https://github.com/anthropics/skills/tree/main/skills/pdf) - Extract text, tables, metadata, merge & annotate PDFs.
 - [pptx](https://github.com/anthropics/skills/tree/main/skills/pptx) - Read, generate, and adjust slides, layouts, templates.
@@ -169,6 +171,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 
 ### Communication & Writing
 
+- [de-ai-writer](https://github.com/jiawood2006/hermes-skills/tree/main/skills/de-ai-writer) - Rewrite AI-generated copy into natural human tone — removes robotic phrasing. *By [@jiawood2006](https://github.com/jiawood2006)*
 - [article-extractor](https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/article-extractor) - Extract full article text and metadata from web pages.
 - [brainstorming](https://github.com/obra/superpowers/tree/main/skills/brainstorming) - Transform rough ideas into fully-formed designs through structured questioning and alternative exploration.
 - [Content Research Writer](./content-research-writer/) - Assists in writing high-quality content by conducting research, adding citations, improving hooks, and providing section-by-section feedback.
@@ -179,6 +182,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 
 ### Creative & Media
 
+- [ecommerce-material-studio](https://github.com/jiawood2006/hermes-skills/tree/main/skills/ecommerce-material-studio) - Batch e-commerce product images (main/detail/scene) with auto product scaling and brand overlay. *By [@jiawood2006](https://github.com/jiawood2006)*
 - [anydesign](https://github.com/uxKero/anydesign) - Analyzes any image, URL, or Figma file and generates a structured `design.md` with the full design system, component inventory, and reconstruction notes — portable to v0, Lovable, Cursor or any AI builder. *By [@uxKero](https://github.com/uxKero)*
 - [Canvas Design](./canvas-design/) - Creates beautiful visual art in PNG and PDF documents using design philosophy and aesthetic principles for posters, designs, and static pieces.
 - [imagen](https://github.com/sanjay3290/ai-skills/tree/main/skills/imagen) - Generate images using Google Gemini's image generation API for UI mockups, icons, illustrations, and visual assets. *By [@sanjay3290](https://github.com/sanjay3290)*
