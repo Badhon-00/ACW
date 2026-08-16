@@ -144,11 +144,11 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [Septim Agents Pack](https://septimlabs.com/tools/agents?utm_source=awesome-claude-skills&utm_medium=awesome-list&utm_campaign=oss-backlink) - 10 named Claude Code sub-agents (Atlas, Luca, Canon, Ember, Tally, Nova, Ward, Mira, Juno, Pip) covering planning, architecture, brand, marketing, finance, design, legal, customer, research, and coordination. Drop into `.claude/agents/`. *By [@septimlabs-code](https://github.com/septimlabs-code)*
 - [Skill Creator](./skill-creator/) - Provides guidance for creating effective Claude Skills that extend capabilities with specialized knowledge, workflows, and tool integrations.
 - [Skill Seekers](https://github.com/yusufkaraaslan/Skill_Seekers) - Automatically converts any documentation website into a Claude AI skill in minutes. *By [@yusufkaraaslan](https://github.com/yusufkaraaslan)*
+- [servicenow-script-forge](https://github.com/jxrlabs/servicenow-forge-skills/tree/main/script-forge) - Review ServiceNow server-side and client-side scripts (Business Rules, Script Includes, Client Scripts, ACLs) for bugs, performance issues, security risks, and platform anti-patterns. _By @jxrlabs_
 - [software-architecture](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/ddd/skills/software-architecture) - Implements design patterns including Clean Architecture, SOLID principles, and comprehensive software design best practices.
 - [subagent-driven-development](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/sadd/skills/subagent-driven-development) - Dispatches independent subagents for individual tasks with code review checkpoints between iterations for rapid, controlled development.
 - [test-driven-development](https://github.com/obra/superpowers/tree/main/skills/test-driven-development) - Use when implementing any feature or bugfix, before writing implementation code.
 - [using-git-worktrees](https://github.com/obra/superpowers/blob/main/skills/using-git-worktrees/) - Creates isolated git worktrees with smart directory selection and safety verification.
-- [servicenow-script-forge](https://github.com/jxrlabs/servicenow-forge-skills/tree/main/script-forge) - Review ServiceNow server-side and client-side scripts (Business Rules, Script Includes, Client Scripts, ACLs) for bugs, performance issues, security risks, and platform anti-patterns. _By @jxrlabs_
 - [Webapp Testing](./webapp-testing/) - Tests local web applications using Playwright for verifying frontend functionality, debugging UI behavior, and capturing screenshots.
 
 
@@ -216,10 +216,10 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 
 ### Security & Systems
 
+- [servicenow-access-forge](https://github.com/jxrlabs/servicenow-forge-skills/tree/main/access-forge) - Audit ServiceNow security configuration including ACLs, roles, Business Rules, and data policies for over-permissioning, missing restrictions, and compliance gaps. _By @jxrlabs_
 - [computer-forensics](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/computer-forensics) - Digital forensics analysis and investigation techniques.
 - [file-deletion](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/file-deletion) - Secure file deletion and data sanitization methods.
 - [metadata-extraction](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/metadata-extraction) - Extract and analyze file metadata for forensic purposes.
-- [servicenow-access-forge](https://github.com/jxrlabs/servicenow-forge-skills/tree/main/access-forge) - Audit ServiceNow security configuration including ACLs, roles, Business Rules, and data policies for over-permissioning, missing restrictions, and compliance gaps. _By @jxrlabs_
 - [threat-hunting-with-sigma-rules](https://github.com/jthack/threat-hunting-with-sigma-rules-skill) - Use Sigma detection rules to hunt for threats and analyze security events.
 
 ### Assistive Technology
