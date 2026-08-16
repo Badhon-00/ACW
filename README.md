@@ -108,6 +108,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 
 ### Document Processing
 
+- [DeepRead](https://github.com/xiehuan123/dsh-deepread) - Evidence-first deep reading for articles, books, PDFs, and document sets, with traceable claims, confidence levels, knowledge maps, Feynman learning, and real output examples. *By [@xiehuan123](https://github.com/xiehuan123)*
 - [docx](https://github.com/anthropics/skills/tree/main/skills/docx) - Create, edit, analyze Word docs with tracked changes, comments, formatting.
 - [pdf](https://github.com/anthropics/skills/tree/main/skills/pdf) - Extract text, tables, metadata, merge & annotate PDFs.
 - [pptx](https://github.com/anthropics/skills/tree/main/skills/pptx) - Read, generate, and adjust slides, layouts, templates.
