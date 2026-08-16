@@ -149,6 +149,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [test-driven-development](https://github.com/obra/superpowers/tree/main/skills/test-driven-development) - Use when implementing any feature or bugfix, before writing implementation code.
 - [using-git-worktrees](https://github.com/obra/superpowers/blob/main/skills/using-git-worktrees/) - Creates isolated git worktrees with smart directory selection and safety verification.
 - [Webapp Testing](./webapp-testing/) - Tests local web applications using Playwright for verifying frontend functionality, debugging UI behavior, and capturing screenshots.
+- [which-skill](https://github.com/whichskill/whichskill) - Routes a request to an ordered chain of skills across every installed pack, with the arbitration between near-duplicates already settled — which of three debuggers, which of two TDD skills — plus an explicit list of what not to run and why. Builds its catalogue from your own machine, so it never names a command you do not have. *By [@OmarBenje](https://github.com/OmarBenje)*
 
 ### Data & Analysis
 
