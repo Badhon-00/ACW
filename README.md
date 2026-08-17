@@ -164,6 +164,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [Brand Guidelines](./brand-guidelines/) - Applies Anthropic's official brand colors and typography to artifacts for consistent visual identity and professional design standards.
 - [Competitive Ads Extractor](./competitive-ads-extractor/) - Extracts and analyzes competitors' ads from ad libraries to understand messaging and creative approaches that resonate.
 - [Domain Name Brainstormer](./domain-name-brainstormer/) - Generates creative domain name ideas and checks availability across multiple TLDs including .com, .io, .dev, and .ai extensions.
+- [geo-audit-skill](https://github.com/msdanyg/geo-audit-skill) - Audits a website's AI-search readiness (GEO) against a 26-check scorecard — scores only from evidence you paste in, marks what it can't verify, and outputs a prioritized fix list plus a 30-day plan. *By [@msdanyg](https://github.com/msdanyg)*
 - [Internal Comms](./internal-comms/) - Helps write internal communications including 3P updates, company newsletters, FAQs, status reports, and project updates using company-specific formats.
 - [Lead Research Assistant](./lead-research-assistant/) - Identifies and qualifies high-quality leads by analyzing your product, searching for target companies, and providing actionable outreach strategies.
 
