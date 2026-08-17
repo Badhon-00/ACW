@@ -155,6 +155,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [CSV Data Summarizer](https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill) - Automatically analyzes CSV files and generates comprehensive insights with visualizations without requiring user prompts. *By [@coffeefuelbump](https://github.com/coffeefuelbump)*
 - [deep-research](https://github.com/sanjay3290/ai-skills/tree/main/skills/deep-research) - Execute autonomous multi-step research using Gemini Deep Research Agent for market analysis, competitive landscaping, and literature reviews. *By [@sanjay3290](https://github.com/sanjay3290)*
 - [postgres](https://github.com/sanjay3290/ai-skills/tree/main/skills/postgres) - Execute safe read-only SQL queries against PostgreSQL databases with multi-connection support and defense-in-depth security. *By [@sanjay3290](https://github.com/sanjay3290)*
+- [phoebe-data-skills](https://github.com/phoebefu6/phoebe-data-skills) - Installable data skills that run a real analysis on your own schema: EDA, data quality, RFM, sales forecasting, schema design, and executive scorecards, each producing executed charts from a fixed seed rather than mockups. *By [@phoebefu6](https://github.com/phoebefu6)*
 - [recursive-research](https://github.com/Anjos2/recursive-research) - Recursive research up to PhD level across any domain (science, tech, business, arts, humanities) with source tiering, WDM + Munger inversion for autonomous decisions, and disk checkpointing to survive context compaction. *By [@Anjos2](https://github.com/Anjos2)*
 - [root-cause-tracing](https://github.com/obra/superpowers/tree/main/skills/root-cause-tracing) - Use when errors occur deep in execution and you need to trace back to find the original trigger.
 
@@ -472,6 +473,7 @@ We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING
 - [Lenny's Newsletter](https://www.lennysnewsletter.com/p/everyone-should-be-using-claude-code) - 50 ways people use Claude Code
 - [Notion Skills](https://www.notion.so/notiondevs/Notion-Skills-for-Claude-28da4445d27180c7af1df7d8615723d0) - Notion integration skills
 - [Top Claude Skills](https://composio.dev/content/top-claude-skills)
+- [Agent Skills: Phoebe's Picks](https://phoebefu6.github.io/agent-skills-phoebe-picks/) - Which agent Skills survive a real build, each field-tested by shipping a product with it and rated on a public rubric
 
 
 ## Join the Community
