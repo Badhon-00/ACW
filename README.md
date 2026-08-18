@@ -464,10 +464,9 @@ We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING
 ### Community Resources
 
 - [Anthropic Skills Repository](https://github.com/anthropics/skills) - Official example skills
+- [BundleDex](https://bundledex.net/) - The largest directory of 500+ Open Knowledge Format (OKF) bundles for AI agents, with llms.txt and an MCP endpoint, free to submit.
 - [Claude Community](https://community.anthropic.com) - Discuss skills with other users
 - [Skills Marketplace](https://claude.ai/marketplace) - Discover and share skills
-
-- [BundleDex](https://bundledex.net/) - The largest directory of 500+ Open Knowledge Format (OKF) bundles for AI agents, with llms.txt and an MCP endpoint, free to submit.
 
 ### Inspiration & Use Cases
 
