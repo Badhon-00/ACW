@@ -117,6 +117,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 
 ### Development & Code Tools
 
+- [anti-ui-slop](https://github.com/uizze/uizze/tree/main/skills/anti-ui-slop) - Stop generic UI with a product-specific design contract, required loading/empty/error states, and a hard finish gate. Works with Claude Code, Codex, Cursor, and other Agent Skills-compatible agents. The optional UIZZE workflow adds no-account preview checks and live search, validation, and audits across 800,000+ real web and iOS screens.
 - [artifacts-builder](https://github.com/anthropics/skills/tree/main/skills/web-artifacts-builder) - Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui).
 - [aws-skills](https://github.com/zxkane/aws-skills) - AWS development with CDK best practices, cost optimization MCP servers, and serverless/event-driven architecture patterns.
 - [building-blog](https://github.com/BuildShipGrowRepeat/nextjs-sanity-blog-skill) - Adds an SEO-first, i18n-ready blog to a Next.js + Sanity site via a 40-question intake, a one-page plan, and a 20-section spec. Includes a generator for AI hero images via Gemini 3 Pro Image (Nano Banana Pro). *By [@BuildShipGrowRepeat](https://github.com/BuildShipGrowRepeat)*
@@ -147,7 +148,6 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [software-architecture](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/ddd/skills/software-architecture) - Implements design patterns including Clean Architecture, SOLID principles, and comprehensive software design best practices.
 - [subagent-driven-development](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/sadd/skills/subagent-driven-development) - Dispatches independent subagents for individual tasks with code review checkpoints between iterations for rapid, controlled development.
 - [test-driven-development](https://github.com/obra/superpowers/tree/main/skills/test-driven-development) - Use when implementing any feature or bugfix, before writing implementation code.
-- [anti-ui-slop](https://github.com/uizze/uizze/tree/main/skills/anti-ui-slop) - Stop generic UI with a product-specific design contract, required loading/empty/error states, and a hard finish gate. Works with Claude Code, Codex, Cursor, and other Agent Skills-compatible agents. The optional UIZZE workflow adds no-account preview checks and live search, validation, and audits across 800,000+ real web and iOS screens.
 - [using-git-worktrees](https://github.com/obra/superpowers/blob/main/skills/using-git-worktrees/) - Creates isolated git worktrees with smart directory selection and safety verification.
 - [Webapp Testing](./webapp-testing/) - Tests local web applications using Playwright for verifying frontend functionality, debugging UI behavior, and capturing screenshots.
 
