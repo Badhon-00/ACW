@@ -214,6 +214,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 ### Security & Systems
 
 - [computer-forensics](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/computer-forensics) - Digital forensics analysis and investigation techniques.
+- [deep-security-audit](https://github.com/ravindrakele/claude-skills) - Multi-agent security audit that maps the real attack surface of WordPress, Laravel, Next.js, or Node apps, reads the code instead of grepping, and adversarially verifies every finding with honest CVSS scoring. *By [@ravindrakele](https://github.com/ravindrakele)*
 - [file-deletion](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/file-deletion) - Secure file deletion and data sanitization methods.
 - [metadata-extraction](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/metadata-extraction) - Extract and analyze file metadata for forensic purposes.
 - [threat-hunting-with-sigma-rules](https://github.com/jthack/threat-hunting-with-sigma-rules-skill) - Use Sigma detection rules to hunt for threats and analyze security events.
