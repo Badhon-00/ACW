@@ -149,6 +149,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [test-driven-development](https://github.com/obra/superpowers/tree/main/skills/test-driven-development) - Use when implementing any feature or bugfix, before writing implementation code.
 - [using-git-worktrees](https://github.com/obra/superpowers/blob/main/skills/using-git-worktrees/) - Creates isolated git worktrees with smart directory selection and safety verification.
 - [Webapp Testing](./webapp-testing/) - Tests local web applications using Playwright for verifying frontend functionality, debugging UI behavior, and capturing screenshots.
+- [WP Theme Design Stack](https://github.com/skillsvaults/wp-theme-design-stack) - Builds complete, production-ready WordPress themes (Block Theme/FSE) from scratch or converts HTML/CSS/JS projects: theme.json v3, exact block-comment syntax, PHP escaping, and a mechanical structure-validation gate + full quality checklist. *By [@skillsvaults](https://github.com/skillsvaults)*
 
 ### Data & Analysis
 
