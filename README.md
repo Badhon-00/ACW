@@ -166,6 +166,8 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [Domain Name Brainstormer](./domain-name-brainstormer/) - Generates creative domain name ideas and checks availability across multiple TLDs including .com, .io, .dev, and .ai extensions.
 - [Internal Comms](./internal-comms/) - Helps write internal communications including 3P updates, company newsletters, FAQs, status reports, and project updates using company-specific formats.
 - [Lead Research Assistant](./lead-research-assistant/) - Identifies and qualifies high-quality leads by analyzing your product, searching for target companies, and providing actionable outreach strategies.
+- [MisarBlog Skills](https://github.com/Misar-AI/misarblog-mcp/tree/main/skills) - 6-skill set for running a blog end to end: publish a post, optimise it for SEO, manage a series, promote it, and pull blog and newsletter performance reports. Backed by the MisarBlog MCP server. *By [@Misar-AI](https://github.com/Misar-AI)*
+- [MisarReach Skills](https://github.com/Misar-AI/misarreach-mcp/tree/main/skills) - 4-skill set for outbound sales: build and qualify a lead list, run a multi-step outreach sequence, review the pipeline, and audit autopilot behaviour. Backed by the MisarReach MCP server. *By [@Misar-AI](https://github.com/Misar-AI)*
 
 ### Communication & Writing
 
@@ -174,6 +176,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [Content Research Writer](./content-research-writer/) - Assists in writing high-quality content by conducting research, adding citations, improving hooks, and providing section-by-section feedback.
 - [family-history-research](https://github.com/emaynard/claude-family-history-research-skill) - Provides assistance with planning family history and genealogy research projects.
 - [Meeting Insights Analyzer](./meeting-insights-analyzer/) - Analyzes meeting transcripts to uncover behavioral patterns including conflict avoidance, speaking ratios, filler words, and leadership style.
+- [MisarMail Skills](https://github.com/Misar-AI/misarmail-mcp/tree/main/skills) - 8-skill set for email operations: send transactional mail, run and A/B test campaigns, build automations, clean contact lists, set up a sending domain, and audit deliverability. Backed by the MisarMail MCP server. *By [@Misar-AI](https://github.com/Misar-AI)*
 - [NotebookLM Integration](https://github.com/PleasePrompto/notebooklm-skill) - Lets Claude Code chat directly with NotebookLM for source-grounded answers based exclusively on uploaded documents. *By [@PleasePrompto](https://github.com/PleasePrompto)*
 - [Twitter Algorithm Optimizer](./twitter-algorithm-optimizer/) - Analyze and optimize tweets for maximum reach using Twitter's open-source algorithm insights. Rewrite and edit tweets to improve engagement and visibility.
 
