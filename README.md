@@ -157,6 +157,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [postgres](https://github.com/sanjay3290/ai-skills/tree/main/skills/postgres) - Execute safe read-only SQL queries against PostgreSQL databases with multi-connection support and defense-in-depth security. *By [@sanjay3290](https://github.com/sanjay3290)*
 - [recursive-research](https://github.com/Anjos2/recursive-research) - Recursive research up to PhD level across any domain (science, tech, business, arts, humanities) with source tiering, WDM + Munger inversion for autonomous decisions, and disk checkpointing to survive context compaction. *By [@Anjos2](https://github.com/Anjos2)*
 - [root-cause-tracing](https://github.com/obra/superpowers/tree/main/skills/root-cause-tracing) - Use when errors occur deep in execution and you need to trace back to find the original trigger.
+- [X Twitter Scraper](https://github.com/Xquik-dev/x-twitter-scraper/tree/master/skills/x-twitter-scraper) - Searches and exports X (Twitter) data through Xquik's REST API or MCP, with bounded monitoring, webhooks, and approval-gated account actions. *By [@Xquik-dev](https://github.com/Xquik-dev)*
 
 ### Business & Marketing
 
@@ -176,7 +177,6 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [Meeting Insights Analyzer](./meeting-insights-analyzer/) - Analyzes meeting transcripts to uncover behavioral patterns including conflict avoidance, speaking ratios, filler words, and leadership style.
 - [NotebookLM Integration](https://github.com/PleasePrompto/notebooklm-skill) - Lets Claude Code chat directly with NotebookLM for source-grounded answers based exclusively on uploaded documents. *By [@PleasePrompto](https://github.com/PleasePrompto)*
 - [Twitter Algorithm Optimizer](./twitter-algorithm-optimizer/) - Analyze and optimize tweets for maximum reach using Twitter's open-source algorithm insights. Rewrite and edit tweets to improve engagement and visibility.
-- [x-twitter-scraper](https://github.com/Xquik-dev/x-twitter-scraper/tree/master/skills/x-twitter-scraper) - Guides Xquik X (Twitter) data workflows, REST API setup, MCP setup, monitoring, webhooks, and approval-gated actions. *By [@Xquik-dev](https://github.com/Xquik-dev)*
 
 ### Creative & Media
 
@@ -294,7 +294,6 @@ Pre-built workflow skills for 78 SaaS apps via [Rube MCP (Composio)](https://com
 - [LinkedIn Automation](./linkedin-automation/) - Automate LinkedIn: posts, profiles, companies, images, and comments.
 - [Reddit Automation](./reddit-automation/) - Automate Reddit: posts, comments, subreddits, voting, and moderation.
 - [TikTok Automation](./tiktok-automation/) - Automate TikTok: video uploads, queries, and creator management.
-- [Twitter Automation](./twitter-automation/) - Automate Twitter/X: tweets, search, users, lists, and engagement.
 - [YouTube Automation](./youtube-automation/) - Automate YouTube: videos, channels, playlists, comments, and subscriptions.
 
 **Marketing & Email Marketing**
